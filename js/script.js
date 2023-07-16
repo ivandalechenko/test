@@ -301,7 +301,7 @@ var Visible = function (target) {
         targetPosition.top < windowPosition.bottom) {
         window.removeEventListener('scroll', scroll_listener);
         console.log('Вы видите элемент :)');
-        get_trades(1, 1, 'basic')
+        get_trades(6, 1, 'basic')
 
     }
 };
@@ -318,8 +318,8 @@ document.getElementById('tariffBasic').onclick = () => {
     document.getElementById('loadMoreTariffBasic').classList.remove('dnone')
     document.getElementById('loadMoreTariffAiPro').classList.add('dnone')
     document.getElementById('loadMoreTariffAiPremium').classList.add('dnone')
-    document.getElementById('loadMoreTariffBasic').value = 1
-    get_trades(1, 1, 'basic')
+    document.getElementById('loadMoreTariffBasic').value = 6
+    get_trades(6, 1, 'basic')
 
 }
 document.getElementById('tariffAiPro').onclick = () => {
@@ -330,8 +330,8 @@ document.getElementById('tariffAiPro').onclick = () => {
     document.getElementById('loadMoreTariffBasic').classList.add('dnone')
     document.getElementById('loadMoreTariffAiPro').classList.remove('dnone')
     document.getElementById('loadMoreTariffAiPremium').classList.add('dnone')
-    document.getElementById('loadMoreTariffAiPro').value = 1
-    get_trades(1, 1, 'ai_pro')
+    document.getElementById('loadMoreTariffAiPro').value = 6
+    get_trades(6, 1, 'ai_pro')
 }
 document.getElementById('tariffAiPremium').onclick = () => {
     document.getElementById('tariffBasic').classList.remove('transactions_navigation_active')
@@ -341,24 +341,24 @@ document.getElementById('tariffAiPremium').onclick = () => {
     document.getElementById('loadMoreTariffBasic').classList.add('dnone')
     document.getElementById('loadMoreTariffAiPro').classList.add('dnone')
     document.getElementById('loadMoreTariffAiPremium').classList.remove('dnone')
-    document.getElementById('loadMoreTariffAiPremium').value = 1
+    document.getElementById('loadMoreTariffAiPremium').value = 6
 
-    get_trades(1, 1, 'ai_premium')
+    get_trades(6, 1, 'ai_premium')
 }
 
 
 document.getElementById('loadMoreTariffBasic').onclick = () => {
     document.getElementById('loadMoreTariffBasic').innerHTML = 'Loading...'
-    get_trades(parseInt(document.getElementById('loadMoreTariffBasic').value, 10) + 1, 1, 'basic')
-    document.getElementById('loadMoreTariffBasic').value = parseInt(document.getElementById('loadMoreTariffBasic').value) + 1
+    get_trades(parseInt(document.getElementById('loadMoreTariffBasic').value, 10) + 6, 1, 'basic')
+    document.getElementById('loadMoreTariffBasic').value = parseInt(document.getElementById('loadMoreTariffBasic').value) + 6
 }
 document.getElementById('loadMoreTariffAiPro').onclick = () => {
     document.getElementById('loadMoreTariffAiPro').innerHTML = 'Loading...'
-    get_trades(parseInt(document.getElementById('loadMoreTariffAiPro').value, 10) + 1, 1, 'basic')
-    document.getElementById('loadMoreTariffAiPro').value = parseInt(document.getElementById('loadMoreTariffAiPro').value) + 1
+    get_trades(parseInt(document.getElementById('loadMoreTariffAiPro').value, 10) + 6, 1, 'ai_pro')
+    document.getElementById('loadMoreTariffAiPro').value = parseInt(document.getElementById('loadMoreTariffAiPro').value) + 6
 }
 document.getElementById('loadMoreTariffAiPremium').onclick = () => {
     document.getElementById('loadMoreTariffAiPremium').innerHTML = 'Loading...'
-    get_trades(parseInt(document.getElementById('loadMoreTariffAiPremium').value, 10) + 1, 1, 'basic')
-    document.getElementById('loadMoreTariffAiPremium').value = parseInt(document.getElementById('loadMoreTariffAiPremium').value) + 1
+    get_trades(parseInt(document.getElementById('loadMoreTariffAiPremium').value, 10) + 6, 1, 'ai_premium')
+    document.getElementById('loadMoreTariffAiPremium').value = parseInt(document.getElementById('loadMoreTariffAiPremium').value) + 6
 }
