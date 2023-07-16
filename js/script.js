@@ -189,24 +189,101 @@ const get_trades = (limit, page, cat) => {
             return response.json();
         })
         .then((data) => {
-            setTimeout(() => {
-                document.getElementById('table_elements_loader').classList.add('onone')
-                setTimeout(() => {
-                    document.getElementById('table_elements_loader').classList.add('dnone')
-                    document.getElementById('table_elements').innerHTML = ''
-                    data.transactions.map((d) => {
-                        console.log(d)
-                        document.getElementById('table_elements').innerHTML += table_element({
-                            id: d.id,
-                            type: d.type,
-                            date: d.date,
-                            amount: d.amount,
-                            price: d.price,
-                            income: d.income,
-                        })
-                    })
-                }, 200, data)
-            }, 2000, data)
+            document.getElementById('loadMoreTariffBasic').innerHTML = 'Load more'
+            document.getElementById('loadMoreTariffAiPremium').innerHTML = 'Load more'
+            document.getElementById('loadMoreTariffAiPro').innerHTML = 'Load more'
+            // Pagination
+
+            if (data.total > limit) {
+                function get_page(limit, page, cat) {
+                    return (event) => {
+                        get_trades(limit, page, cat)
+                    }
+                }
+                document.getElementById('table_elements_pagination').innerHTML = '';
+                if (page != 1) {
+                    document.getElementById('table_elements_pagination').innerHTML += '<button id="prev_page"  aria-label="Transactions previous page"><img src="img/left_arr.svg" alt="left arrow" width="8" height="14" /></button>';
+                }
+                const pages_count = Math.ceil(data.total / limit)
+                if (pages_count < 6) {
+                    for (let i = 1; i < pages_count + 1; i++) {
+                        if (i == page) {
+                            document.getElementById('table_elements_pagination').innerHTML += '<button class="active">' + i + '</button>';
+                        } else {
+
+                            document.getElementById('table_elements_pagination').innerHTML += '<button id="page' + i + '">' + i + '</button>';
+                        }
+                    }
+                } else {
+                    var prevDots = false
+                    for (let i = 1; i < pages_count + 1; i++) {
+                        if (i == page) {
+                            document.getElementById('table_elements_pagination').innerHTML += '<button class="active">' + i + '</button>';
+                            prevDots = false
+                        } else if (i == page - 1 || i == page + 1 || i == pages_count || i == 1) {
+                            document.getElementById('table_elements_pagination').innerHTML += '<button id="page' + i + '">' + i + '</button>';
+                            prevDots = false
+                        } else if (!prevDots) {
+                            document.getElementById('table_elements_pagination').innerHTML += '<button>...</button>';
+                            prevDots = true
+                        }
+                    }
+                }
+                if (page != pages_count) {
+                    document.getElementById('table_elements_pagination').innerHTML += '<button id="next_page"  aria-label="Transactions next page"><img src="img/right_arr.svg" alt="right arrow" width="8" height="14" /></button>';
+                }
+
+                if (page != 1) {
+                    document.getElementById('prev_page').onclick = get_page(limit, page - 1, cat);
+                }
+                if (page != pages_count) {
+                    document.getElementById('next_page').onclick = get_page(limit, page + 1, cat);
+                }
+                if (pages_count < 6) {
+                    for (let i = 1; i < pages_count + 1; i++) {
+                        if (i != page) {
+                            const pageId = 'page' + i
+                            document.getElementById(pageId).onclick = get_page(limit, i, cat);
+
+                        }
+                    }
+                } else {
+                    var prevDots = false
+                    for (let i = 1; i < pages_count + 1; i++) {
+                        if (i == page) {
+                            prevDots = false
+                        } else if (i == page - 1 || i == page + 1 || i == pages_count || i == 1) {
+                            const pageId = 'page' + i
+                            document.getElementById(pageId).onclick = get_page(limit, i, cat);
+                            prevDots = false
+                        } else if (!prevDots) {
+                            prevDots = true
+                        }
+                    }
+                }
+                document.getElementById('table_elements_pagination').classList.remove('onone')
+            } else {
+                document.getElementById('table_elements_pagination').innerHTML = '';
+            }
+            setTimeout(() => { document.getElementById('table_elements_loader').classList.add('dnone') }, 100)
+            document.getElementById('table_elements_loader').classList.add('onone')
+            document.getElementById('table_elements_pagination').classList.remove('onone')
+            document.getElementById('table').classList.remove('onone')
+            document.getElementById('transactions_navigation').classList.remove('onone')
+            document.getElementById('transactions_secure').classList.remove('onone')
+
+            document.getElementById('table_elements').innerHTML = ''
+            data.transactions.map((d) => {
+                console.log(d)
+                document.getElementById('table_elements').innerHTML += table_element({
+                    id: d.id,
+                    type: d.type,
+                    date: d.date,
+                    amount: d.amount,
+                    price: d.price,
+                    income: d.income,
+                })
+            })
 
         })
 }
@@ -224,7 +301,8 @@ var Visible = function (target) {
         targetPosition.top < windowPosition.bottom) {
         window.removeEventListener('scroll', scroll_listener);
         console.log('Вы видите элемент :)');
-        get_trades(6, 1, 'basic')
+        get_trades(1, 1, 'basic')
+
     }
 };
 
@@ -232,3 +310,55 @@ const scroll_listener = () => { Visible(document.querySelector('#all_trades')); 
 window.addEventListener('scroll', scroll_listener);
 Visible(document.querySelector('#all_trades'));
 
+document.getElementById('tariffBasic').onclick = () => {
+    document.getElementById('tariffBasic').classList.add('transactions_navigation_active')
+    document.getElementById('tariffAiPro').classList.remove('transactions_navigation_active')
+    document.getElementById('tariffAiPremium').classList.remove('transactions_navigation_active')
+
+    document.getElementById('loadMoreTariffBasic').classList.remove('dnone')
+    document.getElementById('loadMoreTariffAiPro').classList.add('dnone')
+    document.getElementById('loadMoreTariffAiPremium').classList.add('dnone')
+    document.getElementById('loadMoreTariffBasic').value = 1
+    get_trades(1, 1, 'basic')
+
+}
+document.getElementById('tariffAiPro').onclick = () => {
+    document.getElementById('tariffBasic').classList.remove('transactions_navigation_active')
+    document.getElementById('tariffAiPro').classList.add('transactions_navigation_active')
+    document.getElementById('tariffAiPremium').classList.remove('transactions_navigation_active')
+
+    document.getElementById('loadMoreTariffBasic').classList.add('dnone')
+    document.getElementById('loadMoreTariffAiPro').classList.remove('dnone')
+    document.getElementById('loadMoreTariffAiPremium').classList.add('dnone')
+    document.getElementById('loadMoreTariffAiPro').value = 1
+    get_trades(1, 1, 'ai_pro')
+}
+document.getElementById('tariffAiPremium').onclick = () => {
+    document.getElementById('tariffBasic').classList.remove('transactions_navigation_active')
+    document.getElementById('tariffAiPro').classList.remove('transactions_navigation_active')
+    document.getElementById('tariffAiPremium').classList.add('transactions_navigation_active')
+
+    document.getElementById('loadMoreTariffBasic').classList.add('dnone')
+    document.getElementById('loadMoreTariffAiPro').classList.add('dnone')
+    document.getElementById('loadMoreTariffAiPremium').classList.remove('dnone')
+    document.getElementById('loadMoreTariffAiPremium').value = 1
+
+    get_trades(1, 1, 'ai_premium')
+}
+
+
+document.getElementById('loadMoreTariffBasic').onclick = () => {
+    document.getElementById('loadMoreTariffBasic').innerHTML = 'Loading...'
+    get_trades(parseInt(document.getElementById('loadMoreTariffBasic').value, 10) + 1, 1, 'basic')
+    document.getElementById('loadMoreTariffBasic').value = parseInt(document.getElementById('loadMoreTariffBasic').value) + 1
+}
+document.getElementById('loadMoreTariffAiPro').onclick = () => {
+    document.getElementById('loadMoreTariffAiPro').innerHTML = 'Loading...'
+    get_trades(parseInt(document.getElementById('loadMoreTariffAiPro').value, 10) + 1, 1, 'basic')
+    document.getElementById('loadMoreTariffAiPro').value = parseInt(document.getElementById('loadMoreTariffAiPro').value) + 1
+}
+document.getElementById('loadMoreTariffAiPremium').onclick = () => {
+    document.getElementById('loadMoreTariffAiPremium').innerHTML = 'Loading...'
+    get_trades(parseInt(document.getElementById('loadMoreTariffAiPremium').value, 10) + 1, 1, 'basic')
+    document.getElementById('loadMoreTariffAiPremium').value = parseInt(document.getElementById('loadMoreTariffAiPremium').value) + 1
+}

@@ -1879,10 +1879,9 @@
                 <img data-src="img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
             </div>
         </div>
-    </div>
-    -->
+    </div>-->
     <div class="lb2">
-        <!-- <div class="lb2_images">
+        <div class="lb2_images">
             <div class="lb2_images_light free_image">
 
                 <img data-src="img/security_images/l1.webp" alt="fone light" class="lozad lb2_images_light_img"
@@ -2004,7 +2003,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="transactions" id="all_trades">
             <div class="transactions_container container">
                 <div class="transactions_transactions_header">
@@ -2015,18 +2014,24 @@
                         Торговый бот на ByBit от TradeCoinAI повышает процент ваших успешных сделок!
                     </div>
                 </div>
-                <div class="transactions_navigation">
-                    <div class="transactions_navigation_navigation_element h6 transactions_navigation_active">
+                <div class="table_elements_loader_wrapper">
+                    <div id="table_elements_loader">
+                        <img src="img/loader.svg" alt="">
+                    </div>
+                </div>
+                <div class="transactions_navigation onone" id="transactions_navigation">
+                    <div class="transactions_navigation_navigation_element h6 transactions_navigation_active"
+                        id="tariffBasic">
                         Basic
                     </div>
-                    <div class="transactions_navigation_navigation_element h6">
+                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPro">
                         AI Pro
                     </div>
-                    <div class="transactions_navigation_navigation_element h6">
+                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPremium">
                         AI Premium
                     </div>
                 </div>
-                <div class="table">
+                <div id="table" class="onone">
                     <div class="element element_headers">
                         <div class="num element_info">
                             #
@@ -2054,429 +2059,28 @@
                         </div>
                     </div>
                     <div id="table_elements">
-                        <div id="table_elements_loader" class="dnone onone">
-                            <img src="img/loader.svg" alt="">
-                        </div>
                     </div>
-                    <button class="load_more">
+                    <button class="load_more" id="loadMoreTariffBasic" value="1">
+                        Load more
+                    </button>
+                    <button class="load_more dnone" id="loadMoreTariffAiPro" value="1">
+                        Load more
+                    </button>
+                    <button class="load_more dnone" id="loadMoreTariffAiPremium" value="1">
                         Load more
                     </button>
                 </div>
                 <div class="security_and_pages element_loading">
-                    <div class="secure element_info">
+                    <div id="transactions_secure" class="secure element_info onone">
                         <img alt="secure" class="secure_img" src="img/shield_check.svg" width="24" height="24" />
                         <div class="medium15 secure_medium15">
                             Ваши данные верифицированы по API платформы ByBit и надежно защищены!
                         </div>
-
                         <img alt="bybit" class=" secure_img" src="img/bybit.svg" width="47" height="17" />
                     </div>
-                    <div id="table_pagination" class="pages element_info">
-                        <button aria-label="Transactions previous page">
-                            <img src="img/left_arr.svg" alt="left arrow" class="" width="8" height="14" />
-                        </button>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>...</button>
-                        <button class="active">78</button>
-                        <button>79</button>
-                        <button aria-label="Transactions next page">
-                            <img src="img/right_arr.svg" alt="right arrow" class="" width="8" height="14" />
-                        </button>
+                    <div id="table_elements_pagination" class="pages element_info onone">
                     </div>
                 </div>
-                <!-- <div class="transactions_table_naming">
-                    <div class="transactions_table_naming_number transactions_table_naming_element regular14">
-                        #
-                    </div>
-                    <div class="transactions_table_naming_type transactions_table_naming_element regular14">
-                        Тип
-                    </div>
-                    <div class="transactions_table_naming_pair transactions_table_naming_element regular14">
-                        Пара
-                    </div>
-                    <div class="transactions_table_naming_date transactions_table_naming_element regular14">
-                        Дата
-                    </div>
-                    <div class="transactions_table_naming_count transactions_table_naming_element regular14">
-                        Кол-во
-                    </div>
-                    <div class="transactions_table_naming_price transactions_table_naming_element regular14">
-                        Цена
-                    </div>
-                    <div class="transactions_table_naming_volume transactions_table_naming_element regular14">
-                        Объём
-                    </div>
-                    <div class="transactions_table_naming_profit transactions_table_naming_element regular14">
-                        Прибыль
-                    </div>
-                </div>
-                <div class="transactions_pc_elements">
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                    <div class="transactions_pc_elements_table_element">
-                        <div class="transactions_pc_elements_table_element_number btn">
-                            2334
-                        </div>
-                        <div class="transactions_pc_elements_table_element_type">
-                            <div class="direction short btn">
-                                Short
-                            </div>
-                            <div class="leverage medium12">
-                                lsol x10
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_pair">
-
-                            <img data-src="img/currency/bnb.png" alt="cryptotype"
-                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
-                            <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
-                                BNB/USDT
-                            </div>
-                        </div>
-                        <div class="transactions_pc_elements_table_element_date medium15">
-                            14 June, 2023
-                        </div>
-                        <div class="transactions_pc_elements_table_element_count medium15">
-                            4.0093
-                        </div>
-                        <div class="transactions_pc_elements_table_element_price bold15">
-                            24,943.09
-                        </div>
-                        <div class="transactions_pc_elements_table_element_volume medium15">
-                            50,324
-                        </div>
-                        <div class="transactions_pc_elements_table_element_profit">
-                            <div class="transactions_pc_elements_table_element_profit_count bold15">
-                                $24,943.09
-                            </div>
-                            <div class="transactions_pc_elements_table_element_profit_percent medium15">
-                                +38,39%
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="transactions_mobile_elements">
-                    <div class="transactions_mobile_elements_element">
-                        <div class="transactions_mobile_elements_element_pair_and_leverage">
-                            <div class="transactions_mobile_elements_element_pair_and_leverage_pair">
-
-                                <img width="35" height="35" data-src="img/currency/bnb.png" alt="cryptotype"
-                                    class="lozad transactions_mobile_elements_element_pair_and_leverage_pair_img">
-                                <div
-                                    class="medium15 transactions_mobile_elements_element_pair_and_leverage_pair_medium15">
-                                    BNB/USDT
-                                </div>
-                            </div>
-                            <div class="transactions_mobile_elements_element_pair_and_leverage_lev_and_type">
-                                <div
-                                    class="transactions_mobile_elements_element_pair_and_leverage_lev_and_type_type btn short">
-                                    Short
-                                </div>
-                                <div
-                                    class="transactions_mobile_elements_element_pair_and_leverage_lev_and_type_leverage medium12">
-                                    lsol x10
-                                </div>
-                            </div>
-                        </div>
-                        <div class="transactions_mobile_elements_element_info_element">
-                            <div class="transactions_mobile_elements_element_info_element_name regular14">
-                                Date
-                            </div>
-                            <div class="transactions_mobile_elements_element_info_element_value medium15">
-                                14 June, 2023
-                            </div>
-                        </div>
-                        <div class="transactions_mobile_elements_element_info_element">
-                            <div class="transactions_mobile_elements_element_info_element_name regular14">
-                                Volume
-                            </div>
-                            <div class="transactions_mobile_elements_element_info_element_value medium15">
-                                50,324
-                            </div>
-                        </div>
-                        <div class="transactions_mobile_elements_element_info_element">
-                            <div class="transactions_mobile_elements_element_info_element_name regular14">
-                                Amount
-                            </div>
-                            <div class="transactions_mobile_elements_element_info_element_value medium15">
-                                4.0093
-                            </div>
-                        </div>
-                        <div class="transactions_mobile_elements_element_info_element">
-                            <div class="transactions_mobile_elements_element_info_element_name regular14">
-                                Price
-                            </div>
-                            <div class="transactions_mobile_elements_element_info_element_value medium15 priceprofit">
-                                24,943.09
-                            </div>
-                        </div>
-                        <div class="transactions_mobile_elements_element_info_element">
-                            <div class="transactions_mobile_elements_element_info_element_name regular14">
-                                Profit
-                            </div>
-                            <div
-                                class="transactions_mobile_elements_element_info_element_value transactions_mobile_elements_element_info_element_priceprofit transactions_mobile_elements_element_info_element_percent_wrapper">
-                                <div
-                                    class="transactions_mobile_elements_element_info_element_percent_wrapper_medium15 medium15">
-                                    $24,943.09</div>
-                                <div
-                                    class="transactions_mobile_elements_element_info_element_percent transactions_mobile_elements_element_info_element_percent_wrapper_medium15 medium15">
-                                    +38,39%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn transactions_mobile_elements_button">Load more</button>
-                    <div class="secure nobem">
-
-                        <img alt="secure" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
-                            height="24">
-                        <div class="medium15 secure_medium15">
-                            Ваши данные верифицированы по API платформы ByBit и надежно защищены!
-                        </div>
-
-                        <img data-src="img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
-                    </div>
-                </div>
-                <div class="transactions_security_and_pages">
-                    <div class="transactions_security_and_pages_sec">
-                        <div class="secure transactions_security_and_pages_sec_secure">
-
-                            <img alt="secure" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
-                                height="24">
-                            <div class="medium15 secure_medium15">
-                                Ваши данные верифицированы по API платформы ByBit и надежно защищены!
-                            </div>
-
-                            <img alt="bybit" class="lozad secure_img" data-src="img/bybit.svg" width="47" height="17">
-                        </div>
-                    </div>
-                    <div class="transactions_security_and_pages_pages">
-                        <button class="transactions_security_and_pages_pages_button"
-                            aria-label="Transactions previous page">
-
-                            <img data-src="img/left_arr.svg" alt="left arrow"
-                                class="lozad transactions_security_and_pages_pages_button_img" width="8" height="14">
-                        </button>
-                        <button class="transactions_security_and_pages_pages_button">1</button>
-                        <button class="transactions_security_and_pages_pages_button">2</button>
-                        <button class="transactions_security_and_pages_pages_button">...</button>
-                        <button
-                            class="transactions_security_and_pages_pages_button transactions_security_and_pages_pages_active">78</button>
-                        <button class="transactions_security_and_pages_pages_button">79</button>
-                        <button class="transactions_security_and_pages_pages_button"
-                            aria-label="Transactions next page">
-
-                            <img data-src="img/right_arr.svg" alt="right arrow"
-                                class="lozad transactions_security_and_pages_pages_button_img" width="8" height="14">
-                        </button>
-                    </div>
-                </div> -->
-
             </div>
         </div>
         <div class="tutorial" id="how_it_works">

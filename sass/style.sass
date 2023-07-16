@@ -29,8 +29,7 @@ a, button
 a:hover, button:hover
     cursor: pointer
     opacity: .6
-.dnone
-    display: none
+
 a
     text-decoration: none
 body
@@ -1104,215 +1103,7 @@ h6
                 &_body
                     margin-top: 10px
                     color: #B5B6B6
-.Short
-    color: #FF5F72
-.Long
-    color: #D9E44F
 
-.transactions
-    margin-top: 155px
-    position: relative
-    z-index: 2
-    @media (max-width: 1000px)
-        margin-top: 0px
-    &_transactions_header
-        &_h2, &_body
-            text-align: center
-            @media (max-width: 900px)
-                text-align: left
-        &_body
-            color: #B5B6B6
-            margin-top: 12px
-    &_navigation
-        display: flex
-        margin-top: 40px
-        @media (max-width: 470px)
-            overflow: auto
-            justify-content: left
-            padding: 0px 15px
-            margin: 40px -15px 0px
-        &_navigation_element:hover
-            color: rgba(255, 255, 255,1)
-            border-bottom: 1px solid rgba(255, 255, 255, 1)
-            cursor: pointer
-        &_navigation_element
-            transition: color .5s, border-bottom .5s
-            width: 33%
-            text-align: center
-            min-width: 150px
-            padding-bottom: 20px
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15)
-            color: rgba(255, 255, 255, 0.5)
-            @media (max-width: 700px)
-                padding-bottom: 12px
-                &_h6
-                    font-size: 14px
-                    line-height: 17px
-        &_active
-            border-bottom: 1px solid rgba(217, 228, 79, 1)
-            color: rgba(255, 255, 255,1)
-
-    // &_table_naming
-    //     margin-top: 32px
-    //     padding: 0px 20px
-    //     display: flex
-    //     padding-bottom: 6px
-    //     @media (max-width: 900px)
-    //         display: none
-    //     &_number
-    //         width: 7.56%
-    //     &_type
-    //         width: 7.18%
-    //     &_pair
-    //         width: 15.13%
-    //     &_date
-    //         width: 13.7%
-    //     &_count
-    //         width: 8.43%
-    //     &_price
-    //         width: 10.3%
-    //     &_volume
-    //         width: 16.15%
-    //     &_profit
-    //         width: 21.2%
-
-    //     &_leverage
-    //         color: #B5B6B6
-    //     &_element
-    //         color: rgba(255,255,255,0.7)
-    // &_pc_elements
-    //     &_table_element
-    //         margin-top: 6px
-    //         padding: 0px 20px
-    //         display: flex
-    //         height: 60px
-    //         background: rgba(255, 255, 255, 0.03)
-    //         border-radius: 12px
-    //         &_number
-    //             width: 7.56%
-    //         &_type
-    //             width: 7.18%
-    //         &_pair
-    //             width: 15.13%
-    //         &_date
-    //             width: 13.7%
-    //         &_count
-    //             width: 8.43%
-    //         &_price
-    //             width: 10.3%
-    //         &_volume
-    //             width: 16.15%
-    //         &_profit
-    //             width: 21.2%
-    //         &_leverage
-    //             color: #B5B6B6
-    //         &_number, &_type, &_pair, &_date, &_count, &_price, &_volume, &_profit
-    //             margin: auto 0
-    //         &_number
-    //             opacity: 0.5
-    //         &_pair
-    //             display: flex
-    //             column-gap: 12px
-    //             &_img, &_medium15
-    //                 margin: auto 0
-    //         &_date
-    //             opacity: 0.7
-    //         &_volume
-    //             opacity: 0.7
-    //         &_profit
-    //             display: flex
-    //             justify-content: space-between
-    //             &_count, &_percent
-    //                 margin: auto 0
-    //             &_percent
-    //                 padding: 4px 12px
-    //                 background: #1F844A
-    //                 text-shadow: 0px 0px 5px black
-    //                 border-radius: 6px
-    //         @media (max-width: 900px)
-    //             display: none
-
-    // &_mobile_elements
-    //     display: none
-    //     @media (max-width: 900px)
-    //         display: flex
-    //         justify-content: center
-    //         flex-wrap: wrap
-    //         padding-top: 10px
-    //     &_button
-    //         max-width: 460px
-    //         width: 100%
-    //         background: #3763FF
-    //         border-radius: 65px
-    //         height: 48px
-    //         margin-top: 24px
-
-    //     &_element
-    //         background: rgba(255, 255, 255, 0.03)
-    //         border-radius: 12px
-    //         padding: 20px
-    //         max-width: 460px
-    //         width: 100%
-    //         margin-top: 12px
-    //         &_pair_and_leverage
-    //             display: flex
-    //             justify-content: space-between
-    //             padding-bottom: 16px
-    //             &_pair
-    //                 display: flex
-    //                 column-gap: 12px
-    //                 &_medium15, &_img
-    //                     margin: auto 0
-    //         &_info_element:not(:last-child)
-    //             border-bottom: 1px solid rgba(255, 255, 255, 0.05)
-    //             padding-bottom: 8px
-    //         &_info_element
-    //             padding-top: 8px
-    //             display: flex
-    //             justify-content: space-between
-    //             &_name, &_value
-    //                 margin: auto 0
-    //             &_name, &_value
-    //                 opacity: 0.7
-    //             &_priceprofit
-    //                 opacity: 1
-    //             &_percent_wrapper
-    //                 display: flex
-    //                 column-gap: 16px
-    //                 .medium15
-    //                     margin: auto 0
-    //             &_percent
-    //                 background: #1F844A
-    //                 text-shadow: 0px 0px 5px black
-    //                 border-radius: 6px
-    //                 padding: 4px 12px
-
-    // &_security_and_pages
-            display: flex
-            justify-content: space-between
-            margin-top: 23px
-            column-gap: 40px
-        @media (max-width: 900px)
-            display: none
-        &_pages, &_sec
-            margin: auto 0
-        &_sec
-            &_secure
-                margin-top: 0px
-        &_pages
-            display: flex
-            column-gap: 8px
-            &_button
-                width: 48px
-                height: 48px
-                background: rgba(255, 255, 255, 0.05)
-                border-radius: 12px
-                font-style: normal
-                font-weight: 500
-                font-size: 15px
-                line-height: 20px
-            &_active
-                background: #3763FF
 .tutorial
     margin-top: 100px
     padding: 0px 20px
@@ -2111,34 +1902,74 @@ h6
         height: 600px
         backdrop-filter: blur(10px)
 
-// .fade
-//     animation-name: fade
-//     animation-duration: 1.2s
+.Short
+    color: #FF5F72
+.Long
+    color: #D9E44F
 
-// @keyframes fade
-//     0%
-//         opacity: 0
-//     40%
-//         opacity: 0
-//     100%
-//         opacity: 1
+.transactions
+    margin-top: 155px
+    position: relative
+    z-index: 2
+    @media (max-width: 1000px)
+        margin-top: 0px
+    &_transactions_header
+        &_h2, &_body
+            text-align: center
+            @media (max-width: 900px)
+                text-align: left
+        &_body
+            color: #B5B6B6
+            margin-top: 12px
+    &_navigation
+        display: flex
+        margin-top: 40px
+        opacity: 1
+        transition: opacity 200ms
+        @media (max-width: 470px)
+            overflow: auto
+            justify-content: left
+            padding: 0px 15px
+            margin: 40px -15px 0px
+        &_navigation_element:hover
+            color: rgba(255, 255, 255,1)
+            border-bottom: 1px solid rgba(255, 255, 255, 1)
+            cursor: pointer
+        &_navigation_element
+            transition: color .5s, border-bottom .5s
+            width: 33%
+            text-align: center
+            min-width: 150px
+            padding-bottom: 20px
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+            color: rgba(255, 255, 255, 0.5)
+            @media (max-width: 700px)
+                padding-bottom: 12px
+                &_h6
+                    font-size: 14px
+                    line-height: 17px
+        &_active
+            border-bottom: 1px solid rgba(217, 228, 79, 1)
+            color: rgba(255, 255, 255,1)
+
 .load_more
     height: 48px
     width: 100%
     max-width: 500px
     border-radius: 65px
     background: var(--primary, #3763FF)
-
     font-size: 14px
     font-weight: 700
     letter-spacing: -0.28px
-.table
+#table
     display: flex
     flex-wrap: wrap
     justify-content: center
+    opacity: 1
+    transition: opacity 200ms
     #table_elements
         width: 100%
-        transition: height 10000ms
+        min-height: 408px
     .load_more
         display: none
         @media (max-width: 1000px)
@@ -2318,35 +2149,21 @@ h6
             line-height: 20px
         .active
             background: #3763FF
-// .table
-//     transition: height 500ms
-//     .element_loading
-//         background: rgba(255, 255, 255, 0.03) linear-gradient(90deg, transparent, transparent,rgba(255, 255, 255, 0.2) ,transparent, transparent)
-//         animation: background_loading 1s infinite ease-in-out alternate
-//         @keyframes background_loading
-//             0%
-//                 background-position-x: 0px
-//             100%
-//                 background-position-x: 1000px
-//         .element_info
-//             opacity: 0
 
-// .element_loading
-//     background: rgba(255, 255, 255, 0.03) linear-gradient(90deg, transparent, transparent,rgba(255, 255, 255, 0.2) ,transparent, transparent)
-//     animation: background_loading 1s infinite ease-in-out alternate
-//     @keyframes background_loading
-//         0%
-//             background-position-x: 0px
-//         100%
-//             background-position-x: 1000px
-//     .element_info
-//         opacity: 0
 
+.table_elements_loader_wrapper
+    width: 100%
+    height: 0
+    position: relative
+    top: 20px
+    z-index: 2
 #table_elements_loader
     width: 100%
-    height: 500px
+    height: 550px
     border-radius: 12px
-    background: rgba(255, 255, 255, 0.03)
+    // background: black
+    // background: rgb(9, 10, 11)
+    // background: rgba(255, 255, 255, 0.03)
     display: flex
     justify-content: center
     align-items: center
@@ -2366,3 +2183,5 @@ h6
 
 .onone
     opacity: 0 !important
+.dnone
+    display: none !important
