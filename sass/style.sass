@@ -1283,21 +1283,23 @@ h6
                 display: none
 
         &_rocket
-
-            top: -319px
-            left: -176px
+            top: -279px
+            left: 493px
             z-index: 0
             display: flex
-            justify-content: center
+            justify-content: right
+            @media (max-width: 1100px)
+                left: 393px
+
             @media (max-width: 900px)
                 top: -130px
-                left: -207px
+                left: 136px
                 &_img
                     width: 1000px
                     height: 931px
             @media (max-width: 550px)
                 top: -58px
-                left: -819px
+                left: 147px
                 &_img_pc
                     display: none
                 &_img_mob

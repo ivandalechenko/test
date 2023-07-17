@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Открытие-закрытие меню с кнопки
-    // document.getElementById('burger_menu_button').onclick = () => {
-    //     elBlock = document.getElementById('mobile_menu')
-    //     if (elBlock.style.height === "0px") {
-    //         document.getElementById('header').classList.add('show_mobile_menu')
-    //         document.getElementById('usp').classList.add('filter_blur')
-    //         document.getElementById('lb1').classList.add('filter_blur')
-    //         document.getElementById('body').classList.add('no_scroll')
-    //         elBlock.style.height = `${elBlock.scrollHeight}px`
-    //         document.getElementById('mobile_menu_img_burger').classList.add('dnone')
-    //         document.getElementById('mobile_menu_img_cross').classList.remove('dnone')
-    //     } else {
-    //         hide_menu()
-    //     }
-    // }
+    document.getElementById('burger_menu_button').onclick = () => {
+        elBlock = document.getElementById('mobile_menu')
+        if (elBlock.style.height === "0px") {
+            document.getElementById('header').classList.add('show_mobile_menu')
+            document.getElementById('usp').classList.add('filter_blur')
+            document.getElementById('lb1').classList.add('filter_blur')
+            document.getElementById('body').classList.add('no_scroll')
+            elBlock.style.height = `${elBlock.scrollHeight}px`
+            document.getElementById('mobile_menu_img_burger').classList.add('dnone')
+            document.getElementById('mobile_menu_img_cross').classList.remove('dnone')
+        } else {
+            hide_menu()
+        }
+    }
     // Функция закрытие меню
     function hide_menu() {
         document.getElementById('body').classList.remove('no_scroll')
