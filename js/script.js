@@ -178,7 +178,8 @@ lozad('.lozad', {
 }).observe()
 
 const table_element = (props) => {
-    return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">isol x10</div></div></div><div class="pair element_info"><div class="info"><img src="img/currency/btc.png" /><div class="text">BNB/USDT</div></div></div><div class="date element_info"><div class="name">Дата</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Кол-во</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Цена</div><div class="info">' + props.price + '</div></div><div class="volume element_info"><div class="name">Объем</div><div class="info">50,324</div></div><div class="profit element_info"><div class="name">Прибыль</div><div class="info"><div class="usdt">$' + props.income + '</div><div class="percent">+38,39%</div></div></div></div>'
+    return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">' + props.margin + '</div></div></div><div class="pair element_info"><div class="info"><img src="img/currency/btc.png" /><div class="text">BNB/USDT.P</div></div></div><div class="date element_info"><div class="name">Дата</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Кол-во</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Цена</div><div class="info">$ ' + props.price + '</div></div><div class="profit element_info"><div class="name">Прибыль</div><div class="info"><div class="usdt">$ ' + props.income + '</div><div class="percent ' + props.percentClass + '">' + props.percent + ' %</div></div></div></div>'
+    // return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">isol x10</div></div></div><div class="pair element_info"><div class="info"><img src="img/currency/btc.png" /><div class="text">BNB/USDT</div></div></div><div class="date element_info"><div class="name">Дата</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Кол-во</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Цена</div><div class="info">' + props.price + '</div></div><div class="volume element_info"><div class="name">Объем</div><div class="info">50,324</div></div><div class="profit element_info"><div class="name">Прибыль</div><div class="info"><div class="usdt">$' + props.income + '</div><div class="percent">+38,39%</div></div></div></div>'
 }
 
 const get_trades = (limit, page, cat) => {
@@ -273,15 +274,20 @@ const get_trades = (limit, page, cat) => {
             document.getElementById('transactions_secure').classList.remove('onone')
 
             document.getElementById('table_elements').innerHTML = ''
-            data.transactions.map((d) => {
-                console.log(d)
+            data.transactions.map((d, i) => {
+                var percent = '+'
+                d.percent > 0 ? percent += d.percent : percent = d.percent
+                d.percent > 0 ? percentClass = 'plus' : percent = 'minus'
                 document.getElementById('table_elements').innerHTML += table_element({
-                    id: d.id,
+                    id: (page - 1) * limit + i + 1,
                     type: d.type,
                     date: d.date,
                     amount: d.amount,
                     price: d.price,
                     income: d.income,
+                    percent: percent,
+                    margin: d.margin,
+                    percentClass: percentClass
                 })
             })
 
