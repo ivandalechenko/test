@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="description"
+        content="Проверенные торговые боты для фьючерскной торговли для ByBit на основе AI от TradeCoincAI ⭐️ Круглосуточная работа ✔️ Анализ 🔏 Безопасность ⚡️ Стабильный заработок">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeCoinAi — Подключиться к торговым ботам AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="img/usp_images/man_with_notebook_mob.webp">
+
+
+
+    <style>
+        #loader {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 1);
+            position: fixed;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            transition: 0.6s ease-out;
+            opacity: 1;
+
+        }
+
+        #loader svg {
+            margin-top: 40vh;
+            width: 100px;
+            height: 100px;
+            animation: loader 1s infinite cubic-bezier(0.5, 0, 0.5, 1);
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            80% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.2s
+        }
+
+        .lozad {
+            opacity: 0
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        header {
+            display: block
+        }
+
+        html,
+        body,
+        div,
+        h1,
+        h2,
+        a,
+        img,
+        header,
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            color: #fff
+        }
+
+        .dnone {
+            display: none !important
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        body {
+            background: #090a0b
+        }
+
+        .secure {
+            margin-top: 34px;
+            display: flex;
+            column-gap: 15px
+        }
+
+        .secure_medium15,
+        .secure_img {
+            margin: auto 0
+        }
+
+        .secure_medium15 {
+            color: #b5b6b6;
+            padding-right: 15px
+        }
+
+        @media (max-width:550px) {
+            .secure_medium15 {
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        .free_image {
+            width: 0px;
+            height: 0px;
+            position: relative
+        }
+
+        .container {
+            width: 1085px;
+            margin: 0 auto
+        }
+
+        @media (max-width:1150px) {
+            .container {
+                width: 100%;
+                padding: 0px 15px
+            }
+        }
+
+        .btn {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            .btn {
+                font-size: 14px;
+                line-height: 17px
+            }
+        }
+
+        .body {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px
+        }
+
+        @media (max-width:550px) {
+            .body {
+                font-size: 14px;
+                line-height: 22px
+            }
+        }
+
+        .colored_text {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: .205em;
+            text-transform: uppercase
+        }
+
+        @media (max-width:550px) {
+            .colored_text {
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 53px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            h1 {
+                font-size: 26px;
+                line-height: 31px
+            }
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            h2 {
+                font-size: 24px;
+                line-height: 29px
+            }
+        }
+
+        .medium15 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px
+        }
+
+        .regular14 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px
+        }
+
+        .medium12 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: -0.02em
+        }
+
+        .header {
+            position: relative;
+            z-index: 2
+        }
+
+        .header_mobile {
+            overflow: hidden;
+            height: 305px;
+            position: absolute;
+            width: 100%;
+            margin: 0px -15px;
+            padding: 0px 15px
+        }
+
+        .header_pc {
+            height: 80px;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .header_navigation {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px
+        }
+
+        .header_navigation_logo {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo {
+                column-gap: 10px
+            }
+        }
+
+        .header_navigation_logo_img {
+            margin: auto 0
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo_img img {
+                width: 28px;
+                height: 28px
+            }
+        }
+
+        .header_navigation_logo_text {
+            margin: auto 0;
+            font-weight: 700;
+            font-size: 18.2642px;
+            line-height: 22px
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo_text {
+                font-size: 16.0725px;
+                line-height: 19px
+            }
+        }
+
+        .header_navigation_links {
+            display: flex;
+            justify-content: space-between;
+            margin: auto 0;
+            column-gap: 20px
+        }
+
+        @media (max-width:850px) {
+            .header_navigation_links {
+                display: none
+            }
+        }
+
+        .header_navigation_links_a {
+            color: #b5b6b6
+        }
+
+        .header_buttons {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 12px
+        }
+
+        .header_buttons_log_reg,
+        .header_buttons_burger {
+            margin: auto 0
+        }
+
+        .header_buttons_burger {
+            display: none;
+            padding-left: 20px
+        }
+
+        @media (max-width:850px) {
+            .header_buttons_burger {
+                display: block
+            }
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_burger {
+                padding-left: 10px
+            }
+        }
+
+        .header_buttons_burger_btn {
+            background: none
+        }
+
+        .header_buttons_log_reg {
+            display: flex;
+            column-gap: 8px
+        }
+
+        @media (max-width:450px) {
+            .header_buttons_log_reg {
+                display: none
+            }
+        }
+
+        .header_buttons_log_reg_btn_log {
+            width: 122px;
+            height: 43px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 65px
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_log_reg_btn_log {
+                width: 95px;
+                height: 36px
+            }
+        }
+
+        .header_buttons_log_reg_btn_reg {
+            width: 122px;
+            height: 43px;
+            background: #3763ff;
+            border-radius: 65px
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_log_reg_btn_reg {
+                width: 95px;
+                height: 36px
+            }
+        }
+
+        .lb1 {
+            width: 100%;
+            overflow: hidden
+        }
+
+        .lb1_light {
+            display: flex;
+            justify-content: center
+        }
+
+        .lb1_light_el1 {
+            top: -160px;
+            z-index: 1;
+            left: -1074px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_el1 {
+                top: -60px;
+                left: -601px;
+                z-index: 0
+            }
+        }
+
+        .lb1_light_el2 {
+            top: 60px;
+            left: -226px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_el2 {
+                display: none
+            }
+        }
+
+        .lb1_light_line {
+            top: 340px;
+            z-index: 0;
+            left: -1005px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_line {
+                display: none
+            }
+        }
+
+        .usp {
+            padding-top: 90px;
+            padding-bottom: 350px;
+            width: 100%;
+            overflow: hidden
+        }
+
+        @media (max-width:700px) {
+            .usp {
+                padding-bottom: 510px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp {
+                padding-top: 42px
+            }
+        }
+
+        .usp_container {
+            display: flex
+        }
+
+        .usp_images {
+            position: relative
+        }
+
+        .usp_images_man_with_notebook {
+            top: 152px;
+            left: 126px;
+            z-index: 3
+        }
+
+        @media (max-width:900px) {
+            .usp_images_man_with_notebook {
+                top: 200px
+            }
+        }
+
+        @media (max-width:650px) {
+            .usp_images_man_with_notebook {
+                left: 50px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_man_with_notebook {
+                top: 340px;
+                left: -160px
+            }
+
+            .usp_images_man_with_notebook_img {
+                width: 550px;
+                height: 428px
+            }
+        }
+
+        .usp_images_chart {
+            top: -93px;
+            left: 401px
+        }
+
+        @media (max-width:550px) {
+            .usp_images_chart {
+                top: 241px;
+                left: 53px
+            }
+
+            .usp_images_chart_img {
+                width: 384px;
+                height: 295px
+            }
+        }
+
+        .usp_images_eth {
+            z-index: 3;
+            top: 196px;
+            left: 752px
+        }
+
+        @media (max-width:550px) {
+            .usp_images_eth {
+                top: 353px;
+                left: 333px
+            }
+        }
+
+        .usp_images_eth_button {
+            padding: 7px 8px 3px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, .46);
+            backdrop-filter: blur(10px);
+            border-radius: 12.3257px;
+            transform: rotate(17.09deg)
+        }
+
+        @media (max-width:550px) {
+            .usp_images_eth_button {
+                border-radius: 12.6919px;
+                padding: 6px 8px 4px
+            }
+
+            .usp_images_eth_button_img {
+                width: 16px;
+                height: 16px
+            }
+        }
+
+        .usp_images_ai {
+            z-index: 3;
+            top: 128px;
+            left: 899px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_ai {
+                top: 200px;
+                left: 400px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_ai {
+                top: 305px;
+                left: 250px
+            }
+        }
+
+        .usp_images_ai_button {
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: -11px -18px 38px #6735f4, 18px 39px 47px 1px rgba(0, 0, 0, .64);
+            backdrop-filter: blur(5.5px);
+            border-radius: 18px;
+            transform: rotate(13.17deg);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #fff
+        }
+
+        @media (max-width:550px) {
+            .usp_images_ai_button {
+                font-size: 18px;
+                box-shadow: -6.30289px -10.3138px 21.7736px #6735f4, 10.3138px 22.3466px 26.9305px .57299px rgba(0, 0, 0, .64);
+                border-radius: 10.3138px
+            }
+        }
+
+        .usp_images_usdt {
+            z-index: 3;
+            top: 416px;
+            left: 325px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_usdt {
+                top: 356px
+            }
+        }
+
+        @media (max-width:650px) {
+            .usp_images_usdt {
+                top: 280px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_usdt {
+                top: 487px;
+                left: 4px
+            }
+        }
+
+        .usp_images_usdt_button {
+            padding: 12px 12px 6px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: -7px 39px 47px rgba(0, 0, 0, .46);
+            border-radius: 18px;
+            transform: rotate(-14.5deg)
+        }
+
+        @media (max-width:550px) {
+            .usp_images_usdt_button {
+                border-radius: 12.6919px;
+                padding: 10px 10px 6px
+            }
+
+            .usp_images_usdt_button_img {
+                width: 23px;
+                height: 23px
+            }
+        }
+
+        .usp_images_stat {
+            z-index: 2;
+            top: 344px;
+            left: 723px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_stat {
+                top: 478px;
+                left: 17px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_stat {
+                z-index: 3;
+                top: 597px;
+                left: 126px
+            }
+
+            .usp_images_stat_img {
+                width: 322px;
+                height: 190px
+            }
+        }
+
+        .usp_text {
+            position: relative;
+            z-index: 3
+        }
+
+        .usp_text_guarant {
+            display: flex;
+            justify-content: left;
+            column-gap: 14px
+        }
+
+        .usp_text_guarant_medium15 {
+            margin: auto 0;
+            color: #b5b6b6;
+            width: 500px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_guarant_medium15 {
+                width: 100%;
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        .usp_text_h1 {
+            margin-top: 10px;
+            width: 530px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_h1 {
+                width: 100%
+            }
+        }
+
+        .usp_text_body {
+            color: #b5b6b6;
+            width: 450px
+        }
+
+        @media (max-width:900px) {
+            .usp_text_body {
+                width: 380px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_text_body {
+                width: 100%
+            }
+        }
+
+        .usp_text_button {
+            width: 300px;
+            padding: 0px 15px;
+            height: 57px;
+            background: #d9e44f;
+            border-radius: 65px;
+            color: #1c1d1e;
+            margin-top: 32px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_button {
+                width: 200px;
+                margin-top: 24px;
+                max-width: 300px;
+                min-width: 160px;
+                height: 48px
+            }
+        }
+
+        .usp_text_btns_mobile_download {
+            margin-top: 32px;
+            display: flex;
+            column-gap: 8px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_btns_mobile_download {
+                display: none
+            }
+        }
+
+        .usp_text_btns_mobile_download_button {
+            width: 150px;
+            height: 43px;
+            background: rgba(255, 255, 255, .15);
+            border-radius: 7px
+        }
+
+        .about_us {
+            margin-top: 400px
+        }
+
+        .about_us {
+            margin-top: 20px;
+            width: 100%;
+            padding: 0px 20px;
+            position: relative;
+            z-index: 2
+        }
+
+        @media (max-width:550px) {
+            .about_us {
+                padding: 0px 5px
+            }
+        }
+
+        .about_us_inner {
+            width: 100%;
+            border-radius: 32px;
+            background: rgba(55, 99, 255, .1);
+            padding-top: 65px;
+            padding-bottom: 150px;
+            overflow: hidden
+        }
+
+        @media (max-width:900px) {
+            .about_us_inner {
+                padding-bottom: 210px
+            }
+        }
+
+        @media (max-width:550px) {
+            .about_us_inner {
+                padding-top: 32px
+            }
+        }
+
+        .about_us_colored_text {
+            text-align: center;
+            background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            background-clip: text;
+            text-fill-color: rgba(0, 0, 0, 0)
+        }
+
+        @media (max-width:550px) {
+            .about_us_colored_text {
+                text-align: left
+            }
+        }
+
+        .about_us_h2 {
+            text-align: center;
+            margin-top: 12px
+        }
+
+        @media (max-width:550px) {
+            .about_us_h2 {
+                text-align: left
+            }
+        }
+
+        .security_img_light {
+            display: none
+        }
+
+        @media (max-width:1000px) {
+            .security_img_light {
+                display: block;
+                left: -365px;
+                top: -77px
+            }
+
+            .security_img_light_img {
+                width: 800px;
+                height: 535px
+            }
+        }
+
+        .short {
+            color: #ff5f72
+        }
+
+        .transactions_mobile_elements {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            .transactions_mobile_elements {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 10px
+            }
+        }
+
+        .transactions_mobile_elements_button {
+            max-width: 460px;
+            width: 100%;
+            background: #3763ff;
+            border-radius: 65px;
+            height: 48px;
+            margin-top: 24px
+        }
+
+        .transactions_mobile_elements_element {
+            background: rgba(255, 255, 255, .03);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 460px;
+            width: 100%;
+            margin-top: 12px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage_pair {
+            display: flex;
+            column-gap: 12px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage_pair_medium15,
+        .transactions_mobile_elements_element_pair_and_leverage_pair_img {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, .05);
+            padding-bottom: 8px
+        }
+
+        .transactions_mobile_elements_element_info_element {
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .transactions_mobile_elements_element_info_element_name,
+        .transactions_mobile_elements_element_info_element_value {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element_name,
+        .transactions_mobile_elements_element_info_element_value {
+            opacity: .7
+        }
+
+        .transactions_mobile_elements_element_info_element_priceprofit {
+            opacity: 1
+        }
+
+        .transactions_mobile_elements_element_info_element_percent_wrapper {
+            display: flex;
+            column-gap: 16px
+        }
+
+        .transactions_mobile_elements_element_info_element_percent_wrapper .medium15 {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element_percent {
+            background: #1f844a;
+            text-shadow: 0px 0px 5px #000;
+            border-radius: 6px;
+            padding: 4px 12px
+        }
+
+        .chance_images_rocket_img_mob {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            .chance_images_rocket_img {
+                width: 1000px;
+                height: 931px
+            }
+        }
+
+        @media (max-width:550px) {
+            .chance_images_rocket_img_mob {
+                display: block
+            }
+        }
+
+        .btn {
+            font-family: "Inter Tight"
+        }
+
+        .body {
+            font-family: "Inter"
+        }
+
+        .colored_text {
+            font-family: "Inter Tight"
+        }
+
+        h1 {
+            font-family: "Inter Tight"
+        }
+
+        h2 {
+            font-family: "Inter Tight"
+        }
+
+        .medium15 {
+            font-family: "Inter"
+        }
+
+        .regular14 {
+            font-family: "Inter"
+        }
+
+        .medium12 {
+            font-family: "Inter"
+        }
+    </style>
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
+    </noscript>
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg">
+
+    <script>
+        function hide_loader() {
+            document.getElementById('loader').style.opacity = 0;
+            setTimeout(() => { document.getElementById('loader').classList.add('dnone') }, 600)
+        }
+        setTimeout(hide_loader, 2000)
+    </script>
+</head>
+
+<body id="body">
+
+    <div id="loader">
+        <svg width="140" height="140" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M24.0355 13.6334L26.4021 16L16 26.4021L5.59791 16L8.112 13.4859L5.31339 10.6866L0 16L16 32L32 16L26.8341 10.8341L24.0355 13.6334Z"
+                fill="url(#paint0_linear_4_186)" />
+            <path d="M17.8254 1.82539L16 0L14.1746 1.82539L16 3.65078L17.8254 1.82539Z"
+                fill="url(#paint1_linear_4_186)" />
+            <path
+                d="M18.7986 2.79861L16 5.59791L13.2014 2.79861L7.18191 8.81739L9.98122 11.6167L13.8365 7.76139L16 26.4021L18.1635 7.76139L22.1663 11.7642L24.9649 8.96487L18.7986 2.79861Z"
+                fill="url(#paint2_linear_4_186)" />
+            <defs>
+                <linearGradient id="paint0_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+    </div>
+
+    <div class="lb1">
+        <div class="lb1_light" id="lb1">
+            <div class="lb1_light_line free_image ">
+                <img width="2294" height="388" alt="fone line" class="fade" src="img/usp_images/line.webp">
+            </div>
+            <div class="lb1_light_el1 free_image ">
+                <img onload="hide_loader()" width="1600" height="1600" alt="fone light" class="fade lb1_light_el1_img"
+                    src="img/usp_images/el1.webp" loading="lazy">
+            </div>
+            <div class="lb1_light_el1_mobile free_image ">
+                <img width="1000" height="1000" alt="fone light" class="fade lb1_light_el1_img"
+                    src="img/usp_images/el1.svg">
+            </div>
+            <div class="lb1_light_el2 free_image">
+                <img width="1304" height="1285" alt="fone light" class="fade" src="img/usp_images/el2.webp">
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header_container container">
+                <div class="header_pc">
+                    <div class="header_navigation">
+                        <a href="https://tradecoinai.com" class="header_navigation_logo">
+                            <div class="header_navigation_logo_img">
+
+                                <img width="32" height="32" alt="logo" class="lozad fade" data-src="img/logo.svg">
+                            </div>
+                            <div class="header_navigation_logo_text inter">
+                                TradeCoinAi
+                            </div>
+                        </a>
+                        <div class="header_navigation_links">
+                            <a href="./#all_trades" class="header_navigation_links_a medium15">Все сделки</a>
+                            <a href=./#how_it_works" class="header_navigation_links_a medium15">Как это работает</a>
+                            <a href="./#pricing" class="header_navigation_links_a medium15">Цены</a>
+                            <a href="./#trading" class="header_navigation_links_a medium15">О нас</a>
+                        </div>
+                    </div>
+                    <div class="header_buttons">
+                        <div class="header_buttons_log_reg">
+                            <a href="https://app.tradecoinai.com/auth/login"> <button
+                                    class="header_buttons_log_reg_btn_log btn">
+                                    Login
+                                </button></a>
+                            <a href="https://app.tradecoinai.com/auth/signup"><button
+                                    class="header_buttons_log_reg_btn_reg btn">
+                                    Sign up
+                                </button></a>
+                        </div>
+                        <div class="header_buttons_burger">
+                            <button class="header_buttons_burger_btn fade" id="burger_menu_button">
+
+                                <img alt="mobile menu opener" id="mobile_menu_img_burger" src="img/burger.svg"
+                                    width="20" height="14">
+
+                                <img alt="mobile menu closer" class="dnone" id="mobile_menu_img_cross"
+                                    src="img/cross.svg" width="24" height="24">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_mobile" id="mobile_menu" style="height: 0px">
+                    <div class="header_mobile_menu_element">
+                        <a href="./#all_trades" class="header_mobile_menu_element_a medium15">Все сделки</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#how_it_works" class="header_mobile_menu_element_a medium15">Как это работает</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#pricing" class="header_mobile_menu_element_a medium15">Цены</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#trading" class="header_mobile_menu_element_a medium15">О нас</a>
+                    </div>
+                    <div class="header_mobile_menu_element header_mobile_menu_element_log_reg">
+                        <div class="header_mobile_menu_element_log_reg_buttons">
+                            <a href="https://app.tradecoinai.com/auth/login"><button
+                                    class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
+                                    Login
+                                </button></a>
+                            <a href="https://app.tradecoinai.com/auth/signup"><button
+                                    class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
+                                    Sign up
+                                </button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="lb3">
+
+        <div class="faq">
+            <div class="faq_container container">
+                <div class="faq_header">
+                    <h2 class="faq_header_h2">
+                        Terms and Conditions
+                    </h2>
+                    <br><br>
+                </div>
+                <br>1. Applicability
+                <br><br>These Terms and Conditions (also "Agreement") shall govern the commercial relationship you and
+                us. Where used in this Agreement, references to: (a) "we", "our", "us" means TradeCoinAi as applicable,
+                any of its directors, officers, shareholders, employees, advisors, contractors, subsidiaries and any of
+                its affiliated corporate entities, providing certain Services (as defined below) and an access to the
+                Applications and Data (as defined below) through the Website (as defined below) and (b) "you" and/or
+                "your" mean the individual or entity who wishes to use our Services, Applications and Data.
+                <br>By checking the box and clicking I have read and accepted the Terms and Conditions button,
+                continuing to use any of our Services, you (a) confirm that you are aware and comply with the present
+                Agreement and agree to be bound by this Agreement and (b) represent and warrant that you are authorized
+                and lawfully able to enter into this Agreement.
+                <br>Additional terms or service conditions may apply and be shown separately. These additional terms
+                become part of your Agreement with us and all the policies made available to you therein must be
+                followed. If you do not agree to all the terms and conditions of this Agreement, then you may not use
+                any of our Services Applications and/or Data.
+                <br>We reserve the right, at our sole discretion, to change, modify, add or remove portions of any part
+                of these terms and conditions, at any time. We will notify you about the changes to the terms and
+                conditions either by e-mail, your Account (if any) or through the Website. Your continued use of our
+                Services, Website, Applications or Data means that you accept and agree to the changes.
+                <br><br>2. Definitions and interpretations
+                <br><br>References to the following words shall have the meanings set out below:
+                <br><b>Account:</b> an account which is created through the Website and used to access our Services,
+                Applications and Data.
+                <br><b>Agreement:</b> any standard terms imposed by us to regulate the commercial relationship between
+                you and us, including these terms and conditions.
+                <br><b>Applications:</b> a PC and mobile software application developed and owned by us that interacts
+                with the Exchanges (including receives information about your transactions on such Exchanges), API Keys
+                of which you have entered to the Application(s).
+                <br><b>API Key:</b> a code that allows your Account to interact directly with your account(s) on the
+                Exchange(s), including, but not limited to, place and cancel trading orders, set and cancel alerts,
+                receive information on your account balance and trading activity, as preselected by you on the relevant
+                Exchange s API setup.
+                <br><b>Exchange:</b> a cryptocurrency exchange you are registered in that you use for trading
+                cryptocurrencies.
+                <br><b>Client Data:</b> any data obtained by us via the Applications about your transactions on the
+                Exchanges and delivered to you through the Services.
+                <br><b>Data:</b> includes Public Data, Client Data and Processed Data.
+                <br><b>Processed Data:</b> any Public Data analyzed and compared by us and delivered to you through the
+                Services in the processed form. The Processed Data is owned by us.
+                <br><b>Public Data:</b> any market data, prices, information on transactions and other data obtained by
+                us from public sources, including exchanges, and other sources and delivered to you through the
+                Services.
+                <br><b>Fees:</b> fees payable by you to us for the use of the Website, Services, Applications and Data
+                in the amount and under the terms as indicated in the Subscription Plan selected by you.
+                <br><b>Services:</b> cryptocurrency price and trading analytics, cryptocurrencies "signal" analytics,
+                demo trading, market surveys, cryptocurrency trading, holding cryptocurrency portfolio and other
+                services provided by us to you via the Website and/or Applications under the terms of this Agreement.
+                <br><b>Subscription Plan:</b> a subscription plan selected by you in connection with the purchase of the
+                use of the Services and Data. Subscription plans (including particular terms of use of the Services and
+                Data) are available on the Website and may be updated by us at any time.
+                <br><b>Website:</b> website located at tradecoinai.com and all subdomains of such website.
+                <br>References to the word include or including (or any similar term) are not to be construed as
+                implying any limitation and general words introduced by the word other (or any similar term) shall not
+                be given a restrictive meaning because they are preceded or followed by words indicating a particular
+                class of acts, matters or things.
+                <br><br>3. Registration
+                <br><br>In order to access the Services, you must first register an Account on the Website and be in
+                compliance with present Agreement. In order to start placing trade orders, you need enter your API keys
+                (to the Exchanges you use) to the Application.
+                <br>Any natural person with full active legal capacity or any legal person may apply for an Account. You
+                may not create an Account for anyone other than yourself without respective authorization. The
+                representative of a legal person making the Account on behalf of the legal person must ensure that he
+                has all the necessary rights and powers to do that.
+                <br>We reserve the right to accept or reject your Account registration request without additional
+                explanation. Registering an Account implies full and total acceptance of all our policies, including
+                these terms and conditions.
+                <br>You are entirely responsible for maintaining the confidentiality of the information you hold for
+                your Account, including your password, and for any and all activity that occurs under your Account as a
+                result of you failing to keep this information secure and confidential. You have to notify us
+                immediately, in case of any unauthorized use of your Account.
+                <br>You may not transfer your Account to anyone without our explicit written permission and you may not
+                use anyone else s Account or password at any time without the express permission and consent of the
+                holder of that Account.
+                <br>In case we find at our sole discretion that there is a threat that you are engaging in any
+                suspicious activity, you have violated the Agreement or it is necessary for security reasons, we may
+                temporarily suspend your Account until the cause for suspending your Account has been eliminated; or if
+                that cannot be eliminated or you refuse or fail to eliminate it, terminate the Agreement and block your
+                Account. For security reasons we may in addition block your access to the entire Website. You agree that
+                we will not be liable to you or to any third party for termination of your access to your Account and/or
+                the Website as a result of any violation of the Agreement by you.
+                <br><br>4. Use of website,services, applications and data
+                <br><br>All site, product and services content as text, graphics, user interfaces, visual interfaces,
+                photographs, trademarks, logos, artwork and computer code, including but not limited to the design,
+                structure, selection, coordination, expression and arrangement of such content, contained on the Website
+                is owned, controlled or licensed by us, and is protected by copyright and trademark laws, and various
+                other intellectual property rights and unfair competition laws. Applications are owned, controlled or
+                licensed by us, and are protected by copyright and trademark laws, and various other intellectual
+                property rights and unfair competition laws.
+                <br>No part and no content may be copied, reproduced, republished, posted, publicly displayed, encoded,
+                translated, transmitted or distributed in any way for publication or distribution of for any commercial
+                enterprise, without our express written consent.
+                <br>You may use information about our Services purposely made available by us for downloading from the
+                Website, provided that you use such information only for your personal, non-commercial informational
+                purpose and do not copy or post such information on any networked computer or broadcast it in any media.
+                <br>You may not attempt to gain unauthorized access to any portion or feature of the Website, or to any
+                our server, or to any of the Services offered on or through the Website, by hacking, password brute-
+                forcing or any other illegitimate means.
+                <br>You may not reverse look-up, trace or seek to trace any information on any other user of or visitor
+                to the Website, or any other our customer, including any Account not owned by you, to its source, or
+                exploit the Website or any service or information made available or offered by or through the Website,
+                in any way where the purpose is to reveal any information, including but not limited to personal
+                identification or information, other than your own information, as provided for by the Website.
+                <br>You may not use the Website or any its content, Services, Applications and/or Data for any purpose
+                that is unlawful or prohibited by this Agreement, or to solicit the performance of any illegal activity
+                or other activity, which infringes our or others rights.
+                <br>Subject to your compliance with this Agreement, we grant you a revocable, limited, non-exclusive,
+                non-transferable and non-sublicensable license to access and use the Website, Services, Applications and
+                Data available via the Services solely for your personal purposes.
+                <br>You hereby grant us the right to access, process and use your Client Data with the aim to deliver it
+                to you through the Services and in non-identifiable form to other our clients.
+                <br>We reserve the right to do any of the following, at any time, without notice, to: modify, suspend or
+                terminate operation or access to the Website, Applications or Services for any reason; modify or change
+                the Website, Services, Applications and any applicable policies or terms; and/or interrupt the operation
+                of the Website, Services and/or Applications as necessary to perform routine or non-routine maintenance,
+                error correction, or other changes.
+                <br><br>5. Security policy
+                <br><br>By using Website, Services or Applications you signify your acceptance of our security policy
+                available on the Website.
+                <br><br>6. Privacy policy
+                <br><br>By using Website, Services or Applications you signify your acceptance of our privacy policy.
+                <br>We collect information that you share to us yourself, e.g. when you complete Account registration
+                form and enter API keys to the Application. This information may include, but is not limited to, email
+                address, your account balance, trading activity, account history and identification data of the device
+                on which the Application has been installed.
+                <br>We may process information that you have shared for the following purposes: (a) execution,
+                fulfilment, handling and administration of this Agreement; (b) billing and reconciliation; (c)
+                maintenance, support and product/service development; (d) sales, revenue and customer analysis and
+                reporting as well as for market and customer use analysis; etc.
+                <br>We only use your e-mail address for sharing our product related marketing messages if you have given
+                a respective consent on the Website or in the Application. If you no longer wish to receive direct
+                marketing messages, please click the Unsubscribe from direct marketing messages link in the footer of
+                our e-mail.
+                <br>We reserve the right at all times to disclose any information that we deem necessary to comply with
+                any applicable law, regulation, legal process or governmental request.
+                <br>Only our authorized employees and/or service providers have access to the personal data and they may
+                access the data only for the purposes provided above.
+                <br>You may request details of personal information which we hold about you in accordance with data
+                protection laws. If you believe that any information we are holding on you is incorrect or incomplete,
+                please write to or email us as soon as possible. In addition, you have all other rights provided in
+                applicable laws regulating data protection and electronic transmission of commercial notifications.
+                <br>Please note that the deinstallation of Application in your device does not cause the deletion of
+                your personal data. If you want to delete your personal data collected by us, please send a written
+                request by email as indicated above. You should also bear in mind that the request to delete personal
+                data is possible only if we delete your Account. As a result of that you will not be able to use the
+                Services under your existing Account.
+                <br>We adhere to the generally accepted industry standards to protect the information you submit to us.
+                <br><br>7. Cookie policy
+                <br><br>Like most Internet sites, our Website may use cookies. Cookies are small text files placed on
+                the browser or hard drive of your computer, mobile, or other device when you visit a website. Cookies
+                are widely used when providing online services and help to make websites work, or work more efficiently
+                as well as to provide information to the website owners. Cookies do lots of different things, for
+                example, remembering user preferences, letting users navigate between pages efficiently and generally
+                improving the user experience. Cookies are not used to personally identify you in any way, nor will they
+                damage your system or files.
+                <br>We may use on our Website the strictly necessary cookies that enable you to log into secure areas of
+                Website and cookies used by our networking system, analytical cookies that collect information about how
+                you use Website, advertising cookies, session cookies, persistent cookies and third-party cookies.
+                <br>It is possible to tell your browser to reject cookies for all sites or specific sites. Rejecting
+                cookies is not however recommended, as cookies are intended to improve your browsing experience. In
+                order to reject or opt out of cookies you can either manually delete them or choose to permanently
+                opt-out from seeing advertisements matching your interests.
+                <br><br>8. Liability, indemnity
+                <br><br>You are fully responsible for the due performance of your obligations under the Agreement and
+                must compensate to us any and all damages caused by the non-performance or unsatisfactory performance of
+                your obligations.
+                <br>To the fullest extent permitted by applicable law, you agree to indemnify, hold and defend us, our
+                officers, directors, shareholders, predecessors, successors in interest, employees, agents, clients and
+                partners, harmless from any demands, loss, liability, claims or expenses, made against us by any and all
+                third-party claims and liabilities arising out of or related to or in connection with your use of the
+                Website, Services, Applications and/or Data, including any served content that is not provided by us, or
+                your breach of any term of the Agreement. You shall notify us immediately of any matter which could
+                result in any loss, claim, damage, expense or liability subject to indemnification under this section.
+                Such notification will not release you from your indemnification duty. We reserve the right to exercise
+                sole control over the defense, at your expense, of any claim subject to indemnification under this
+                section.
+                <br><br>9. Disclaimer of warranty
+                <br><br>We do not promise that our Website or any content, Services, Applications and/or Data or feature
+                will be error-free or uninterrupted, or that any defects will be corrected, or that your use of the
+                Website, Services, Applications and/or Data will provide specific results. The Website and its content,
+                our Services, Beta Product, Applications and/or Data are delivered on an as is and as available basis.
+                All information provided on the Website is subject to change without notice. We disclaim all warranties,
+                express or implied, including any warranties of accuracy, non-infringement, merchantability, fitness for
+                a particular purpose, quality or performance. We make no warranty that the Website, Applications and/or
+                Data will meet your specific objectives or needs. We make no warranty that the Website, Services,
+                Applications and/or Data will be free from errors or bugs. We make no warranty that there will be
+                uninterrupted operation of the Services, Website, Applications and/or Data.
+                <br>We make no warranty regarding the Data or any other information purchased or obtained through the
+                Website, Applications and/or the Services, or the accuracy, timeliness, truthfulness, completeness or
+                reliability of any Data or other information obtained through the Website, Applications and/or the
+                Services.
+                <br>You expressly acknowledge that any data downloaded through the use of the Services and Website is
+                done at your own discretion and risk, and that you will be solely responsible for any damage to your
+                computer system or loss of applications or data that results from the download of such data.
+                <br>We disclaim any and all liability for the acts, omissions and any conduct of any third parties in
+                connection with or related to your use of the Website, Services, Applications and/or Data. You
+                acknowledge that we are not a financial institution and do not give or provide you any advice on your
+                trading activity and disclaim any liability for execution of your trading orders. Your sole remedy
+                against us for dissatisfaction with the Website or any its content, Services, Applications and/or Data
+                is to stop using the Website or any such content, Services, Applications and/or Data.
+                <br>The above disclaimer applies to any damages, liability or injuries caused by any failure of
+                performance, error, omission, interruption, deletion, defect, delay in operation or transmission,
+                computer virus, communication line failure, theft or destruction of or unauthorized access to,
+                alteration of, or use, whether for breach of contract, tort, negligence or any other cause of action.
+                <br>No claim for a breach of any our representation or warranty shall be actionable or payable if the
+                breach in question results from or is based on a condition, state of facts or other matter which was
+                disclosed to you and/or actually known by you.
+                <br>In no event will we be liable for any indirect, special, incidental, consequential or punitive loss,
+                injury or damage of any kind (regardless of whether we have been advised of the possibility of such
+                loss) including, but not limited to, any loss of revenue, income or profits, loss of use or data, or
+                damages for business interruption, any damages resulting from any interruption or disruption in
+                communications or Services or Applications, unavailability or inoperability of the Services,
+                Applications and/or Data.
+                <br>The provision of this section 8 determine the allocation of risks between you and us, and you agree
+                and acknowledge that such allocation of risks and the limitations of liability specified herein are an
+                essential basis of the bargain between you and us.
+                <br>The above exclusions of liability shall be valid to the fullest extent permitted by law. Some
+                jurisdictions do not allow the exclusion of certain warranties in certain circumstances. Accordingly,
+                some of the limitations set forth above may not apply.
+                <br><br>10. Force majeure
+                <br><br>You and us shall not be liable for delays or failure to perform under the Agreement which result
+                directly or indirectly from any cause or condition beyond its reasonable control, including but not
+                limited to, any delay or failure due to any act of God, act of civil or military authorities, act of
+                terrorists, civil disturbance, war, strike or other labour dispute, fire, interruption in
+                telecommunications or Internet services or network provider services, failure of equipment and/or
+                software, other catastrophe or any other occurrence which is beyond its reasonable control and shall not
+                affect the validity and enforceability of any remaining provisions (force majeure).
+                <br>The party in default of force majeure shall immediately notify the other party of the occurrence of
+                force majeure, shall make reasonable efforts to remove or overcome the effects of such occurrence or
+                event; and shall resume performance of its obligations hereunder immediately after cessation of such
+                occurrence or event.
+                <br><br>11. Duration and Termination
+                <br><br>Your Agreement with us becomes effective upon registration of your Account or upon signing any
+                additional agreement with us and is valid for unspecified period.
+                <br>Each party may terminate this Agreement for any reason, by notifying the other party at least 24
+                hours in advance.
+                <br>You are not entitled to a refund on Fees paid to us if you terminate the Agreement before the
+                expiration of the subscription term of the Subscription Plan purchased by you, except for if the
+                termination is due to a material breach of the Agreement by us as provided below, in which case we will
+                the prorated Fees associated with the unused portion of the Services.
+                <br>We will refund you the prorated Fees associated with the unused portion of the Services if we
+                terminate the Agreement before the expiration of the subscription term of the Subscription Plan
+                purchased by you, except for if the termination is due to the reasons provide below. We may at any time
+                with immediate effect suspend or cease supplying the Service or terminate the Agreement if:
+                <br><br><b>(a)</b> we are required so by a facially valid subpoena, court order, or binding order of a
+                governmental authority;
+                <br><b>(b)</b> you are in delay with payment of the Fee and such delay has lasted at least 5 days;
+                <br><b>(c)</b> you have failed to comply with any applicable laws, directives, rules and/or regulations;
+                <br><b>(d)</b> you have materially breached any other obligation of the Agreement and failed to remedy
+                such breach within a reasonable time granted by us;
+                <br><b>(e)</b> in respect of you, a liquidator, receiver or administrative receiver is appointed, you
+                are adjudicated as bankrupt, or declared as insolvent;
+                <br><b>(f)</b> this opportunity is set forth in any other provision of this Agreement.
+                <br><br>This Agreement may be terminated at our discretion if you do not log into your Account or
+                schedule and carry out any transaction(s) on or through your Account during a consecutive 365-day
+                period. If this is the case, your account information will be deleted. This removal will not be applied
+                to information and documents, for which we have an obligation to store data, as defined by the privacy
+                policy.
+                <br>You may terminate the Agreement if we commit a material breach of the Agreement and fail to rectify
+                such breach within fifteen (15) days after receipt of your written notice requesting such rectification.
+                <br>A termination notice must be sent by registered mail (with notice of delivery) or by e-mail, sent by
+                you <b>support@tradecoinai.com</b> or by e-mail from us to the e-mail address you have previously
+                provided.
+                <br>Upon termination of the Agreement your Account is immediately archived. All provisions of the
+                Agreement which by their nature extend beyond the expiration or termination of this Agreement shall
+                survive the termination of this Agreement. Termination of this Agreement will not prejudice any right of
+                action or remedy which may have accrued to you or us prior to termination (as the case may be).
+                <br><br>12. Notices
+                <br><br>You agree that we may communicate with you electronically any finance information related to
+                your Account. We may also provide notices to you by posting them in your Account on the Website, or by
+                sending them to an email address that you have previously provided to us. Website and email notices
+                shall be considered received by you within 24 hours of the time posted or sent.
+                <br><br>13. Complaints
+                <br><br>In case you have any complaints, or require additional support, please contact us by e-mail at
+                <b>support@tradecoinai.com.</b> Our support team will get back to you within 48 working hours. If your
+                inquiry requires a more detailed answer, it might take up to 30 working days for processing your
+                request.
+                <br><br>14. Miscellaneous
+                <br><br>There is no relationship of exclusivity, partnership, joint venture, employment, agency or
+                franchise between you and us under this Agreement. None of us has the authority to bind the each other
+                (including the making of any representation or warranty, the assumption of any obligation or liability
+                and/or the exercise of any right or power), except as expressly provided in this Agreement.
+                <br>Whenever possible, each provision of this Agreement will be interpreted in such a manner as to be
+                effective and valid under applicable law but, if any provision of this Agreement is held to be invalid,
+                illegal or unenforceable in any respect, such provision will be ineffective only to the extent of such
+                invalidity, or unenforceability, without invalidating the remainder of this Agreement or any other
+                provision hereof.
+                <br>This Agreement, including the Subscription Plan, as amended from time to time according to its
+                terms, constitutes the full and entire understanding and agreement between you and us regarding the
+                subjects hereof and supersedes all prior agreements, arrangements, representations or promises, whether
+                oral or written, as to its subject matter.
+                <br>Our failure to insist on or enforce strict performance of the terms and conditions of the Agreement
+                shall not be construed as a waiver by us of any provision or any right it has to enforce the Agreement,
+                nor shall any course of conduct between us and you or any other party be deemed to modify any provision
+                of the terms and conditions of the Agreement.
+                <br>This Agreement, and any rights and obligations hereunder, may not be transferred or assigned by you,
+                but may be assigned by us without restriction, including without limitation to any third party. Any
+                attempted transfer or assignment in violation hereof shall be null and void. Subject to the foregoing,
+                this Agreement will bind and inure to the benefit of us and you, respective successors and permitted
+                assigns.
+                <br>A person who is not a party to this Agreement has no right to rely upon or enforce any term of this
+                Agreement.
+
+            </div>
+            <div class="faq_images">
+                <div class="faq_images_light free_image">
+
+                    <img alt="fone light" class="lozad" data-src="img/quest/el4.webp" width="1003" height="393">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer_header">
+                <div class="footer_header_text">
+                    <h3 class="footer_header_text_h3">
+                        Пока вы отдыхаете, наш бот работает
+                    </h3>
+                    <div class="footer_header_text_body body">
+                        Профессиональная платформа для алгоритмической и ручной торговли криптовалютами
+                    </div>
+                </div>
+                <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button class="footer_header_button">
+                        Подключится
+                    </button></a>
+            </div>
+            <div class="footer_content">
+                <a href="https://tradecoinai.com" class="footer_content_logo">
+
+                    <img alt="logo" src="img/logo.svg" width="73" height="136">
+                    <div class="footer_content_logo_text">
+                        TradeCoinAi
+                    </div>
+                </a>
+            </div>
+            <div class="footer_content_navigation">
+                <div class="footer_content_navigation_navigation_header">
+                    Navigation
+                </div>
+                <div class="footer_content_navigation_elements">
+                    <div class="footer_content_navigation_elements_element">
+                        Choose algoritm
+                    </div>
+                    <div class="footer_content_navigation_elements_element">
+                        Why to trust us
+                    </div>
+                    <div class="footer_content_navigation_elements_element">
+                        Latest transactions
+                    </div>
+                    <div class="footer_content_navigation_elements_element">
+                        Easy start
+                    </div>
+                    <div class="footer_content_navigation_elements_element">
+                        How to get started
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content_documents">
+                <div class="footer_content_documents_documents_header">
+                    Navigation
+                </div>
+                <div class="footer_content_documents_elements">
+                    <div class="footer_content_documents_elements_element">
+                        <a href="policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer_content_documents_elements_element">
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_footer">
+            <div class="footer_footer_text">
+                TradeCoinAI 2023 © All rights reserved
+            </div>
+            <div class="footer_footer_soc_net">
+
+                <a href="https://twitter.com/TradeCoinAI" target="_blank"><img alt="twitter"
+                        class=" footer_footer_soc_net_img" src="img/soc_net/twitter.svg" width="22" height="18"></a>
+
+                <a target="_blank" href="https://t.me/tradecoinai"> <img alt="telegram"
+                        class=" footer_footer_soc_net_img" src="img/soc_net/telegram.svg" width="21" height="18"></a>
+
+                <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                        class=" footer_footer_soc_net_img" src="img/soc_net/discord.svg" width="20" height="20"></a>
+
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script
+        src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RWWHES2VQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4RWWHES2VQ');
+    </script>
+
+</body>
+
+</html>

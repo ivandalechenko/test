@@ -2,19 +2,32 @@
 <html lang="ru">
 
 <head>
+    <link rel="preload" as="image" href="/img/usp_images/man_with_notebook_small.webp">
     <meta name="description"
-        content="Проверенные торговые боты для фьючерскной торговли для ByBit на основе AI от TradeCoincAI ⭐️ Круглосуточная работа ✔️ Анализ 🔏 Безопасность ⚡️ Стабильный заработок">
+        content="Proven AI-powered futures trading bots for ByBit by TradeCoincAI ⭐️ 24/7 operation ✔️ Analysis 🔏 Security ⚡️ Stable earnings">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeCoinAi — Подключиться к торговым ботам AI</title>
+    <title>TradeCoinAi — Connect to AI trading bots</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="img/usp_images/man_with_notebook_mob.webp">
 
 
 
     <style>
+        @media (max-width:550px) {
+            .usp_phone_images {
+                display: block;
+                width: 521px;
+                height: 502px;
+                background: radial-gradient(blue 10%, transparent 70%);
+            }
+        }
+
+        .usp_phone_images {
+            display: none;
+        }
+
         #loader {
             width: 100%;
             height: 100vh;
@@ -383,16 +396,18 @@
         }
 
         .header_buttons_log_reg_btn_reg {
-            width: 122px;
+            min-width: 122px;
             height: 43px;
             background: #3763ff;
-            border-radius: 65px
+            border-radius: 65px;
+            padding: 0px 10px;
         }
 
         @media (max-width:550px) {
             .header_buttons_log_reg_btn_reg {
-                width: 95px;
-                height: 36px
+                min-width: 95px;
+                height: 36px;
+                padding: 0px 10px;
             }
         }
 
@@ -463,7 +478,8 @@
         }
 
         .usp_container {
-            display: flex
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .usp_images {
@@ -494,10 +510,6 @@
                 left: -160px
             }
 
-            .usp_images_man_with_notebook_img {
-                width: 550px;
-                height: 428px
-            }
         }
 
         .usp_images_chart {
@@ -671,7 +683,8 @@
         .usp_text_guarant {
             display: flex;
             justify-content: left;
-            column-gap: 14px
+            column-gap: 14px;
+            height: 45px;
         }
 
         .usp_text_guarant_medium15 {
@@ -695,7 +708,8 @@
 
         @media (max-width:550px) {
             .usp_text_h1 {
-                width: 100%
+                width: 100%;
+                height: 93px;
             }
         }
 
@@ -712,7 +726,8 @@
 
         @media (max-width:550px) {
             .usp_text_body {
-                width: 100%
+                width: 100%;
+                height: 66px;
             }
         }
 
@@ -977,6 +992,10 @@
         .medium12 {
             font-family: "Inter"
         }
+
+        .dnone {
+            display: none;
+        }
     </style>
 
     <link rel="preload"
@@ -986,198 +1005,212 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
     </noscript>
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/style10.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style10.css">
     </noscript>
 
 
     <link rel="icon" type="image/x-icon" href="/img/logo.svg">
 
 
+
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "TradeCoinAi",
-        "url": "https://tradecoinai.com/",
-        "description": "Проверенные торговые боты для ByBit на основе AI от TradeCoincAI"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "ItemList",
-      "name": "Список продуктов",
-      "itemListElement": [
         {
-          "@type": "Product",
-          "name": "Basic",
-          "description": "Описание продукта 1",
-          "offers": {
-            "@type": "Offer",
-            "price": "39",
-            "priceCurrency": "USD",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5"
-            }
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "AI Pro",
-          "description": "Описание продукта 2",
-          "offers": {
-            "@type": "Offer",
-            "price": "39",
-            "priceCurrency": "USD",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5"
-            }
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "AI Premium",
-          "description": "Описание продукта 3",
-          "offers": {
-            "@type": "Offer",
-            "price": "39",
-            "priceCurrency": "USD",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5"
-            }
-          }
+            "@context": "http://schema.org/",
+            "@type": "ItemList",
+            "name": "Список продуктов",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "name": "Basic",
+                    "description": "Описание продукта 1",
+                    "image": "https://tradecoinai.com/img/usp_images/chart.webp",
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": 10
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "59",
+                        "priceCurrency": "USD"
+                    }
+                },
+                {
+                    "@type": "Product",
+                    "name": "AI Pro",
+                    "description": "Описание продукта 2",
+                    "image": "https://tradecoinai.com/img/usp_images/chart.webp",
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": 10
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "79",
+                        "priceCurrency": "USD"
+                    }
+                },
+                {
+                    "@type": "Product",
+                    "name": "AI Premium",
+                    "description": "Описание продукта 3",
+                    "image": "https://tradecoinai.com/img/usp_images/chart.webp",
+                    "aggregateRating": {
+                        "@type": "AggregateRating",
+                        "ratingValue": "5",
+                        "reviewCount": 10
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "30",
+                        "priceCurrency": "USD"
+                    }
+                }
+            ]
         }
-      ]
-    }
     </script>
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Когда я смогу получить первую прибыль?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Все зависит от того, какой алгоритм торговли ботом вы выберите. Как правило, первые “плюсы” могут быть уже в течение суток"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Можно ли модифицировать ваш бот?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Наш торговый бот использует уникальный код, доступ к которому не предоставляется широкой аудитории"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Мои личные данные на ByBit, Binance и прочих торговых биржах под надежной защитой?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Абсолютно! Наш торговый бот не располагает доступом к вашим личным данным и к вашему финансовому счету на любой подключенной к нему торговой бирже"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Я могу получить уведомления и отчет о деятельности торгового бота?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Да, все данные о совершаемых торговым ботом операциях будут доступны в вашем личном кабинете на сайте"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "На каком устройстве я могу пользоваться вашим торговым ботом?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Абсолютно на любом устройстве, наши алгоритмы лежат на серверах партнера"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Какое ограничение пользователей может быть?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "У нас есть лимиты пользователей для стабильной работы, на данный момент загрузка 74%"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Какое количество сделок происходит в месяц?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Как правило,с помощью нашего бота происходит от 5 до 7 сделок на криптовалютных биржах, зависит еще от выбора нашего алгоритма"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Есть риск лишиться всего депозита, который я сделаю?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Это исключено! Мы выставляем tp/sl моментально, вариация от 0,7 до 1,7%"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Каким образом я могу следить за работой алгоритма онлайн?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Все это доступно в личном кабинете на нашей платформе, либо в личном кабинете на выбранной вами криптовалютной бирже"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Я могу каким-либо образом корректировать работу алгоритма и/или остановить его?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Это функционально возможно. Но мы настоятельно не рекомендуем делать это!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Мои личные данные кто-либо видит?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Наша платформа абсолютно не получает доступ к вашей персональной информации и личным данным. Мы видим только адрес вашей электронной почты и используем его исключительно для обратной связи с вами"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Какой принцип работы алгоритма AI Premium, какой процент?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "При балансе от 10 тысяч долларов будет порядка 15%. Возможно внести корректировки в работу алгоритма, все обговаривается в индивидуальном порядке"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Я могу получить онлайн помощь касательно работы алгоритма и его запуска?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "У нас работает круглосуточная служба поддержки. Обратная связь происходит через адрес электронной почты, указанный на сайте, либо через Telegram"
-            }
-          }
-        ]
-      }                                                  
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "TradeCoinAi",
+            "url": "https://tradecoinai.com/",
+            "description": "Проверенные торговые боты для ByBit на основе AI от TradeCoincAI"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Когда я смогу получить первую прибыль?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Все зависит от того, какой алгоритм торговли ботом вы выберите. Как правило, первые “плюсы” могут быть уже в течение суток"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Можно ли модифицировать ваш бот?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Наш торговый бот использует уникальный код, доступ к которому не предоставляется широкой аудитории"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Мои личные данные на ByBit, Binance и прочих торговых биржах под надежной защитой?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Абсолютно! Наш торговый бот не располагает доступом к вашим личным данным и к вашему финансовому счету на любой подключенной к нему торговой бирже"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Я могу получить уведомления и отчет о деятельности торгового бота?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Да, все данные о совершаемых торговым ботом операциях будут доступны в вашем личном кабинете на сайте"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "На каком устройстве я могу пользоваться вашим торговым ботом?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Абсолютно на любом устройстве, наши алгоритмы лежат на серверах партнера"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Какое ограничение пользователей может быть?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "У нас есть лимиты пользователей для стабильной работы, на данный момент загрузка 74%"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Какое количество сделок происходит в месяц?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Как правило,с помощью нашего бота происходит от 5 до 7 сделок на криптовалютных биржах, зависит еще от выбора нашего алгоритма"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Есть риск лишиться всего депозита, который я сделаю?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Это исключено! Мы выставляем tp/sl моментально, вариация от 0,7 до 1,7%"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Каким образом я могу следить за работой алгоритма онлайн?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Все это доступно в личном кабинете на нашей платформе, либо в личном кабинете на выбранной вами криптовалютной бирже"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Я могу каким-либо образом корректировать работу алгоритма и/или остановить его?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Это функционально возможно. Но мы настоятельно не рекомендуем делать это!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Мои личные данные кто-либо видит?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Наша платформа абсолютно не получает доступ к вашей персональной информации и личным данным. Мы видим только адрес вашей электронной почты и используем его исключительно для обратной связи с вами"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Какой принцип работы алгоритма AI Premium, какой процент?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "При балансе от 10 тысяч долларов будет порядка 15%. Возможно внести корректировки в работу алгоритма, все обговаривается в индивидуальном порядке"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Я могу получить онлайн помощь касательно работы алгоритма и его запуска?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "У нас работает круглосуточная служба поддержки. Обратная связь происходит через адрес электронной почты, указанный на сайте, либо через Telegram"
+                    }
+                }
+            ]
+        }
     </script>
     <script>
         function hide_loader() {
             document.getElementById('loader').style.opacity = 0;
             setTimeout(() => { document.getElementById('loader').classList.add('dnone') }, 600)
         }
-        setTimeout(hide_loader, 2000)
+        setTimeout(hide_loader, 1500)
+
+
     </script>
 </head>
 
 <body id="body">
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG2PMMF" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="loader">
         <svg width="140" height="140" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -1203,90 +1236,117 @@
                 </linearGradient>
             </defs>
         </svg>
-
     </div>
 
     <div class="lb1">
         <div class="lb1_light" id="lb1">
-            <div class="lb1_light_line free_image ">
-                <img width="2294" height="388" alt="fone line" class="fade" src="img/usp_images/line.webp">
-            </div>
-            <div class="lb1_light_el1 free_image ">
-                <img onload="hide_loader()" width="1600" height="1600" alt="fone light" class="fade lb1_light_el1_img"
-                    src="img/usp_images/el1.webp" loading="lazy">
-            </div>
-            <div class="lb1_light_el1_mobile free_image ">
-                <img width="1000" height="1000" alt="fone light" class="fade lb1_light_el1_img"
-                    src="img/usp_images/el1.svg">
-            </div>
-            <div class="lb1_light_el2 free_image">
-                <img width="1304" height="1285" alt="fone light" class="fade" src="img/usp_images/el2.webp">
-            </div>
         </div>
         <header class="header" id="header">
             <div class="header_container container">
                 <div class="header_pc">
                     <div class="header_navigation">
-                        <div class="header_navigation_logo">
+                        <a href="https://tradecoinai.com/" class="header_navigation_logo">
                             <div class="header_navigation_logo_img">
-
-                                <img width="32" height="32" alt="logo" class="lozad fade" data-src="img/logo.svg">
+                                <img width="32" height="32" alt="logo" class="fade" src="/img/logo.svg">
                             </div>
                             <div class="header_navigation_logo_text inter">
                                 TradeCoinAi
                             </div>
-                        </div>
+                        </a>
                         <div class="header_navigation_links">
-                            <a href="#all_trades" class="header_navigation_links_a medium15">Все сделки</a>
-                            <a href="#how_it_works" class="header_navigation_links_a medium15">Как это работает</a>
-                            <a href="#pricing" class="header_navigation_links_a medium15">Цены</a>
-                            <a href="#trading" class="header_navigation_links_a medium15">О нас</a>
+                            <a href="#all_trades" class="header_navigation_links_a medium15">All trades</a>
+                            <a href="#how_it_works" class="header_navigation_links_a medium15">How it works</a>
+                            <a href="#pricing" class="header_navigation_links_a medium15">Pricing</a>
+                            <a href="#trading" class="header_navigation_links_a medium15">About us</a>
                         </div>
                     </div>
                     <div class="header_buttons">
+                        <div class="header_buttons_lang">
+                            <div class="header_buttons_lang_changer dnone" id="lang_changer">
+                                <div class="header_buttons_lang_changer_wrapper">
+                                    <a href="https://tradecoinai.com/ru/"
+                                        class="header_buttons_lang_changer_wrapper_element">
+                                        <img width="20" height="21" alt="english" src="/img/flags/rf.png">
+                                        <div class="btn">
+                                            Русский
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header_buttons_lang_btn" id="lang_changer_block">
+                                <div class="header_buttons_lang_img">
+                                    <img width="20" height="21" alt="english" src="/img/flags/usa.png">
+                                </div>
+                                <div class="header_buttons_lang_btn btn">
+                                    English
+                                </div>
+                                <div class="header_buttons_lang_dd_btn">
+                                    <img width="12" height="12" alt="arrow down"
+                                        class="lozad header_buttons_lang_dd_btn_img"
+                                        data-src="/img/flags/arrow_down.png">
+                                </div>
+                            </div>
+                        </div>
                         <div class="header_buttons_log_reg">
-                            <a href="https://app.tradecoinai.com/login"> <button
+                            <a href="https://app.tradecoinai.com/auth/login"> <button
                                     class="header_buttons_log_reg_btn_log btn">
                                     Login
                                 </button></a>
-                            <a href="https://app.tradecoinai.com/signup"><button
+                            <a href="https://app.tradecoinai.com/auth/signup"><button
                                     class="header_buttons_log_reg_btn_reg btn">
                                     Sign up
                                 </button></a>
                         </div>
                         <div class="header_buttons_burger">
                             <button class="header_buttons_burger_btn fade" id="burger_menu_button">
-
-                                <img alt="mobile menu opener" id="mobile_menu_img_burger" src="img/burger.svg"
+                                <img alt="mobile menu opener" id="mobile_menu_img_burger" src="/img/burger.svg"
                                     width="20" height="14">
-
                                 <img alt="mobile menu closer" class="dnone" id="mobile_menu_img_cross"
-                                    src="img/cross.svg" width="24" height="24">
+                                    src="/img/cross.svg" width="24" height="24">
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="header_mobile" id="mobile_menu" style="height: 0px">
                     <div class="header_mobile_menu_element">
-                        <a href="#all_trades" class="header_mobile_menu_element_a medium15">Все сделки</a>
+                        <a href="#all_trades" class="header_mobile_menu_element_a medium15">All trades</a>
                     </div>
                     <div class="header_mobile_menu_element">
-                        <a href="#how_it_works" class="header_mobile_menu_element_a medium15">Как это работает</a>
+                        <a href="#how_it_works" class="header_mobile_menu_element_a medium15">How it works</a>
                     </div>
                     <div class="header_mobile_menu_element">
-                        <a href="#pricing" class="header_mobile_menu_element_a medium15">Цены</a>
+                        <a href="#pricing" class="header_mobile_menu_element_a medium15">Pricint</a>
                     </div>
                     <div class="header_mobile_menu_element">
-                        <a href="#trading" class="header_mobile_menu_element_a medium15">О нас</a>
+                        <a href="#trading" class="header_mobile_menu_element_a medium15">About us</a>
                     </div>
                     <div class="header_mobile_menu_element header_mobile_menu_element_log_reg">
                         <div class="header_mobile_menu_element_log_reg_buttons">
-                            <button class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
+                            <a href="https://app.tradecoinai.com/auth/login"
+                                class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
                                 Login
-                            </button>
-                            <button class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
+                            </a>
+                            <a href="https://app.tradecoinai.com/auth/signup"
+                                class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
                                 Sign up
-                            </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_mobile_menu_element_change_lang">
+                        <div class="header_mobile_menu_element_change_lang_title">
+                            Choose language
+                        </div>
+                        <div class="header_mobile_menu_element_change_lang_languages">
+                            <div
+                                class="header_mobile_menu_element_change_lang_languages_element header_mobile_menu_element_change_lang_languages_element_active">
+                                <img width="20" height="21" alt="english" src="/img/flags/usa.png">
+                                English
+                            </div>
+                            <a href="https://tradecoinai.com/ru/"
+                                class="header_mobile_menu_element_change_lang_languages_element ">
+                                <img width="20" height="21" alt="english" src="/img/flags/rf.png">
+                                Русский
+                            </a>
                         </div>
                     </div>
 
@@ -1295,86 +1355,41 @@
         </header>
         <div class="usp" id="usp">
             <div class="usp_container container">
-                <div class="usp_images">
-                    <div class="usp_images_chart free_image">
-                        <img src="img/usp_images/chart.webp" width="747" height="575" alt="chart"
-                            class="fade usp_images_chart_img" loading="lazy">
-                    </div>
-                    <div class="usp_images_chart_small free_image">
-                        <img src="img/usp_images/chart_small.webp" width="384" height="296" alt="chart"
-                            class="fade usp_images_chart_small_img">
-                    </div>
-
-
-                    <div class="usp_images_man_with_notebook free_image">
-                        <img src="img/usp_images/man_with_notebook.webp" width="739" height="576"
-                            alt="man with notebook" class="fade  usp_images_man_with_notebook_img" loading="lazy">
-                    </div>
-                    <div class="usp_images_man_with_notebook_mob free_image">
-                        <img src="img/usp_images/man_with_notebook.webp" width="550" height="428"
-                            alt="man with notebook" class="fade  usp_images_man_with_notebook_img">
-                    </div>
-
-
-                    <div class="usp_images_eth free_image">
-                        <button class="usp_images_eth_button" aria-label="Eth button">
-                            <img src="img/usp_images/eth.svg" width="23" height="24" alt="eth"
-                                class=" fade usp_images_eth_button_img">
-                        </button>
-                    </div>
-                    <div class="usp_images_ai free_image">
-                        <button class="usp_images_ai_button inter">
-                            Ai
-                        </button>
-                    </div>
-                    <div class="usp_images_usdt free_image">
-                        <button class="usp_images_usdt_button" aria-label="Usdt button">
-                            <img src="img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"
-                                class=" fade usp_images_usdt_button_img">
-                        </button>
-                    </div>
-
-
-                    <div class="usp_images_stat free_image">
-                        <img src="img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"
-                            class="fade usp_images_stat_img" loading="lazy">
-                    </div>
-                    <div class="usp_images_stat_mob free_image">
-                        <img src="img/usp_images/user_stat_mob.webp" width="322" height="190" alt="user statistic"
-                            class="fade usp_images_stat_img">
-                    </div>
-
+                <div class="usp_images" id="usp_images">
                 </div>
                 <div class="usp_text">
                     <div class="usp_text_guarant">
-
-                        <img src="img/shield_check.svg" alt="verified" class="fade usp_text_guarant_img" width="24"
+                        <img src="/img/shield_check.svg" alt="verified" class="fade usp_text_guarant_img" width="24"
                             height="40">
                         <div class="usp_text_guarant_medium15 medium15">
-                            Предлагаем работающий инструмент для получения прибыли. Все данные верифицированы
+                            We offer you a powerful tool to generate profits. All data is verified.
                         </div>
                     </div>
                     <h1 class="usp_text_h1">
-                        Проверенные торговые боты для ByBit на основе AI от TradeCoinAi
+                        The Revolution of Trading with Top AI Crypto Bots
                     </h1>
                     <div class="usp_text_body body">
-                        Торговые боты на ByBit помогут вам повысить свой заработок на продаже/покупке цифровых активов.
+                        Our crypto trading bots on ByBit will help you increase your profits by selling/buying AI crypto
+                        coins in an efficient manner.
+                        CTA- Try for free
+
                     </div>
-                    <button class="usp_text_button btn">
-                        Попробовать бесплатно
-                    </button>
+                    <a href="https://app.tradecoinai.com/auth/login"><button class="usp_text_button btn">
+                            Try for free
+                        </button></a>
                     <div class="usp_text_btns_mobile_download">
                         <button class="usp_text_btns_mobile_download_button" aria-label="Appstore download button">
-
-                            <img src="img/platforms/apple.svg" alt="appstore download"
+                            <img src="/img/platforms/apple.svg" alt="appstore download"
                                 class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
                         </button>
                         <button class="usp_text_btns_mobile_download_button" aria-label="Play market download button">
 
-                            <img src="img/platforms/android.svg" alt="play market download"
+                            <img src="/img/platforms/android.svg" alt="play market download"
                                 class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
                         </button>
                     </div>
+                </div>
+                <div class="usp_phone_images" id="usp_phone_images">
                 </div>
             </div>
         </div>
@@ -1382,10 +1397,10 @@
             <div class="about_us_inner">
                 <div class="about_us_container container">
                     <div class="about_us_colored_text colored_text">
-                        О нас
+                        About us
                     </div>
                     <h2 class="about_us_h2">
-                        Что из себя представляют торговые боты на Binance, BitGet, ByBit?
+                        What are AI Crypto Trading Bots on ByBit, Binance, BitGet?
                     </h2>
                     <div class="about_us_content">
                         <div class="about_us_content_advantages">
@@ -1393,32 +1408,32 @@
                                 <div class="about_us_content_advantages_left_element">
                                     <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                        <img data-src="img/advantages/pc/robot.svg" alt="robot"
+                                        <img data-src="/img/advantages/pc/robot.svg" alt="robot"
                                             class="lozad about_us_content_advantages_left_element_img" width="52"
                                             height="52">
                                     </div>
                                     <div class="about_us_content_advantages_left_element_h5 h5">
-                                        Отсутствует человеческий фактор
+                                        No Human Factor
+
                                     </div>
                                     <div class="about_us_content_advantages_left_element_body body">
-                                        Устанавливаются конкретные параметры, по которым бот работает. Он не паникует,
-                                        не спешит
+                                        Our AI trading bot operates according to specific parameters. No panic and zero
+                                        rush — a true testament to bot trading crypto.
                                     </div>
                                 </div>
                                 <div class="about_us_content_advantages_left_element">
                                     <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                        <img data-src="img/advantages/pc/auto.svg" alt="auto"
+                                        <img data-src="/img/advantages/pc/auto.svg" alt="auto"
                                             class="lozad about_us_content_advantages_left_element_img" width="52"
                                             height="52">
                                     </div>
                                     <div class="about_us_content_advantages_left_element_h5 h5">
-                                        Анализ и торговля на боте
+                                        AI Analysis and Trade with the Bot
                                     </div>
                                     <div class="about_us_content_advantages_left_element_body body">
-                                        Вам не нужно постоянно следить за котировками и трендами на рынке. Бот это
-                                        сделает быстрее, эффективнее и правильнее
-
+                                        You don't need to constantly monitor quotes and trends in the market. Our top AI
+                                        crypto bot will do it faster, more efficiently and correctly!
                                     </div>
                                 </div>
                             </div>
@@ -1426,40 +1441,39 @@
                                 <div class="about_us_content_advantages_right_element">
                                     <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                        <img data-src="img/advantages/pc/source.svg" alt="source"
+                                        <img data-src="/img/advantages/pc/source.svg" alt="source"
                                             class="lozad about_us_content_advantages_right_element_img" width="52"
                                             height="52">
                                     </div>
                                     <div class="about_us_content_advantages_right_element_h5 h5">
-                                        Круглосуточная работа бота
+                                        24/7 Trading with our AI Crypto Bot
                                     </div>
                                     <div class="about_us_content_advantages_right_element_body body">
-                                        Когда вы спите, рынок бодрствует, а потому в ночное время цены меняются. Боту не
-                                        нужен сон или отдых
+                                        While you sleep, the market is awake, and prices change at night. Thankfully,
+                                        our bot doesn't need sleep or rest.
                                     </div>
                                 </div>
                                 <div class="about_us_content_advantages_right_element">
                                     <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                        <img data-src="img/advantages/pc/stat.svg" alt="statistic"
+                                        <img data-src="/img/advantages/pc/stat.svg" alt="statistic"
                                             class="lozad about_us_content_advantages_right_element_img" width="52"
                                             height="52">
                                     </div>
                                     <div class="about_us_content_advantages_right_element_h5 h5">
-                                        Стабильный заработок
+                                        Stable Income
                                     </div>
                                     <div class="about_us_content_advantages_right_element_body body">
-                                        Крипто бот работает со страховкой от потери прибыли. Поэтому вы стабильно
-                                        зарабатываете, не теряя средства
+                                        TradeCoinAI crypto bot operates with profit insurance, ensuring you earn
+                                        steadily without losing funds.
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="about_us_content_text">
                             <div class="about_us_content_text_body body">
-                                Криптовалюты - уже давно являются инструментом для получения прибыли. Используя наш бот
-                                TradeCoinAI вы сможете ежедневно совершать ликвидные сделки на популярных криптовалютных
-                                биржах в автоматическом режиме.
+                                Cryptocurrencies have been a profit-making tool for a long time. Using our AI crypto
+                                bot, you can automate daily liquid transactions at popular cryptocurrency exchanges.
                             </div>
                             <div class="about_us_content_text_h5 h5">
                                 Services about us
@@ -1467,22 +1481,22 @@
                             <div class="about_us_content_text_services_about_us_logos">
 
                                 <a href="https://www.trustpilot.com/review/tradecoinai.com" target="_blank"> <img
-                                        data-src="img/services_about_us_logos/trustpilot.svg" alt="trustpilot"
+                                        data-src="/img/services_about_us_logos/trustpilot.svg" alt="trustpilot"
                                         class="lozad about_us_content_text_services_about_us_logos_img" width="144"
                                         height="27"></a>
 
                                 <a href="https://forklog.com/" target="_blank"> <img
-                                        data-src="img/services_about_us_logos/forklog.png" alt="forklog"
+                                        data-src="/img/services_about_us_logos/forklog.png" alt="forklog"
                                         class="lozad about_us_content_text_services_about_us_logos_img" width="108"
                                         height="27"></a>
 
-                                <a href="https://vc.ru/" target="_blank"> <img
-                                        data-src="img/services_about_us_logos/vcru.svg" alt="vcru"
+                                <!--<a href="https://vc.ru/" target="_blank"> <img
+                                        data-src="/img/services_about_us_logos/vcru.svg" alt="vcru"
                                         class="lozad about_us_content_text_services_about_us_logos_img" width="28"
-                                        height="27"></a>
+                                        height="27"></a>-->
 
                                 <a href="https://www.bybit.com/" target="_blank"> <img
-                                        data-src="img/services_about_us_logos/bybit.svg" alt="bybit"
+                                        data-src="/img/services_about_us_logos/bybit.svg" alt="bybit"
                                         class="lozad about_us_content_text_services_about_us_logos_img" width="66"
                                         height="27"></a>
                             </div>
@@ -1491,12 +1505,12 @@
                     <div class="about_us_images">
                         <div class="about_us_images_box free_image">
 
-                            <img data-src="img/abous_us_images/box.webp" alt="box with light"
+                            <img data-src="/img/abous_us_images/box.webp" alt="box with light"
                                 class="lozad about_us_images_box_img" width="850" height="967">
                         </div>
                         <div class="about_us_images_light1 free_image">
 
-                            <img data-src="img/abous_us_images/el1.webp" alt="fone light"
+                            <img data-src="/img/abous_us_images/el1.webp" alt="fone light"
                                 class="lozad about_us_images_light1_img" width="2340" height="1594">
                         </div>
                     </div>
@@ -1508,10 +1522,10 @@
         <div class="offers_container container">
             <div class="offers_header">
                 <h2 class="offers_header_h2">
-                    Выберите алгоритм, который подходит вам
+                    Choose the AI Algorithm that Suits You
                 </h2>
                 <div class="offers_header_body body">
-                    Профессиональная платформа для алгоритмической и ручной торговли криптовалютами
+                    Our platform provides professional algorithmic and manual trading of cryptocurrencies.
                 </div>
             </div>
             <div class="offers_offers_list">
@@ -1523,7 +1537,7 @@
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
-                                <img data-src="img/verified.svg" alt="verified"
+                                <img data-src="/img/verified.svg" alt="verified"
                                     class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
                                     height="20">
                             </div>
@@ -1550,13 +1564,13 @@
                             </div>
                         </div>
 
-                        <img data-src="img/offer_chart1.svg" alt="offer chart"
+                        <img data-src="/img/offer_chart1.svg" alt="offer chart"
                             class="lozad offers_offers_list_offer_chart_img" width="345" height="130">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
                             <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
-                                Cредняя прибыль
+                                Average profit
                             </div>
                             <div class="offers_offers_list_offer_content_pnl_num">
                                 <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
@@ -1564,7 +1578,7 @@
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_pnl_num_percent offers_offers_list_offer_content_pnl_num_percent_medium15 medium15">
-                                    +17,39%
+                                    +45,39%
                                 </div>
                             </div>
                         </div>
@@ -1572,47 +1586,54 @@
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Средний win rate
+                                    Average winrate
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    67.8%
+                                    47%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее время открытой
+                                    Average monthly profit
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    2 часа
+                                    40-57%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее позиций в месяц
+                                    Average loss
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    4
+                                    15-55%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Подписалось
+                                    Subscribed
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    138/170 users
+                                    138/170
                                 </div>
                             </div>
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    A profitable option for beginners
+                                </div>
+                            </div>
+
                         </div>
                         <div class="offers_offers_list_offer_content_price">
                             <div class="offers_offers_list_offer_content_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="offers_offers_list_offer_content_price_price_value">
                                 <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
@@ -1621,13 +1642,14 @@
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_buttons">
-                            <a href="https://app.tradecoinai.com/login" target="_blank "
+                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
                                 class="btn offers_offers_list_offer_content_buttons_button">
-                                Connecting
+                                Connect
                             </a>
-                            <button class="btn offers_offers_list_offer_content_buttons_button">
+                            <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
+                                onclick="tarifBasicClick()">
                                 Details
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1639,9 +1661,13 @@
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
-                                <img data-src="img/verified.svg" alt="verified"
+                                <img data-src="/img/verified.svg" alt="verified"
                                     class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
                                     height="20">
+                            </div>
+                            <div class="offers_offers_list_offer_header_name_the_best"
+                                style="border-radius: 6px; margin-left: 10px">
+                                🔥 The best
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_header_light14 light14">
@@ -1666,13 +1692,13 @@
                             </div>
                         </div>
 
-                        <img data-src="img/offer_chart2.svg" alt="chart"
+                        <img data-src="/img/offer_chart2.svg" alt="chart"
                             class="lozad offers_offers_list_offer_chart_img" width="345" height="119">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
                             <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
-                                Cредняя прибыль
+                                Average profit
                             </div>
                             <div class="offers_offers_list_offer_content_pnl_num">
                                 <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
@@ -1688,47 +1714,53 @@
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Средний win rate
+                                    Average winrate
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    73% 🚀
+                                    78%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее время открытой
+                                    Average monthly profit
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    2 часа 🔥
+                                    35%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее позиций в месяц
+                                    Average loss
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    7
+                                    15%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Подписалось
+                                    Subscribed
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    271/320 users
+                                    271/320
+                                </div>
+                            </div>
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    Option for confident traders of the cryptocurrency market
                                 </div>
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_price">
                             <div class="offers_offers_list_offer_content_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="offers_offers_list_offer_content_price_price_value">
                                 <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
@@ -1738,13 +1770,14 @@
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_buttons">
-                            <a href="https://app.tradecoinai.com/login" target="_blank "
+                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
                                 class="btn offers_offers_list_offer_content_buttons_button">
-                                Connecting
+                                Connect
                             </a>
-                            <button class="btn offers_offers_list_offer_content_buttons_button">
+                            <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
+                                onclick="tarifAiProClick()">
                                 Details
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1755,8 +1788,7 @@
                                 AI Premium
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
-
-                                <img data-src="img/verified.svg" alt="verified"
+                                <img data-src="/img/verified.svg" alt="verified"
                                     class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
                                     height="20">
                             </div>
@@ -1783,13 +1815,13 @@
                             </div>
                         </div>
 
-                        <img data-src="img/offer_chart3.svg" alt="chart"
+                        <img data-src="/img/offer_chart3.svg" alt="chart"
                             class="lozad offers_offers_list_offer_chart_img" width="345" height="120">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
                             <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
-                                Cредняя прибыль
+                                Average profit
                             </div>
                             <div class="offers_offers_list_offer_content_pnl_num">
                                 <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
@@ -1805,47 +1837,53 @@
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Средний win rate
+                                    Average winrate
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    82% 🚀
+                                    87%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее время открытой
+                                    Average monthly profit
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    6 часов 🔥
+                                    15%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Среднее позиций в месяц
+                                    Average loss
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    5
+                                    5-7%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Подписалось
+                                    Subscribed
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    74/99 users
+                                    74/99
+                                </div>
+                            </div>
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    The best solution for major investors
                                 </div>
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_price">
                             <div class="offers_offers_list_offer_content_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="offers_offers_list_offer_content_price_price_value">
                                 <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
@@ -1858,25 +1896,26 @@
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_buttons">
-                            <a href="https://app.tradecoinai.com/login" target="_blank "
+                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
                                 class="btn offers_offers_list_offer_content_buttons_button">
-                                Connecting
+                                Connect
                             </a>
-                            <button class="btn offers_offers_list_offer_content_buttons_button">
+                            <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
+                                onclick="tarifAiPremiumClick()">
                                 Details
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="secure">
 
-                <img data-src="img/shield_check.svg" alt="shied" class="lozad secure_img" width="24" height="24">
+                <img data-src="/img/shield_check.svg" alt="shied" class="lozad secure_img" width="24" height="24">
                 <div class="medium15 secure_medium15">
-                    Ваши данные верифицированы по API платформы ByBit и надежно защищены!
+                    Your data is verified via the ByBit platform API and is securely protected!
                 </div>
 
-                <img data-src="img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
+                <img data-src="/img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
             </div>
         </div>
     </div>
@@ -1884,27 +1923,27 @@
         <div class="lb2_images">
             <div class="lb2_images_light free_image">
 
-                <img data-src="img/security_images/l1.webp" alt="fone light" class="lozad lb2_images_light_img"
+                <img data-src="/img/security_images/l1.webp" alt="fone light" class="lozad lb2_images_light_img"
                     width="1228" height="822">
             </div>
             <div class="lb2_images_light1 free_image">
 
-                <img data-src="img/security_images/l2.webp" alt="fone light" class="lozad lb2_images_light_img"
+                <img data-src="/img/security_images/l2.webp" alt="fone light" class="lozad lb2_images_light_img"
                     width="1707" height="1591">
             </div>
             <div class="lb2_images_light2 free_image">
 
-                <img data-src="img/security_images/l3.webp" alt="fone light" class="lozad lb2_images_light_img"
+                <img data-src="/img/security_images/l3.webp" alt="fone light" class="lozad lb2_images_light_img"
                     width="1672" height="1672">
             </div>
             <div class="lb2_images_light3 free_image">
 
-                <img data-src="img/security_images/l5.webp" alt="fone light" class="lozad lb2_images_light_img"
+                <img data-src="/img/security_images/l5.webp" alt="fone light" class="lozad lb2_images_light_img"
                     width="1672" height="1672">
             </div>
             <div class="lb2_images_light4 free_image">
 
-                <img data-src="img/security_images/l4.webp" alt="fone light" class="lozad lb2_images_light_img"
+                <img data-src="/img/security_images/l4.webp" alt="fone light" class="lozad lb2_images_light_img"
                     width="1903" height="1659">
             </div>
         </div>
@@ -1913,93 +1952,94 @@
                 <div class="security_img">
                     <div class="security_img_light free_image">
 
-                        <img data-src="img/security_images/l1.webp" alt="fone light"
+                        <img data-src="/img/security_images/l1.webp" alt="fone light"
                             class="lozad security_img_light_img">
                     </div>
                     <div class="security_img_success free_image">
 
-                        <img data-src="img/security_images/success.webp" alt="success"
+                        <img data-src="/img/security_images/success.webp" alt="success"
                             class="lozad security_img_success_img" width="528" height="585">
                     </div>
                 </div>
                 <div class="security_content">
                     <div class="security_content_security_header">
                         <div class="security_content_security_header_colored_text colored_text">
-                            БЕЗОПАСНОСТЬ
+                            SECURITY
                         </div>
                         <h2 class="security_content_security_header_h2">
-                            Дополнительные преимущества торгового бота TradeCoinAI?
+                            Extra Benefits of the TradeCoinAl AI Trading Bot
                         </h2>
                     </div>
                     <div class="security_content_advantages">
                         <div class="security_content_advantages_advantages_element">
                             <div class="security_content_advantages_advantages_element_img_wrapper">
-                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                <img data-src="/img/shield_check_yellow.svg" alt="shield"
                                     class="lozad security_content_advantages_advantages_element_img" width="44"
                                     height="44">
                             </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
-                                Защита финансовых средств пользователя
+                                User's Financial Assets Protection
                             </div>
                             <div class="security_content_advantages_advantages_element_body body">
-                                Торговые боты TradeCoinAI не имеют никакого доступа к личному счету пользователя на
-                                любой из подключенных по API критовалютных бирж.
+                                TradeCoinAl AI trading bots have no access to the user's personal account on any of the
+                                API-connected crypto exchanges.
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
                             <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                <img data-src="/img/shield_check_yellow.svg" alt="shield"
                                     class="lozad security_content_advantages_advantages_element_img" width="44"
                                     height="44">
                             </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
-                                Прогнозирование рыночного риска
+                                AI Market Risk Prediction
                             </div>
                             <div class="security_content_advantages_advantages_element_body body">
-                                AI анализирует историю рынка цифровых активов с момента его создания и до текущего
-                                времени, определяя наиболее выгодные моменты для сделки
+                                Our AI stock trading bot analyzes digital asset market history, identifying the most
+                                profitable moments to make a deal.
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
                             <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                <img data-src="/img/shield_check_yellow.svg" alt="shield"
                                     class="lozad security_content_advantages_advantages_element_img" width="44"
                                     height="44">
                             </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
-                                Скорость совершения сделки
+                                Trade Speed
+
                             </div>
                             <div class="security_content_advantages_advantages_element_body body">
-                                Боты способны проводить ордера со скоростью в 0.1-0.2 секунды
+                                Bots can execute orders at an incredible speed of 0.1-0.2 seconds.
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
                             <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                <img data-src="/img/shield_check_yellow.svg" alt="shield"
                                     class="lozad security_content_advantages_advantages_element_img" width="44"
                                     height="44">
                             </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
-                                Реальные результаты
+                                Real Results
                             </div>
                             <div class="security_content_advantages_advantages_element_body body">
-                                Нашим торговым ботом уже воспользовалось более 450 человек и с его помощью все
-                                пользователи получили первую дополнительную прибыль
+                                Over 450 people have already used our best AI stock trading bot, earning their first
+                                extra profit with it.
                             </div>
                         </div>
                     </div>
                     <div class="secure">
 
-                        <img alt="shied" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
+                        <img alt="shied" class="lozad secure_img" data-src="/img/shield_check.svg" width="24"
                             height="24">
                         <div class="medium15 secure_medium15">
-                            Ваши данные верифицированы по API платформы ByBit и надежно защищены!
+                            Your data is verified via the ByBit platform API and is securely protected!
                         </div>
 
-                        <img alt="bybit" class="lozad secure_img" data-src="img/bybit.svg" width="47" height="17">
+                        <img alt="bybit" class="lozad secure_img" data-src="/img/bybit.svg" width="47" height="17">
                     </div>
                 </div>
             </div>
@@ -2008,15 +2048,15 @@
             <div class="transactions_container container">
                 <div class="transactions_transactions_header">
                     <h2 class="transactions_transactions_header_h2">
-                        История транзакций наших пользователей
+                        Transaction History of Our Users
                     </h2>
                     <div class="transactions_transactions_header_body body">
-                        Торговый бот на ByBit от TradeCoinAI повышает процент ваших успешных сделок!
+                        Our ByBit trading bot from TradeCoinAI boosts the rate of your successful trades!
                     </div>
                 </div>
                 <div class="table_elements_loader_wrapper">
                     <div id="table_elements_loader">
-                        <img src="img/loader.svg" alt="">
+                        <img src="/img/loader.svg" width="140" height="140" alt="">
                     </div>
                 </div>
                 <div class="transactions_navigation onone" id="transactions_navigation">
@@ -2037,25 +2077,22 @@
                             #
                         </div>
                         <div class="type element_info">
-                            Тип
+                            Type
                         </div>
                         <div class="pair element_info">
-                            Пара
+                            Pair
                         </div>
                         <div class="date element_info">
-                            Дата
+                            Date
                         </div>
                         <div class="count element_info">
-                            Кол-во
+                            Count
                         </div>
                         <div class="price element_info">
-                            Цена
+                            Price
                         </div>
-                        <!-- <div class="volume element_info">
-                            Объем
-                        </div> -->
                         <div class="profit element_info">
-                            Прибыль
+                            Profit
                         </div>
                     </div>
                     <div id="table_elements">
@@ -2072,11 +2109,11 @@
                 </div>
                 <div class="security_and_pages element_loading">
                     <div id="transactions_secure" class="secure element_info onone">
-                        <img alt="secure" class="secure_img" src="img/shield_check.svg" width="24" height="24" />
+                        <img alt="secure" class="secure_img" src="/img/shield_check.svg" width="24" height="24" />
                         <div class="medium15 secure_medium15">
-                            Ваши данные верифицированы по API платформы ByBit и надежно защищены!
+                            Your data is verified via the ByBit platform API and is securely protected!
                         </div>
-                        <img alt="bybit" class=" secure_img" src="img/bybit.svg" width="47" height="17" />
+                        <img alt="bybit" class=" secure_img" src="/img/bybit.svg" width="47" height="17" />
                     </div>
                     <div id="table_elements_pagination" class="pages element_info onone">
                     </div>
@@ -2088,10 +2125,10 @@
                 <div class="tutorial_container container">
                     <div class="tutorial_header">
                         <div class="tutorial_header_colored_text colored_text">
-                            КАК НАЧАТЬ?
+                            TUTORIAL
                         </div>
                         <h2 class="tutorial_header_h2">
-                            Процесс работы торгового бота на криптовалютных биржах
+                            How to Use Our AI Crypto Trading Bot for Exchanges like ByBit and Binance
                         </h2>
                     </div>
                     <div class="tutorial_path_to_earn">
@@ -2108,15 +2145,13 @@
                                 <div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time">
                                         <div class="tutorial_path_to_earn_steps_step_location_and_time_h4 h4">
-                                            Зарегистрируйтесь на нашей площадке
-
-                                            <img alt="our server" src="img/path_to_earn/our_server.svg" width="37"
+                                            Sign up on our site
+                                            <img alt="our server" src="/img/path_to_earn/our_server.svg" width="37"
                                                 height="29">
                                         </div>
                                     </div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time_body body">
-                                        Не требуется ввод персональных данных. Операций занимает не более 2-х минут
-                                        времени
+                                        No need to enter any personal data. Transactions take no more than 2 minutes.
                                     </div>
                                 </div>
                             </div>
@@ -2127,15 +2162,13 @@
                                 <div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time">
                                         <div class="tutorial_path_to_earn_steps_step_location_and_time_h4 h4">
-                                            Совершите покупку торгового бота
-
-                                            <img alt="dollar" src="img/path_to_earn/dollar.svg" width="35" height="29">
+                                            Purchase a Trading Bot
+                                            <img alt="dollar" src="/img/path_to_earn/dollar.svg" width="35" height="29">
                                         </div>
                                     </div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time_body body">
-                                        Для начала выберите оптимальный для вас алгоритм, а далее определитесь с
-                                        методом
-                                        оплаты
+                                        Choose the AI algorithm that works best for you, and decide on the payment
+                                        method.
                                     </div>
                                 </div>
                             </div>
@@ -2146,13 +2179,12 @@
                                 <div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time">
                                         <div class="tutorial_path_to_earn_steps_step_location_and_time_h4 h4">
-                                            Подключите API ключи биржи
-
-                                            <img alt="bybit" src="img/path_to_earn/bybit.svg" width="71" height="29">
+                                            Connect ByBit Exchange API Keys
+                                            <img alt="bybit" src="/img/path_to_earn/bybit.svg" width="71" height="29">
                                         </div>
                                     </div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time_body body">
-                                        Это обязательно условие для корректной работы нашего торгового бота
+                                        This is a prerequisite for our AI stock trading bot to function correctly.
                                     </div>
                                 </div>
                             </div>
@@ -2165,13 +2197,12 @@
                                 <div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time">
                                         <div class="tutorial_path_to_earn_steps_step_location_and_time_h4 h4">
-                                            Запустите бота
-
-                                            <img alt="chart" src="img/path_to_earn/chart.svg" width="38" height="29">
+                                            Run the Bot
+                                            <img alt="chart" src="/img/path_to_earn/chart.svg" width="38" height="29">
                                         </div>
                                     </div>
                                     <div class="tutorial_path_to_earn_steps_step_location_and_time_body body">
-                                        и наслаждайтесь полученными результатами
+                                        Enjoy the results from your AI crypto trading bot.
                                     </div>
                                 </div>
                             </div>
@@ -2181,16 +2212,10 @@
                 <div class="tutorial_images">
                     <div class="tutorial_images_chart free_image">
                         <img alt="chart" class="lozad tutorial_images_chart_img"
-                            data-src="img/tutorial_images/chart.webp" width="1936" height="608">
+                            data-src="/img/tutorial_images/chart.webp" width="1936" height="608">
                     </div>
-                    <!-- <div class="tutorial_images_waves free_image">
-
-                        <img data-src="img/tutorial_images/waves.webp" alt="fone wawes"
-                            class="lozad tutorial_images_waves_img" width="1763" height="608">
-                    </div> -->
                     <div class="tutorial_images_man free_image">
-
-                        <img alt="man" class="lozad tutorial_images_man_img" data-src="img/tutorial_images/man.webp"
+                        <img alt="man" class="lozad tutorial_images_man_img" data-src="/img/tutorial_images/man.webp"
                             width="611" height="835">
                     </div>
                 </div>
@@ -2202,75 +2227,74 @@
 
         <div class="lb3_images">
             <div class="lb3_images_light1 free_image">
-                <img alt="fone light" class="lozad" data-src="img/quest/el1.webp" width="1537" height="1449">
+                <img alt="fone light" class="lozad" data-src="/img/quest/el1.webp" width="1537" height="1449">
             </div>
             <div class="lb3_images_light2 free_image">
 
-                <img alt="fone light" class="lozad" data-src="img/quest/el2.webp" width="1707" height="1591">
+                <img alt="fone light" class="lozad" data-src="/img/quest/el2.webp" width="1707" height="1591">
             </div>
             <div class="lb3_images_light3 free_image">
-                <img alt="fone light" class="lozad" data-src="img/quest/el3.webp" width="1707" height="1591">
+                <img alt="fone light" class="lozad" data-src="/img/quest/el3.webp" width="1707" height="1591">
             </div>
         </div>
         <div class="chance">
             <div class="chance_inner">
                 <div class="chance_container container">
-                    <div class="chance_header">
+                    <div class="chance_header" style="z-index: 2;">
                         <div class="chance_header_colored_text colored_text">
-                            ВАШ ШАНС
+                            YOUR CHANCE
                         </div>
                         <h2 class="chance_header_h2">
-                            Чтобы получить дополнительную прибыль уе завтра, прямо сейчас закажите нашего торгового
-                            бота!
+                            To Get More Profit Tomorrow, Order Our AI Trading Bot Right Now!
                         </h2>
                         <div class="chance_header_body body">
-                            Торговый бот для криптовалютных бирж - оптимальное вложение денег
+                            Our trading bot for cryptocurrency exchanges - the best investment for your future.
                         </div>
-                        <a href="https://app.tradecoinai.com/login" target="_blank"> <button
+                        <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button
                                 class="chance_header_button btn">
-                                Заказать
+                                Order now
                             </button></a>
                     </div>
                     <div class="chance_images">
                         <div class="chance_images_bybit free_image">
 
                             <img alt="bybit" class="lozad chance_images_bybit_img"
-                                data-src="img/chance_images/bybit.svg" width="77" height="77">
+                                data-src="/img/chance_images/bybit.svg" width="77" height="77">
                         </div>
                         <div class="chance_images_circles free_image">
 
-                            <img data-src="img/chance_images/circles.svg" alt="circles"
+                            <img data-src="/img/chance_images/circles.svg" alt="circles"
                                 class="chance_images_circles_img lozad" width="1121" height="1121">
                         </div>
                         <div class="chance_images_rocket free_image">
 
-                            <img data-src="img/chance_images/rocket.webp" alt="rocket"
+                            <img data-src="/img/chance_images/rocket.webp" alt="rocket"
                                 class="chance_images_rocket_img chance_images_rocket_img_pc lozad" width="1423"
                                 height="1325">
 
-                            <img data-src="img/chance_images/rocket.webp" alt="rocket"
+                            <img data-src="/img/chance_images/rocket.webp" alt="rocket"
                                 class="chance_images_rocket_img chance_images_rocket_img_mob lozad" width="700"
                                 height="652">
                         </div>
                         <div class="chance_images_btc free_image">
 
-                            <img alt="btc" class="chance_images_btc_img lozad" data-src="img/chance_images/btc.webp"
+                            <img alt="btc" class="chance_images_btc_img lozad" data-src="/img/chance_images/btc.webp"
                                 width="175" height="175">
                         </div>
                         <div class="chance_images_eth free_image">
 
-                            <img alt="eth" class="chance_images_eth_img lozad" data-src="img/chance_images/eth.webp"
+                            <img alt="eth" class="chance_images_eth_img lozad" data-src="/img/chance_images/eth.webp"
                                 width="97" height="97">
                         </div>
                         <div class="chance_images_btc_l free_image">
 
                             <img alt="btcl" class="chance_images_btc_l_img lozad"
-                                data-src="img/chance_images/btc_l.webp" width="680" height="680">
+                                data-src="/img/chance_images/btc_l.webp" width="680" height="680">
                         </div>
                         <div class="chance_images_usd_t free_image">
 
-                            <img alt="usdt" class="chance_images_usd_t_img lozad" data-src="img/chance_images/usd_t.svg"
-                                width="45" height="45">
+                            <img alt="usdt" class="chance_images_usd_t_img lozad"
+                                data-src="/img/chance_images/usd_t.svg" width="45" height="45">
                         </div>
                     </div>
                 </div>
@@ -2286,20 +2310,20 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="/img/verified.svg" width="20" height="20">
                             </div>
                         </div>
                         <div class="small_offers_offer_info_price">
                             <div class="small_offers_offer_info_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="small_offers_offer_info_price_num">
                                 <div class="small_offers_offer_info_price_num_h6 h6">
                                     59$
                                 </div>
-                                <a href="https://app.tradecoinai.com/login" target="_blank">
+                                <a href="https://app.tradecoinai.com/auth/login" target="_blank">
                                     <div class="small_offers_offer_info_price_num_add_info_type_1">
-                                        Подключайся
+                                        Connect now
                                     </div>
                                 </a>
                             </div>
@@ -2307,7 +2331,7 @@
                     </div>
                     <a class="small_offers_offer_button" href="#pricing">
 
-                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="/img/arrow_up.svg"
                             width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
@@ -2322,20 +2346,21 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="/img/verified.svg" width="20" height="20">
                             </div>
+
                         </div>
                         <div class="small_offers_offer_info_price">
                             <div class="small_offers_offer_info_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="small_offers_offer_info_price_num">
                                 <div class="small_offers_offer_info_price_num_h6 h6">
                                     79$ <s class="small_offers_offer_info_price_num_h6_s">149$</s>
                                 </div>
-                                <a href="https://app.tradecoinai.com/login" target="_blank">
+                                <a href="https://app.tradecoinai.com/auth/login" target="_blank">
                                     <div class="small_offers_offer_info_price_num_add_info_type_1">
-                                        Подключайся
+                                        Connect now
                                     </div>
                                 </a>
                             </div>
@@ -2343,7 +2368,7 @@
                     </div>
                     <a class="small_offers_offer_button" href="#pricing">
 
-                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="/img/arrow_up.svg"
                             width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
@@ -2358,20 +2383,20 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="/img/verified.svg" width="20" height="20">
                             </div>
                         </div>
                         <div class="small_offers_offer_info_price">
                             <div class="small_offers_offer_info_price_medium15 medium15">
-                                Цена
+                                Price
                             </div>
                             <div class="small_offers_offer_info_price_num">
                                 <div class="small_offers_offer_info_price_num_h6 h6">
                                     30% <s class="small_offers_offer_info_price_num_h6_s">40%</s>
                                 </div>
-                                <a href="https://app.tradecoinai.com/login" target="_blank">
+                                <a href="https://app.tradecoinai.com/auth/login" target="_blank">
                                     <div class="small_offers_offer_info_price_num_add_info_type_1">
-                                        Подключайся
+                                        Connect now
                                     </div>
                                 </a>
                             </div>
@@ -2380,7 +2405,7 @@
                     <a class="small_offers_offer_button" href="#pricing">
 
 
-                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="/img/arrow_up.svg"
                             width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
@@ -2393,7 +2418,7 @@
             <div class="faq_container container">
                 <div class="faq_header">
                     <h2 class="faq_header_h2">
-                        Популярные вопросы <span class="faq_header_h2_span">FAQ</span>
+                        <span class="faq_header_h2_span">FAQ</span>
                     </h2>
                 </div>
                 <div class="faq_questions" id="faq_list"></div>
@@ -2401,7 +2426,7 @@
             <div class="faq_images">
                 <div class="faq_images_light free_image">
 
-                    <img alt="fone light" class="lozad" data-src="img/quest/el4.webp" width="1003" height="393">
+                    <img alt="fone light" class="lozad" data-src="/img/quest/el4.webp" width="1003" height="393">
                 </div>
             </div>
         </div>
@@ -2411,20 +2436,20 @@
             <div class="footer_header">
                 <div class="footer_header_text">
                     <h3 class="footer_header_text_h3">
-                        Пока вы отдыхаете, наш бот работает
+                        While You are Resting, Our AI Crypto Bot is Working
                     </h3>
                     <div class="footer_header_text_body body">
-                        Профессиональная платформа для алгоритмической и ручной торговли криптовалютами
+                        Our platform provides professional algorithmic and manual trading of cryptocurrencies.
                     </div>
                 </div>
-                <a href="https://app.tradecoinai.com/login" target="_blank"> <button class="footer_header_button">
-                        Подключится
+                <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button class="footer_header_button">
+                        Connect now
                     </button></a>
             </div>
             <div class="footer_content">
                 <div class="footer_content_logo">
 
-                    <img alt="logo" src="img/logo.svg" width="73" height="136">
+                    <img alt="logo" src="/img/logo.svg" width="73" height="136">
                     <div class="footer_content_logo_text">
                         TradeCoinAi
                     </div>
@@ -2435,10 +2460,10 @@
                     </div>
                     <div class="footer_content_navigation_elements">
                         <div class="footer_content_navigation_elements_element">
-                            Choose algoritm
+                            Choose Algorithm
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Why to trust us
+                            Why trust us
                         </div>
                         <div class="footer_content_navigation_elements_element">
                             Latest transactions
@@ -2460,7 +2485,7 @@
                             <a href="./policy.html">Privacy Policy</a>
                         </div>
                         <div class="footer_content_documents_elements_element">
-                            Terms &amp; Conditions
+                            <a href="./terms.html">Terms & Conditions</a>
                         </div>
                     </div>
                 </div>
@@ -2472,35 +2497,84 @@
                 <div class="footer_footer_soc_net">
 
                     <a href="https://twitter.com/TradeCoinAI" target="_blank"><img alt="twitter"
-                            class=" footer_footer_soc_net_img" src="img/soc_net/twitter.svg" width="22" height="18"></a>
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/twitter.svg" width="22"
+                            height="18"></a>
 
                     <a target="_blank" href="https://t.me/tradecoinai"> <img alt="telegram"
-                            class=" footer_footer_soc_net_img" src="img/soc_net/telegram.svg" width="21"
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/telegram.svg" width="21"
                             height="18"></a>
 
                     <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
-                            class=" footer_footer_soc_net_img" src="img/soc_net/discord.svg" width="20" height="20"></a>
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/discord.svg" width="20"
+                            height="20"></a>
 
 
                 </div>
             </div>
         </div>
     </footer>
-    <script
-        src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
-    <script src="js/script.js"></script>
 
-    <!-- Google tag (gtag.js) -->
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RWWHES2VQ"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+    <script src="js/scriptEN.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        document.addEventListener("DOMContentLoaded", function (event) {
+            setTimeout(() => {
+                console.log('meow')
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
 
-        gtag('config', 'G-4RWWHES2VQ');
+                gtag('config', 'G-4RWWHES2VQ');
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-PG2PMMF');
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '675649941045710');
+                fbq('track', 'PageView');
+
+            }, 2000)
+        });
+
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=675649941045710&ev=PageView&noscript=1" />
+    </noscript>
+    <script>
+        if (window.innerWidth > 550) {
+            document.getElementById('lb1').innerHTML = '<div class="lb1_light_el1 free_image"><img width="1600" height="1600" alt="fone light" id="el1usp" class="lb1_light_el1_img"   src="/img/usp_images/el1.webp"></div> <div class="lb1_light_line free_image "> <img width="2294" height="388" alt="fone line fade" src="/img/usp_images/line.webp"></div>   <div class="lb1_light_el2 free_image">  <img width="1304" height="1285" alt="fone light fade" src="/img/usp_images/el2.webp"></div>';
 
+            document.getElementById('usp_images').innerHTML = '<div class="usp_images_chart free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/chart.webp" width="747" height="575" alt="chart"class="fade usp_images_chart_img" loading="lazy"></picture></div><div class="usp_images_man_with_notebook free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/man_with_notebook.webp" width="739" height="576"alt="man with notebook" class="usp_images_man_with_notebook_img" onload="hide_loader()"></picture></div><div class="usp_images_eth free_image"><div class="usp_images_eth_button" aria-label="Eth button"><img src="/img/usp_images/eth.svg" width="23" height="24" alt="eth"class=" fade usp_images_eth_button_img"></div></div><div class="usp_images_ai free_image"><div class="usp_images_ai_button inter">Ai</div></div><div class="usp_images_usdt free_image"><div class="usp_images_usdt_button" aria-label="Usdt button"><img src="/img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"class=" fade usp_images_usdt_button_img"></div></div><div class="usp_images_stat free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"class="fade usp_images_stat_img" loading="lazy"></picture></div>';
+
+
+        }
+
+        if (window.innerWidth < 551) {
+            document.getElementById('usp_phone_images').innerHTML = '<img src="/img/usp_images/man_with_notebook_small.webp" width="521" height="502" alt="man with notebook" class="usp_phone_images_man" style="margin-left: -90px;">';
+        }
+        document.getElementById('lang_changer_block').onclick = () => {
+            document.getElementById('lang_changer').classList.toggle('dnone')
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,2385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="description"
+        content="Проверенные торговые боты для фьючерскной торговли для ByBit на основе AI от TradeCoincAI ⭐️ Круглосуточная работа ✔️ Анализ 🔏 Безопасность ⚡️ Стабильный заработок">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeCoinAi — Подключиться к торговым ботам AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="img/usp_images/man_with_notebook_mob.webp">
+
+
+
+    <style>
+        #loader {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 1);
+            position: fixed;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            transition: 0.6s ease-out;
+            opacity: 1;
+
+        }
+
+        #loader svg {
+            margin-top: 40vh;
+            width: 100px;
+            height: 100px;
+            animation: loader 1s infinite cubic-bezier(0.5, 0, 0.5, 1);
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            80% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.2s
+        }
+
+        .lozad {
+            opacity: 0
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        header {
+            display: block
+        }
+
+        html,
+        body,
+        div,
+        h1,
+        h2,
+        a,
+        img,
+        header,
+        button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+            color: #fff
+        }
+
+        .dnone {
+            display: none !important
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        body {
+            background: #090a0b
+        }
+
+        .secure {
+            margin-top: 34px;
+            display: flex;
+            column-gap: 15px
+        }
+
+        .secure_medium15,
+        .secure_img {
+            margin: auto 0
+        }
+
+        .secure_medium15 {
+            color: #b5b6b6;
+            padding-right: 15px
+        }
+
+        @media (max-width:550px) {
+            .secure_medium15 {
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        .free_image {
+            width: 0px;
+            height: 0px;
+            position: relative
+        }
+
+        .container {
+            width: 1085px;
+            margin: 0 auto
+        }
+
+        @media (max-width:1150px) {
+            .container {
+                width: 100%;
+                padding: 0px 15px
+            }
+        }
+
+        .btn {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            .btn {
+                font-size: 14px;
+                line-height: 17px
+            }
+        }
+
+        .body {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px
+        }
+
+        @media (max-width:550px) {
+            .body {
+                font-size: 14px;
+                line-height: 22px
+            }
+        }
+
+        .colored_text {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: .205em;
+            text-transform: uppercase
+        }
+
+        @media (max-width:550px) {
+            .colored_text {
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 53px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            h1 {
+                font-size: 26px;
+                line-height: 31px
+            }
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: -0.02em
+        }
+
+        @media (max-width:550px) {
+            h2 {
+                font-size: 24px;
+                line-height: 29px
+            }
+        }
+
+        .medium15 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px
+        }
+
+        .regular14 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px
+        }
+
+        .medium12 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: -0.02em
+        }
+
+        .header {
+            position: relative;
+            z-index: 2
+        }
+
+        .header_mobile {
+            overflow: hidden;
+            height: 305px;
+            position: absolute;
+            width: 100%;
+            margin: 0px -15px;
+            padding: 0px 15px
+        }
+
+        .header_pc {
+            height: 80px;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .header_navigation {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px
+        }
+
+        .header_navigation_logo {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo {
+                column-gap: 10px
+            }
+        }
+
+        .header_navigation_logo_img {
+            margin: auto 0
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo_img img {
+                width: 28px;
+                height: 28px
+            }
+        }
+
+        .header_navigation_logo_text {
+            margin: auto 0;
+            font-weight: 700;
+            font-size: 18.2642px;
+            line-height: 22px
+        }
+
+        @media (max-width:550px) {
+            .header_navigation_logo_text {
+                font-size: 16.0725px;
+                line-height: 19px
+            }
+        }
+
+        .header_navigation_links {
+            display: flex;
+            justify-content: space-between;
+            margin: auto 0;
+            column-gap: 20px
+        }
+
+        @media (max-width:850px) {
+            .header_navigation_links {
+                display: none
+            }
+        }
+
+        .header_navigation_links_a {
+            color: #b5b6b6
+        }
+
+        .header_buttons {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 12px
+        }
+
+        .header_buttons_log_reg,
+        .header_buttons_burger {
+            margin: auto 0
+        }
+
+        .header_buttons_burger {
+            display: none;
+            padding-left: 20px
+        }
+
+        @media (max-width:850px) {
+            .header_buttons_burger {
+                display: block
+            }
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_burger {
+                padding-left: 10px
+            }
+        }
+
+        .header_buttons_burger_btn {
+            background: none
+        }
+
+        .header_buttons_log_reg {
+            display: flex;
+            column-gap: 8px
+        }
+
+        @media (max-width:450px) {
+            .header_buttons_log_reg {
+                display: none
+            }
+        }
+
+        .header_buttons_log_reg_btn_log {
+            width: 122px;
+            height: 43px;
+            background: rgba(255, 255, 255, .1);
+            border-radius: 65px
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_log_reg_btn_log {
+                width: 95px;
+                height: 36px
+            }
+        }
+
+        .header_buttons_log_reg_btn_reg {
+            width: 122px;
+            height: 43px;
+            background: #3763ff;
+            border-radius: 65px
+        }
+
+        @media (max-width:550px) {
+            .header_buttons_log_reg_btn_reg {
+                width: 95px;
+                height: 36px
+            }
+        }
+
+        .lb1 {
+            width: 100%;
+            overflow: hidden
+        }
+
+        .lb1_light {
+            display: flex;
+            justify-content: center
+        }
+
+        .lb1_light_el1 {
+            top: -160px;
+            z-index: 1;
+            left: -1074px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_el1 {
+                top: -60px;
+                left: -601px;
+                z-index: 0
+            }
+        }
+
+        .lb1_light_el2 {
+            top: 60px;
+            left: -226px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_el2 {
+                display: none
+            }
+        }
+
+        .lb1_light_line {
+            top: 340px;
+            z-index: 0;
+            left: -1005px
+        }
+
+        @media (max-width:550px) {
+            .lb1_light_line {
+                display: none
+            }
+        }
+
+        .usp {
+            padding-top: 90px;
+            padding-bottom: 350px;
+            width: 100%;
+            overflow: hidden
+        }
+
+        @media (max-width:700px) {
+            .usp {
+                padding-bottom: 510px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp {
+                padding-top: 42px
+            }
+        }
+
+        .usp_container {
+            display: flex
+        }
+
+        .usp_images {
+            position: relative
+        }
+
+        .usp_images_man_with_notebook {
+            top: 152px;
+            left: 126px;
+            z-index: 3
+        }
+
+        @media (max-width:900px) {
+            .usp_images_man_with_notebook {
+                top: 200px
+            }
+        }
+
+        @media (max-width:650px) {
+            .usp_images_man_with_notebook {
+                left: 50px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_man_with_notebook {
+                top: 340px;
+                left: -160px
+            }
+
+            .usp_images_man_with_notebook_img {
+                width: 550px;
+                height: 428px
+            }
+        }
+
+        .usp_images_chart {
+            top: -93px;
+            left: 401px
+        }
+
+        @media (max-width:550px) {
+            .usp_images_chart {
+                top: 241px;
+                left: 53px
+            }
+
+            .usp_images_chart_img {
+                width: 384px;
+                height: 295px
+            }
+        }
+
+        .usp_images_eth {
+            z-index: 3;
+            top: 196px;
+            left: 752px
+        }
+
+        @media (max-width:550px) {
+            .usp_images_eth {
+                top: 353px;
+                left: 333px
+            }
+        }
+
+        .usp_images_eth_button {
+            padding: 7px 8px 3px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, .46);
+            backdrop-filter: blur(10px);
+            border-radius: 12.3257px;
+            transform: rotate(17.09deg)
+        }
+
+        @media (max-width:550px) {
+            .usp_images_eth_button {
+                border-radius: 12.6919px;
+                padding: 6px 8px 4px
+            }
+
+            .usp_images_eth_button_img {
+                width: 16px;
+                height: 16px
+            }
+        }
+
+        .usp_images_ai {
+            z-index: 3;
+            top: 128px;
+            left: 899px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_ai {
+                top: 200px;
+                left: 400px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_ai {
+                top: 305px;
+                left: 250px
+            }
+        }
+
+        .usp_images_ai_button {
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: -11px -18px 38px #6735f4, 18px 39px 47px 1px rgba(0, 0, 0, .64);
+            backdrop-filter: blur(5.5px);
+            border-radius: 18px;
+            transform: rotate(13.17deg);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            color: #fff
+        }
+
+        @media (max-width:550px) {
+            .usp_images_ai_button {
+                font-size: 18px;
+                box-shadow: -6.30289px -10.3138px 21.7736px #6735f4, 10.3138px 22.3466px 26.9305px .57299px rgba(0, 0, 0, .64);
+                border-radius: 10.3138px
+            }
+        }
+
+        .usp_images_usdt {
+            z-index: 3;
+            top: 416px;
+            left: 325px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_usdt {
+                top: 356px
+            }
+        }
+
+        @media (max-width:650px) {
+            .usp_images_usdt {
+                top: 280px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_usdt {
+                top: 487px;
+                left: 4px
+            }
+        }
+
+        .usp_images_usdt_button {
+            padding: 12px 12px 6px;
+            background: rgba(255, 255, 255, .1);
+            box-shadow: -7px 39px 47px rgba(0, 0, 0, .46);
+            border-radius: 18px;
+            transform: rotate(-14.5deg)
+        }
+
+        @media (max-width:550px) {
+            .usp_images_usdt_button {
+                border-radius: 12.6919px;
+                padding: 10px 10px 6px
+            }
+
+            .usp_images_usdt_button_img {
+                width: 23px;
+                height: 23px
+            }
+        }
+
+        .usp_images_stat {
+            z-index: 2;
+            top: 344px;
+            left: 723px
+        }
+
+        @media (max-width:900px) {
+            .usp_images_stat {
+                top: 478px;
+                left: 17px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_images_stat {
+                z-index: 3;
+                top: 597px;
+                left: 126px
+            }
+
+            .usp_images_stat_img {
+                width: 322px;
+                height: 190px
+            }
+        }
+
+        .usp_text {
+            position: relative;
+            z-index: 3
+        }
+
+        .usp_text_guarant {
+            display: flex;
+            justify-content: left;
+            column-gap: 14px
+        }
+
+        .usp_text_guarant_medium15 {
+            margin: auto 0;
+            color: #b5b6b6;
+            width: 500px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_guarant_medium15 {
+                width: 100%;
+                font-size: 12px;
+                line-height: 15px
+            }
+        }
+
+        .usp_text_h1 {
+            margin-top: 10px;
+            width: 530px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_h1 {
+                width: 100%
+            }
+        }
+
+        .usp_text_body {
+            color: #b5b6b6;
+            width: 450px
+        }
+
+        @media (max-width:900px) {
+            .usp_text_body {
+                width: 380px
+            }
+        }
+
+        @media (max-width:550px) {
+            .usp_text_body {
+                width: 100%
+            }
+        }
+
+        .usp_text_button {
+            width: 300px;
+            padding: 0px 15px;
+            height: 57px;
+            background: #d9e44f;
+            border-radius: 65px;
+            color: #1c1d1e;
+            margin-top: 32px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_button {
+                width: 200px;
+                margin-top: 24px;
+                max-width: 300px;
+                min-width: 160px;
+                height: 48px
+            }
+        }
+
+        .usp_text_btns_mobile_download {
+            margin-top: 32px;
+            display: flex;
+            column-gap: 8px
+        }
+
+        @media (max-width:550px) {
+            .usp_text_btns_mobile_download {
+                display: none
+            }
+        }
+
+        .usp_text_btns_mobile_download_button {
+            width: 150px;
+            height: 43px;
+            background: rgba(255, 255, 255, .15);
+            border-radius: 7px
+        }
+
+        .about_us {
+            margin-top: 400px
+        }
+
+        .about_us {
+            margin-top: 20px;
+            width: 100%;
+            padding: 0px 20px;
+            position: relative;
+            z-index: 2
+        }
+
+        @media (max-width:550px) {
+            .about_us {
+                padding: 0px 5px
+            }
+        }
+
+        .about_us_inner {
+            width: 100%;
+            border-radius: 32px;
+            background: rgba(55, 99, 255, .1);
+            padding-top: 65px;
+            padding-bottom: 150px;
+            overflow: hidden
+        }
+
+        @media (max-width:900px) {
+            .about_us_inner {
+                padding-bottom: 210px
+            }
+        }
+
+        @media (max-width:550px) {
+            .about_us_inner {
+                padding-top: 32px
+            }
+        }
+
+        .about_us_colored_text {
+            text-align: center;
+            background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            background-clip: text;
+            text-fill-color: rgba(0, 0, 0, 0)
+        }
+
+        @media (max-width:550px) {
+            .about_us_colored_text {
+                text-align: left
+            }
+        }
+
+        .about_us_h2 {
+            text-align: center;
+            margin-top: 12px
+        }
+
+        @media (max-width:550px) {
+            .about_us_h2 {
+                text-align: left
+            }
+        }
+
+        .security_img_light {
+            display: none
+        }
+
+        @media (max-width:1000px) {
+            .security_img_light {
+                display: block;
+                left: -365px;
+                top: -77px
+            }
+
+            .security_img_light_img {
+                width: 800px;
+                height: 535px
+            }
+        }
+
+        .short {
+            color: #ff5f72
+        }
+
+        .transactions_mobile_elements {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            .transactions_mobile_elements {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 10px
+            }
+        }
+
+        .transactions_mobile_elements_button {
+            max-width: 460px;
+            width: 100%;
+            background: #3763ff;
+            border-radius: 65px;
+            height: 48px;
+            margin-top: 24px
+        }
+
+        .transactions_mobile_elements_element {
+            background: rgba(255, 255, 255, .03);
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 460px;
+            width: 100%;
+            margin-top: 12px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 16px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage_pair {
+            display: flex;
+            column-gap: 12px
+        }
+
+        .transactions_mobile_elements_element_pair_and_leverage_pair_medium15,
+        .transactions_mobile_elements_element_pair_and_leverage_pair_img {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, .05);
+            padding-bottom: 8px
+        }
+
+        .transactions_mobile_elements_element_info_element {
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between
+        }
+
+        .transactions_mobile_elements_element_info_element_name,
+        .transactions_mobile_elements_element_info_element_value {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element_name,
+        .transactions_mobile_elements_element_info_element_value {
+            opacity: .7
+        }
+
+        .transactions_mobile_elements_element_info_element_priceprofit {
+            opacity: 1
+        }
+
+        .transactions_mobile_elements_element_info_element_percent_wrapper {
+            display: flex;
+            column-gap: 16px
+        }
+
+        .transactions_mobile_elements_element_info_element_percent_wrapper .medium15 {
+            margin: auto 0
+        }
+
+        .transactions_mobile_elements_element_info_element_percent {
+            background: #1f844a;
+            text-shadow: 0px 0px 5px #000;
+            border-radius: 6px;
+            padding: 4px 12px
+        }
+
+        .chance_images_rocket_img_mob {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            .chance_images_rocket_img {
+                width: 1000px;
+                height: 931px
+            }
+        }
+
+        @media (max-width:550px) {
+            .chance_images_rocket_img_mob {
+                display: block
+            }
+        }
+
+        .btn {
+            font-family: "Inter Tight"
+        }
+
+        .body {
+            font-family: "Inter"
+        }
+
+        .colored_text {
+            font-family: "Inter Tight"
+        }
+
+        h1 {
+            font-family: "Inter Tight"
+        }
+
+        h2 {
+            font-family: "Inter Tight"
+        }
+
+        .medium15 {
+            font-family: "Inter"
+        }
+
+        .regular14 {
+            font-family: "Inter"
+        }
+
+        .medium12 {
+            font-family: "Inter"
+        }
+    </style>
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
+    </noscript>
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg">
+
+    <script>
+        function hide_loader() {
+            document.getElementById('loader').style.opacity = 0;
+            setTimeout(() => { document.getElementById('loader').classList.add('dnone') }, 600)
+        }
+        setTimeout(hide_loader, 1000)
+    </script>
+</head>
+
+<body id="body">
+
+    <div id="loader">
+        <svg width="140" height="140" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M24.0355 13.6334L26.4021 16L16 26.4021L5.59791 16L8.112 13.4859L5.31339 10.6866L0 16L16 32L32 16L26.8341 10.8341L24.0355 13.6334Z"
+                fill="url(#paint0_linear_4_186)" />
+            <path d="M17.8254 1.82539L16 0L14.1746 1.82539L16 3.65078L17.8254 1.82539Z"
+                fill="url(#paint1_linear_4_186)" />
+            <path
+                d="M18.7986 2.79861L16 5.59791L13.2014 2.79861L7.18191 8.81739L9.98122 11.6167L13.8365 7.76139L16 26.4021L18.1635 7.76139L22.1663 11.7642L24.9649 8.96487L18.7986 2.79861Z"
+                fill="url(#paint2_linear_4_186)" />
+            <defs>
+                <linearGradient id="paint0_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+    </div>
+
+    <div class="lb1">
+        <div class="lb1_light" id="lb1">
+            <div class="lb1_light_line free_image ">
+                <img width="2294" height="388" alt="fone line" class="fade" src="img/usp_images/line.webp">
+            </div>
+            <div class="lb1_light_el1 free_image ">
+                <img onload="hide_loader()" width="1600" height="1600" alt="fone light" class="fade lb1_light_el1_img"
+                    src="img/usp_images/el1.webp" loading="lazy">
+            </div>
+            <div class="lb1_light_el1_mobile free_image ">
+                <img width="1000" height="1000" alt="fone light" class="fade lb1_light_el1_img"
+                    src="img/usp_images/el1.svg">
+            </div>
+            <div class="lb1_light_el2 free_image">
+                <img width="1304" height="1285" alt="fone light" class="fade" src="img/usp_images/el2.webp">
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="header_container container">
+                <div class="header_pc">
+                    <div class="header_navigation">
+                        <a href="https://tradecoinai.com/" class="header_navigation_logo">
+                            <div class="header_navigation_logo_img">
+
+                                <img width="32" height="32" alt="logo" class="lozad fade" data-src="img/logo.svg">
+                            </div>
+                            <div class="header_navigation_logo_text inter">
+                                TradeCoinAi
+                            </div>
+                        </a>
+                        <div class="header_navigation_links">
+                            <a href="./#all_trades" class="header_navigation_links_a medium15">Все сделки</a>
+                            <a href=./#how_it_works" class="header_navigation_links_a medium15">Как это работает</a>
+                            <a href="./#pricing" class="header_navigation_links_a medium15">Цены</a>
+                            <a href="./#trading" class="header_navigation_links_a medium15">О нас</a>
+                        </div>
+                    </div>
+                    <div class="header_buttons">
+                        <div class="header_buttons_log_reg">
+                            <a href="https://app.tradecoinai.com/auth/login"> <button
+                                    class="header_buttons_log_reg_btn_log btn">
+                                    Login
+                                </button></a>
+                            <a href="https://app.tradecoinai.com/auth/signup"><button
+                                    class="header_buttons_log_reg_btn_reg btn">
+                                    Sign up
+                                </button></a>
+                        </div>
+                        <div class="header_buttons_burger">
+                            <button class="header_buttons_burger_btn fade" id="burger_menu_button">
+
+                                <img alt="mobile menu opener" id="mobile_menu_img_burger" src="img/burger.svg"
+                                    width="20" height="14">
+
+                                <img alt="mobile menu closer" class="dnone" id="mobile_menu_img_cross"
+                                    src="img/cross.svg" width="24" height="24">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_mobile" id="mobile_menu" style="height: 0px">
+                    <div class="header_mobile_menu_element">
+                        <a href="./#all_trades" class="header_mobile_menu_element_a medium15">Все сделки</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#how_it_works" class="header_mobile_menu_element_a medium15">Как это работает</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#pricing" class="header_mobile_menu_element_a medium15">Цены</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="./#trading" class="header_mobile_menu_element_a medium15">О нас</a>
+                    </div>
+                    <div class="header_mobile_menu_element header_mobile_menu_element_log_reg">
+                        <div class="header_mobile_menu_element_log_reg_buttons">
+                            <a href="https://app.tradecoinai.com/auth/login"><button
+                                    class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
+                                    Login
+                                </button></a>
+                            <a href="https://app.tradecoinai.com/auth/signup"><button
+                                    class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
+                                    Sign up
+                                </button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="lb3">
+
+        <div class="faq">
+            <div class="faq_container container">
+                <div class="faq_header">
+                    <h2 class="faq_header_h2">
+                        Privacy Policy
+                    </h2>
+                    <br><br>
+                </div>
+
+                <br>Terms of Use
+                <br>
+                <br>These Terms of Use come into effect on April 4, 2023.
+                <br>
+                <br>1. INTRODUCTION
+                <br>1.1
+                <br>The service is provided to you by Black Dolphin OÜ, a company incorporated under the laws of the
+                Republic of Estonia ("Black Dolphin," "we," "us," or "our") through the website located at
+                https://tradecoinai.io, mobile application(s) TradeCoinAi, application program interface(s) (excluding
+                TradeCoinAi API as described in Section 6.2.6), and features more specifically described in Section 6
+                below (excluding TradeCoinAi API) (collectively referred to as the "Software") for the purpose of
+                providing tools to manage personal cryptocurrency holdings. The terms "you" or "Client" refer to any
+                person visiting or otherwise accessing or using the Software.
+                <br>
+                <br>1.2
+                <br>These Terms of Use ("Terms of Use") and the Privacy Policy (as defined below) govern your access to
+                and use of the Software and constitute the entire, complete, and binding agreement between you and
+                TradeCoinAi with respect to the Software.
+                <br>
+                <br>1.3
+                <br>You should also review our Privacy Policy at https://tradecoinai.com/privacy-policy, which is
+                incorporated by reference into these Terms of Use. If you do not wish to comply with these Terms of Use
+                or the terms of our Privacy Policy, please do not access or use the Software.
+                <br>
+                <br>1.4
+                <br>THESE TERMS OF USE CONTAIN VERY IMPORTANT INFORMATION REGARDING YOUR RIGHTS AND OBLIGATIONS, AS WELL
+                AS CONDITIONS, LIMITATIONS, AND EXCLUSIONS. PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE ACCESSING OR
+                USING THE SOFTWARE. BY USING THE SOFTWARE IN ANY WAY AND FOR ANY PURPOSE, WITH OR WITHOUT A CLIENT
+                ACCOUNT, FROM ANY DEVICE AND LOCATION, YOU AGREE AND CONFIRM THAT:
+                <br>
+                <br>1.4.1
+                <br>You have read and understood these Terms of Use, and you accept and agree to be bound by these Terms
+                of Use as they appear on each respective date of your use of the Software.
+                <br>
+                <br>1.4.2
+                <br>You undertake all obligations set forth herein.
+                <br>
+                <br>1.4.3
+                <br>You have reached the age of majority and have the legal capacity to use the Software.
+                <br>
+                <br>1.4.4
+                <br>You are not subject to any jurisdiction that prohibits the use of such software.
+                <br>
+                <br>1.4.5
+                <br>You use the Software at your own discretion and risk.
+                <br>
+                <br>2. SUBJECT OF TERMS OF USE
+                <br>2.1
+                <br>These Terms of Use apply between TradeCoinAi and the Client using the Software. The Software is
+                provided to you through the website https://tradecoinai.com on a computer or mobile device.
+                <br>
+                <br>2.2
+                <br>These Terms of Use constitute a legally binding agreement between you and TradeCoinAi and govern the
+                use and provision of the Software. The Software is provided to individuals and legal entities with
+                existing accounts on the exchange and is intended to facilitate more efficient management of personal
+                cryptocurrency holdings. You are not entitled to use the Software in any way to manage the
+                cryptocurrency assets of third parties.
+                <br>
+                <br>2.3
+                <br>TradeCoinAi may, from time to time, update or revise these Terms of Use by notifying you of such
+                updates or changes to the Software. Such changes to the Terms of Use will take effect on the date of the
+                "Last Updated" specified at the beginning of these Terms of Use. Each time you access the Software, you
+                agree to comply with the most current version of the Terms of Use. You agree to periodically review
+                these Terms of Use. If you do not agree to these Terms of Use or any amended version of these Terms of
+                Use, your only recourse is to discontinue your use of the Software.
+                <br>
+                <br>3. REGISTRATION
+                <br>3.1
+                <br>To register and use the Software, you must be at least eighteen (18) years old.
+                <br>
+                <br>3.2
+                <br>If you are accepting these Terms of Use on behalf of a legal entity (i.e., a company or other legal
+                entity), you represent that you have the authority to bind that legal entity to these Terms of Use and
+                that you have provided access to all email addresses, passwords, and credentials for accessing the
+                Software to other authorized representatives of the legal entity. If you do not have such authority, you
+                are not entitled to access or use the Software.
+                <br>
+                <br>3.3
+                <br>Before registering, you are solely responsible for ensuring that the use of the Software in your
+                jurisdiction is allowed under applicable law. If such use is prohibited by law, you are not entitled to
+                access or use the Software.
+                <br>
+                <br>3.4
+                <br>To register, create a Client Account, and access the Software, you must follow the steps below:
+                <br>
+                <br>3.4.1
+                <br>Sign up. Fill out the registration form, providing your email address and password. You will have
+                the opportunity to review the Terms of Use and Privacy Policy. You may access the documents through the
+                provided links and acknowledge them. Before clicking "Sign Up" to proceed with the registration process,
+                you must confirm your acceptance of these Terms of Use and your review of our Privacy Policy.
+                Additionally, you must confirm that you are at least 18 years old. After clicking "Sign Up," your
+                account ("Client Account") is created. The latter method requires you to also comply with the terms and
+                privacy policy of such third-party service.
+                <br>
+                <br>3.4.2
+                <br>Once TradeCoinAi provides you with a Client Account to access and use the Software, the registration
+                process will be completed. The Client Account is provided to you free of charge. TradeCoinAi has the
+                right to refuse to provide you with a Client Account at its discretion, and in such case, you must not
+                use the Software.
+                <br>
+                <br>3.4.3
+                <br>You may interrupt the registration process at any time and/or suspend the process and resume it
+                later. You may review for any errors in the entered information and, if necessary, correct them by
+                modifying the input.
+                <br>
+                <br>3.4.4
+                <br>After creating your Client Account, you will be prompted to complete the profile of your Client
+                Account, and you will be guided through various steps, including connecting your Client Account to an
+                existing cryptocurrency exchange account.
+                <br>
+                <br>3.4.5
+                <br>Connecting to a cryptocurrency exchange account. To utilize the features of the Software, you must
+                have an account on a cryptocurrency exchange ("Exchange Account") (e.g., Binance, Huobi, Coinbase,
+                etc.). If you do not have an exchange account, you may choose to register directly on the website of the
+                cryptocurrency exchange provider or through the link provided in our "My Exchanges" tab, which will
+                direct you to the website of the selected cryptocurrency exchange provider. In any case, you acknowledge
+                that you are entering into separate legal relations with the chosen cryptocurrency exchange provider,
+                and you are bound by their specific terms.
+                <br>
+                <br>To connect your exchange account to your Client Account, you must log into your account, create an
+                API key and API secret, then return to your dashboard and input the API key and API secret. Before
+                clicking "Connect Exchange," you must confirm that the Exchange Account belongs to you personally and
+                that you are not connecting someone else's account. Once you complete this step, your account will be
+                displayed on the tab.
+                <br>
+                <br>Depending on the subscription type you choose (for more information on Plans, refer to Section 7),
+                you can connect either one exchange account from one cryptocurrency exchange or multiple exchange
+                accounts from one cryptocurrency exchange to your Client Account. Subject to the above, you may link
+                exchange account(s) from multiple cryptocurrency exchanges to your Client Account.
+                <br>
+                <br>Under certain circumstances, we may remove API keys for security purposes, which will require you to
+                reconnect to your exchange account.
+                <br>
+                <br>3.5
+                <br>During the registration process, you will be required to provide us with certain information, such
+                as your email address and password. For further information about the data we collect, please refer to
+                our Privacy Policy at https://tradecoinai.com/privacy-policy. You must provide accurate, current, and
+                complete information about yourself and promptly update all information in your Client Account to ensure
+                that your Client Account is accurate, current, and complete. You may update or change the settings of
+                your Client Account at any time.
+                <br>
+                <br>3.6
+                <br>Depending on the exchange account you use, we may automatically register you to participate in
+                trading competitions organized for your benefit. Such competitions do not require your active
+                participation in the contest or any additional actions. Registration for trading competitions does not
+                cause any financial harm to you. When we organize trading competitions, we send you information in
+                advance about the terms and details of the competition. We may request additional data for prize
+                distribution, which is voluntary, and you have the right to refuse, but in such case, your prize will be
+                forfeited.
+                <br>
+                <br>4. USE OF YOUR ACCOUNT TO ACCESS THE SOFTWARE
+                <br>4.1 Purpose and Permitted Use of Your Client Account and Software
+                <br>
+                <br>4.1.1
+                <br>You may use the Software only for the intended purpose and permitted use. You acknowledge that
+                depending on the Plan you choose, the purpose of your Client Account is to provide you with access to
+                the Software tools for managing one or multiple exchange accounts. Any use for other purposes or
+                specific misuse of the Software is not allowed. You agree not to use your Client Account and the
+                Software, in particular, to:
+                <br>
+                <br>4.1.1.1
+                <br>upload, post, email, transmit, or otherwise make available any content that is unlawful, harmful,
+                threatening, abusive, harassing, fraudulent, disturbing, defamatory, vulgar, obscene, invasive of
+                another person's privacy, hateful, or racist, glorifies violence, is pornographic, unethical, or
+                otherwise prohibited or undesirable;
+                <br>
+                <br>4.1.1.2
+                <br>impersonate any person or entity or falsely state or otherwise misrepresent your affiliation with a
+                person or entity;
+                <br>
+                <br>4.1.1.3
+                <br>transmit or otherwise make available any content that you do not have the right to make available,
+                which contains software viruses or any other computer code, files, or programs designed to interrupt,
+                destroy, or limit the functionality of any computer software or hardware or telecommunications
+                equipment;
+                <br>
+                <br>4.1.1.4
+                <br>engage in any activity aimed at reverse engineering, disassembling, decompiling, hacking, or
+                extracting any software used to operate the Software;
+                <br>
+                <br>4.1.1.5
+                <br>trade on platforms to which you are not supposed to have access;
+                <br>
+                <br>4.1.1.6
+                <br>interfere with or disrupt the operation of the Software or servers or networks connected to the
+                Software, including, but not limited to, hacking or bypassing any measures we may use to prevent
+                unauthorized access to the Software; and/or
+                <br>
+                <br>4.1.1.7
+                <br>violate any applicable national or international rules and laws, as well as the rights of third
+                parties.
+                <br>
+                <br>4.1.2
+                <br>Failure to comply with the limits of the purpose and permitted use of your Client Account and
+                Software (including in the event of us detecting any activity related to managing multiple exchange
+                accounts from the same cryptocurrency exchange accounts through your personal Client Account without
+                subscribing to the corresponding Plan) shall be deemed a material breach of these Terms of Use.
+                TradeCoinAi has the right - without prejudice to any other rights - to terminate the operation of your
+                Client Account in accordance with Sections 12.3.2 and 12.3.3. You may not use the Software if we have
+                deleted your Client Account or otherwise blocked you.
+                <br>
+                <br>4.2 Client Account Confidentiality
+                <br>
+                <br>4.2.1
+                <br>You acknowledge that your Client Account is personal to you, and you must not provide any other
+                person with access to the Software or its parts using your email address, password, or other security
+                information.
+                <br>
+                <br>4.2.2
+                <br>You are responsible for maintaining the confidentiality of your information and for monitoring and,
+                if necessary, limiting access to your devices. Any email address, password, or other information chosen
+                by you or provided to you as part of our security procedures must be treated as confidential, and you
+                must not disclose it to any other individual or legal entity. You should exercise caution when accessing
+                your Client Account from a public or shared computer to prevent others from viewing or recording your
+                password or other account information. You agree to log out of your Client Account at the end of each
+                session.
+                <br>
+                <br>4.2.3
+                <br>You are responsible for all actions that occur under your Client Account or from your devices
+                regarding the Software and your Client Account, including any unauthorized use of your Client Account.
+                TradeCoinAi will use reasonable and standard security measures to protect you from unauthorized access
+                to your Client Account. You agree to promptly notify us of any unauthorized access or use of your Client
+                Account or any other security breach. If you fail to notify TradeCoinAi properly, TradeCoinAi will not
+                be able to prevent such unauthorized access or other security breach or take appropriate security
+                measures.
+                <br>
+                <br>4.2.4
+                <br>To enhance the security of your Client Account, you are provided with the option to set up
+                two-factor authentication using the Google Authenticator in the "Settings" section of your Client
+                Account.
+                <br>
+                <br>4.2.5
+                <br>You acknowledge and agree that to the extent permitted by applicable law, we shall not be liable,
+                directly or indirectly, for any damages or losses caused or alleged to be caused or related to
+                unauthorized use of your Client Account arising from your failure to maintain the confidentiality of
+                your password, if we have fulfilled our obligation to apply reasonable and standard security measures.
+                <br>
+                <br>5. TRIAL ACCOUNT
+                <br>5.1
+                <br>If you choose to use the free trial version, we will provide you with the Software on a trial basis
+                ("Trial Version") free of charge. By accessing the Software, you agree to comply with our Terms of Use.
+                <br>
+                <br>5.2
+                <br>To gain Trial access to the Software, you must go through the registration process described in
+                Section 3. You may terminate the Trial Version at any time and for any reason in the account settings,
+                where we have provided you with this option.
+                <br>
+                <br>5.3
+                <br>The Trial Version will commence upon our approval of your Trial Version and will end on the earlier
+                of: (a) the expiration of the free trial period for which you registered, or (b) the start date of any
+                purchased Subscription (as defined in Section 7). Upon the expiration of the Trial Period, any trades
+                you initiated using the Software during the Trial Period will continue, but their completion may take
+                longer, and you will no longer have access to any data you entered into your Client Account.
+                <br>
+                <br>5.4
+                <br>We may terminate your use of the Trial Version and the products and services available in connection
+                with it at any time and for any reason, with or without cause, without prior notice to you, and without
+                any liability or additional obligations of any kind to you or any other party.
+                <br>
+                <br>6. Functional capabilities of a client account
+                <br>
+                <br>6.1
+                <br>Your Client Account provides you with free access to the "All Trades," "Blog," "TradeCoinAi API,"
+                features provided by TradeCoinAi as described in this Section 6.1, and the "Crypto Signal Market," which
+                contains services and content provided by third parties as described in Section 6.3. The specific
+                features of your Client Account will be provided within the chosen Subscription (as defined in Section
+                7) at the time of placing your Purchase Agreement (as defined in Section 7.4).
+                <br>
+                <br>6.2
+                <br>The Software provides you with tools that allow you to manage your cryptocurrency holdings on
+                exchange accounts, including, but not limited to, the following tools:
+                <br>
+                <br>6.2.1
+                <br>TradingView - a major platform for analyzing asset price behavior that allows you to connect an
+                algorithm to one or more indicators of your choice to start receiving alerts and opening trades;
+                <br>
+                <br>6.2.2
+                <br>Dashboard, which tracks the balances of your accounts on different connected platforms and provides
+                a summary of your accounts;
+                <br>
+                <br>6.2.3
+                <br>Portfolios, which allow you to analyze how specific portfolio settings have performed in the past
+                and apply the chosen setting to your existing exchanges;
+                <br>
+                <br>6.2.4
+                <br>TradeCoinAi API, which consists of an application programming interface and corresponding
+                specification documents for establishing electronic connections to third-party services;
+                <br>
+                <br>6.2.5
+                <br>Blog, which provides you with information and news about cryptocurrencies and trading;
+                <br>
+                <br>6.2.6
+                <br>Community, which provides you with chat, customer support, and related services.
+                <br>
+                <br>7. Purchasing a Subscription Plan
+                <br>
+                <br>7.1
+                <br>When registering to receive the Services, you have the option to choose between different
+                subscription plans, i.e., "Basic," "Al Pro," "Al Premium," collectively referred to as "Plans" or
+                "Subscription."
+                <br>
+                <br>7.2
+                <br>Detailed descriptions of TradeCoinAi subscriptions, including prices and features associated with
+                each subscription type, are available on the "Plans" page or in the Help Center. TradeCoinAi reserves
+                the right to modify the subscriptions published on the "Plans" page (e.g., adding or removing plans) at
+                any time. TradeCoinAi will attempt to notify those who may be affected by such actions.
+                <br>
+                <br>7.2.1
+                <br>Subscriptions available on the "Plans" page are governed by these Terms of Use. By accepting these
+                Terms of Use, you also acknowledge your agreement with the terms of the subscription features as
+                described on the "Plans" page.
+                <br>
+                <br>7.3
+                <br>TradeCoinAi reserves the right, at its discretion, to provide Services to Customers based on
+                individual plans ("Individual Plans"). Individual plans will not be displayed on the "Plans" page and
+                will be offered to customers on an individual basis. Individual plans are governed by these Terms of
+                Use.
+                <br>
+                <br>7.4
+                <br>To purchase a subscription other than an Individual Plan, select the subscription you wish to
+                purchase on the "Plans" page of our website or the "Subscription" tab in your Client Account and choose
+                your preferred payment method. All payments made using debit/credit cards and Paypal are processed by
+                our registered seller - cryptocloud.plus. By purchasing a subscription using any of the specified
+                payment methods, you also enter into an agreement with cryptocloud.plus. Your relationship with
+                cryptocloud is governed by cryptocloud's Terms and Conditions, available at
+                https://cryptocloud.plus/legal-buyers. Before clicking the "Pay" button, you must confirm that you
+                accept these Terms of Use and the Privacy Policy. Additionally, you must confirm that you are at least
+                18 years old and agree to receive subscription features at the time of the Purchase Agreement. The
+                selection of the subscription, the subscription period (e.g., month or year), and the provision of your
+                payment information constitute an offer to enter into a contract with TradeCoinAi for the use of
+                Software features provided under the chosen Subscription based on these Terms of Use, as described in
+                Section 3.4 ("Purchase Agreement"). The offer must be accepted by us. We may not accept the offer at our
+                discretion. The Purchase Agreement will be concluded at the moment you receive confirmation from us or
+                when we activate the selected Subscription features, as described below. TradeCoinAi will not store the
+                text of the Purchase Agreement after the conclusion of the Purchase Agreement. However, the text of the
+                Purchase Agreement will be accessible to you on the "Terms of Use" page in a downloadable format. The
+                provisions described in Sections 3.4.2 and 3.4.3 above apply to this Purchase Agreement to the extent
+                not stated otherwise in this Section 7. The term of the Purchase Agreement is the subscription period
+                chosen by you, and the termination provisions of Section 12 apply to it.
+                <br>
+                <br>7.5
+                <br>If you wish to upgrade your Subscription, you can do so at any time on the "Subscription" tab in
+                your Client Account. Your new subscription will start after the payment is processed. Your new
+                Subscription will be activated immediately upon processing your payment, regardless of the remaining
+                time of your old Subscription. Placing an order for a new Subscription will result in the immediate
+                termination of the Purchase Agreement regarding your old Subscription and the conclusion of a new
+                Purchase Agreement for the new Subscription. Any funds you may have remaining from your old Subscription
+                will be calculated towards your new Subscription, meaning you will only pay the difference between your
+                new Subscription payment and the remaining funds unused within the old Subscription. For termination of
+                the Purchase Agreement, refer to Section 12.4.
+                <br>
+                <br>8. Disclaimer of Liability
+                <br>
+                <br>8.1
+                <br>TradeCoinAi PROVIDES SOFTWARE. TradeCoinAi DOES NOT PROVIDE FINANCIAL, INVESTMENT, LEGAL, TAX, OR
+                ANY OTHER PROFESSIONAL ADVICE. TradeCoinAi IS NOT A BROKER, FINANCIAL ADVISOR, INVESTMENT ADVISOR,
+                PORTFOLIO MANAGER, OR TAX ADVISOR. NOTHING IN THE SOFTWARE SHOULD BE CONSTRUED OR INTERPRETED AS
+                OFFERING ANY CURRENCY OR ANY FINANCIAL INSTRUMENTS, OR AS INVESTMENT ADVICE OR INVESTMENT
+                RECOMMENDATIONS (SUCH AS RECOMMENDATIONS TO PURCHASE CURRENCY OR INSTRUMENTS) FROM TradeCoinAi OR THANK
+                YOU AS AN INVESTMENT STRATEGY. YOU ACKNOWLEDGE AND AGREE THAT TradeCoinAi IS NOT RESPONSIBLE FOR YOUR
+                USE OF ANY INFORMATION YOU OBTAIN THROUGH THE SOFTWARE. YOUR DECISIONS REGARDING THE PRODUCTS OR
+                SERVICES IN THE SOFTWARE OR YOUR INTERPRETATION OF DATA FOUND IN THE SOFTWARE ARE YOUR RESPONSIBILITY,
+                FOR WHICH YOU ASSUME FULL LIABILITY. YOU EXPRESSLY AGREE THAT YOU USE THE SOFTWARE AT YOUR OWN RISK.
+                <br>
+                <br>8.2
+                <br>TradeCoinAi STRIVES TO ENSURE THE ACCURACY OF INFORMATION POSTED ON THIS WEBSITE, BUT IT ASSUMES NO
+                RESPONSIBILITY FOR THE ABSENCE OR INACCURACY OF INFORMATION. NO CONTENT OF THE SOFTWARE IS INTENDED TO
+                BE USED AS A BASIS FOR ANY FINANCIAL OR OTHER PRODUCT WITHOUT THE EXPRESS PRIOR WRITTEN CONSENT OF
+                TradeCoinAi.
+                <br>
+                <br>8.3
+                <br>SOME CONTENT PROVIDED IN THE SOFTWARE IS PROVIDED BY THIRD-PARTY SUPPLIERS UNAFFILIATED WITH
+                TradeCoinAi. OTHER CONTENT IS UPLOADED BY YOU. TradeCoinAi DOES NOT VERIFY ALL CONTENT FOR ACCURACY,
+                DOES NOT VERIFY CONTENT FOR COMPLETENESS OR RELIABILITY, AND DOES NOT GUARANTEE THE ACCURACY,
+                COMPLETENESS, RELIABILITY, OR ANY OTHER ASPECT OF ANY CONTENT. THE PERFORMANCE OF THE SOFTWARE IS
+                DIRECTLY LINKED TO THE PERFORMANCE OF UNAFFILIATED THIRD-PARTY SERVICES. TradeCoinAi IS NOT RESPONSIBLE
+                FOR ANY SOFTWARE MALFUNCTION CAUSED BY THE MALFUNCTION OF UNAFFILIATED THIRD-PARTY SERVICES.
+                <br>
+                <br>8.4
+                <br>YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOU MAY LOSE SOME OR ALL OF YOUR FUNDS. CRYPTOCURRENCIES
+                ARE A NEW AND INSUFFICIENTLY TESTED TECHNOLOGY. IN ADDITION TO THE RISKS ENUMERATED HERE, THERE ARE
+                OTHER RISKS ASSOCIATED WITH THE USE OF THE SOFTWARE, PURCHASING, STORING, AND USING CRYPTOCURRENCIES,
+                INCLUDING RISKS THAT TradeCoinAi CANNOT PREDICT. SUCH RISKS MAY MATERIALIZE AS UNFORESEEN CHANGES OR
+                COMBINATIONS OF RISKS DISCUSSED HERE.
+                <br>
+                <br>9. Intellectual Property and Software License
+                <br>
+                <br>9.1
+                <br>The Software, trademarks, and other intellectual property objects displayed, distributed, or
+                otherwise made available through the Software are the exclusive property of TradeCoinAi and its
+                successors, assigns, licensors, and/or suppliers. Unless otherwise specified in the Terms of Use or
+                agreed upon in writing with TradeCoinAi, nothing in these Terms of Use grants you the right to use the
+                Software and its content, TradeCoinAi trademarks, or any other TradeCoinAi intellectual property.
+                <br>
+                <br>9.2
+                <br>TradeCoinAi grants you a personal, non-exclusive, non-transferable, non-sublicensable, revocable
+                license to use the Software for personal non-commercial purposes as described in these Terms of Use for
+                the duration of your access to the Software and Subscription-related features, if applicable. Any
+                intellectual property objects (including, without limitation, any information, data, products,
+                materials, services, software applications and tools, APIs, design elements, text, images, photos,
+                illustrations, audio and video content, and illustrations and graphics contained therein or otherwise
+                made available to you in connection therewith) provided through the Software or used to operate it are
+                licensed, not sold, to you by TradeCoinAi. You acknowledge that you have no rights to access the
+                Software in the form of source code. TradeCoinAi may inform you by notice in the Software or otherwise
+                that the Software contains intellectual property regulated by a third-party license, and you agree to
+                comply with the terms of the Software.
+                <br>
+                <br>9.3
+                <br>Unless you have been expressly permitted to do so in writing or in a separate agreement with us, you
+                may not rent, lease, lend, sell, distribute, sublicense, copy, reverse engineer, decompile, disassemble,
+                translate, modify, distribute copies, provide, adapt, or create derivative works based on the Software
+                or its associated intellectual property.
+                <br>
+                <br>9.4
+                <br>For all content and data that you insert or make available through the Software ("User Content"),
+                you grant TradeCoinAi a free, transferable, sublicensable, non-exclusive, irrevocable right to use
+                worldwide for the maximum period permitted by applicable law and unlimited in content, to use this User
+                Content for any purposes, including, but not limited to:
+                <br>
+                <br>9.4.1
+                <br>providing the Software;
+                <br>
+                <br>9.4.2
+                <br>conducting research, developing new products and services;
+                <br>
+                <br>9.4.3
+                <br>predictive analytics and insights;
+                <br>
+                <br>9.4.4
+                <br>improvement and further development of the Software; and
+                <br>
+                <br>9.4.5
+                <br>other, including commercial use ("Right to Use and Exploit").
+                <br>
+                <br>9.5
+                <br>The Right to Use and Exploit includes, but is not limited to, the right to modify, edit, and
+                translate, as well as store, reproduce, distribute, make available to the public, transmit, publicly
+                disclose, and otherwise make available User Content, including, but not limited to, all bots created by
+                you, the names of such bots, and any settings you create for such bots. By entering or providing User
+                Content through the Software, you warrant that the User Content complies with these Terms of Use, does
+                not infringe upon the rights of third parties, and that you have the right to grant these Rights to Use
+                and Exploit. You agree to indemnify TradeCoinAi for any claims made by third parties against TradeCoinAi
+                in connection with the exercise of these Rights to Use and Exploit.
+                <br>
+                <br>10. PRICES, PAYMENT TERMS, AND REFUNDS
+                <br>
+                <br>10.1
+                <br>All prices, discounts, and promotional offers posted within the Software are subject to change
+                without prior notice. The price charged for the Subscription you select will be the price in effect at
+                the time of your order placement, in accordance with the Purchase Agreement and the terms of any
+                promotions or discounts, your geographic location or residence, and the chosen payment method. You will
+                be charged the price stated at the time of submitting the purchase contract offer. If you choose a
+                monthly subscription and wish to pay via Paypal or Stripe, you may set up recurring monthly payments,
+                and thereafter the cost of the Subscription will be automatically billed on a monthly basis until the
+                Purchase Agreement is terminated as provided in these Terms of Use. The price charged for your current
+                use of the Software will be displayed in the "Subscription History" section on the "Subscription" tab of
+                your Client Account after the completion and confirmation of each transaction by the third-party payment
+                service provider.
+                <br>
+                <br>10.2
+                <br>Applications available through the Software (e.g., add-ons) may be provided for a fee ("Paid
+                Application") or free of charge. For applications provided for free, the purchase price will be listed
+                as $0/€0/£0. Payment for access to a Paid Application (or applications) must be made by the Client to
+                TradeCoinAi using any preferred payment method indicated on our website at the time of the intended
+                purchase. All applications ordered by the Client will be displayed in the Client's Subscription Overview
+                (including free applications).
+                <br>
+                <br>10.3
+                <br>If we increase our prices, such increase will only apply to purchases made after the effective date
+                of the increase. Prices listed in the Software may not include applicable discounts or taxes until you
+                have fully completed the profile data in your Client Account. We strive to display accurate pricing
+                information, but we may occasionally make unintentional typographical errors, inaccuracies, or omissions
+                related to prices and availability. We reserve the right to correct any errors, inaccuracies, or
+                omissions at any time and to cancel any orders associated with such occurrences.
+                <br>
+                <br>10.4
+                <br>You are required to initiate payment for the expenses related to the Subscription or other products
+                or services provided through the Software upon order submission. If you fail to make this payment to our
+                satisfaction, we will cancel your offer to enter into the Purchase Agreement.
+                <br>
+                <br>10.5
+                <br>You may use any available and most convenient payment method currently provided in the Software for
+                all purchases. However, TradeCoinAi does not guarantee the availability of any payment method at any
+                given time. TradeCoinAi may add, remove, or temporarily or permanently suspend the operation of any
+                payment method at its discretion.
+                <br>
+                <br>10.6
+                <br>Any payments you make using the Software and for the Software may be subject to value-added tax
+                (VAT) at the applicable rate and in accordance with the legislation of your jurisdiction. TradeCoinAi
+                charges and collects VAT on your payments based on your location, which is automatically determined by
+                the IP address of your device and/or manually provided by you to TradeCoinAi when entering the billing
+                address. For legal entities in the EU registered for VAT purposes and persons located outside the EU,
+                TradeCoinAi applies a 0% VAT rate. For Estonian legal and natural persons, TradeCoinAi applies a 20% VAT
+                rate, and VAT is included in the displayed price. For other persons within the EU (including natural and
+                legal persons not registered for VAT purposes), TradeCoinAi applies the VAT rate applicable in the
+                respective country, and VAT is included in the displayed price.
+                <br>
+                <br>10.7
+                <br>If you do not agree with the default payment information generated automatically by our Software,
+                you must provide: your payment address (provided that the Software will be used at that location); enter
+                address details in the Software when making a payment; and subsequently provide us with valid
+                confirmation of this address. We will then consider whether to adjust the payment-related information by
+                default. For more information on how we process your personal information, please refer to our Privacy
+                Policy.
+                <br>
+                <br>10.8
+                <br>You represent and warrant that: (1) the payment information you provide to us is true, accurate, and
+                complete, (2) you are duly authorized to use the payment method provided by you, (3) expenses incurred
+                by you will be debited by the issuer of your payment method, and (4) you will pay the applicable fees.
+                <br>
+                <br>10.9
+                <br>Unless required by applicable law, we are not obligated to provide refunds or credits. Due to the
+                nature of the Software being a digital product, no refunds can be provided without clear, substantiated,
+                and lawful reasons. We will assess any request for reimbursement of payable fees on a case-by-case basis
+                in accordance with the substance and procedure set forth in these Terms of Use and our Refund Policy at
+                https://tradecoinai.com/refund.
+                <br>
+                <br>10.10
+                <br>You understand that you are purchasing the Software from TradeCoinAi through a payment service
+                provider (PSP). Unless required by law, you are required to contact TradeCoinAi support for any payment
+                transaction-related inquiries before contacting the PSP or financial institution.
+                <br>
+                <br>10.11
+                <br>Using the Software over the Internet may incur expenses that you will be responsible for paying to
+                the service provider.
+                <br>
+                <br>11. UPDATES
+                <br>
+                <br>11.1
+                <br>TradeCoinAi may provide you with updates, including:
+                <br>
+                <br>11.1.1
+                <br>Enhancements. From time to time, digital content requires refinement and adaptation to new technical
+                capabilities or changes in the user environment/infrastructure. To the extent that this does not
+                adversely affect the subjective or objective requirements of compliance with the Software or your access
+                or use of the Software (e.g., adaptation or additional services, features, links, integration of
+                additional (module) services, or redesign and recompilation of services, as well as changes to the name
+                and appearance of the Software), TradeCoinAi is not obliged to provide enhancements.
+                <br>
+                <br>11.1.2
+                <br>Debugging. TradeCoinAi will provide you with updates, including security updates that contain fixes
+                that ensure compliance of the Software with subjective or objective requirements, including legal,
+                regulatory, and judicial requirements, for the duration of your use of the Software. TradeCoinAi will
+                inform you of the availability of debugging updates and the consequences of being unable to install such
+                updates, as well as provide you with installation instructions. This section 11.1.2 in no way limits
+                your means of legal protection in the event of non-compliance as set forth in section 11.2.
+                <br>
+                <br>11.1.3
+                <br>Modifications. TradeCoinAi may provide you with updates containing modifications to the Software
+                that go beyond what is necessary to maintain compliance with the Software. TradeCoinAi may make changes
+                if (a) the features of the Software or its components are no longer used to the extent that justifies
+                their maintenance and continuation, (b) (new or modified) legal, regulatory, or judicial requirements
+                necessitate adjustments to the Software that would be economically impracticable for TradeCoinAi, or (c)
+                changes in the technical conditions of the environment or infrastructure of the Software are beyond the
+                control of TradeCoinAi and complicate the maintenance and further operation of the Software to an extent
+                that would be economically impracticable for TradeCoinAi. TradeCoinAi will inform you of any changes. If
+                a Modification adversely affects your access to or use of the Software and the impact is more than
+                negligible, the following applies to such information: please note whether you can maintain the Software
+                without the Modification or if you have the right to terminate the agreement in accordance with section
+                12.3 of these Terms of Use.
+                <br>
+                <br>11.2
+                <br>Remedies for non-compliance
+                <br>
+                <br>11.2.1 In the event of non-compliance of the Software, you have the right to bring the Software into
+                compliance with the terms set forth in these Terms of Use, for example, through an update. If (1)
+                TradeCoinAi refuses or is unable to ensure compliance within a reasonable period of time and without
+                significant inconvenience to you, (2) or if the non-compliance is so significant that it is not
+                reasonable for you to first submit a request for correction, you have the right to (a) a proportionate
+                reduction in price, if applicable, for the period of time during which the digital content or digital
+                service did not comply with the requirements, and (b) if the non-compliance is not insignificant,
+                terminate the agreement in accordance with section 13.3. The price reduction or refund shall be
+                proportionate if it reflects the decrease in the value of the Software compared to the value the digital
+                content or digital service would have had if it had complied with the requirements.
+                <br>
+                <br>11.2.2 To enforce your rights in accordance with Section 11, you may contact TradeCoinAi customer
+                support. Contact information for customer support: support@tradecoinai.com.
+                <br>
+                <br>12. SUSPENSION OF FUNCTIONS OR SOFTWARE
+                <br>12.1
+                <br>TradeCoinAi has the right to make changes to the Software and its functions.
+                <br>
+                <br>12.2
+                <br>Until all circumstances have been clarified and, if necessary, it is known that your customer
+                procedures have been performed, TradeCoinAi may suspend or interrupt the provision of the Software in
+                full or in part without any liability to the Customer:
+                <br>
+                <br>12.2.1
+                <br>if necessary for repairs, maintenance, or similar actions, including security updates, and in this
+                case, TradeCoinAi will endeavor to notify you of the interruption as far in advance as possible;
+                <br>
+                <br>12.2.2
+                <br>if you fail to pay any portion of the Subscription fee after we have notified you of such failure;
+                <br>
+                <br>12.2.3
+                <br>if your actions or inactions related to the use of the Software impede or hinder the normal
+                operation of the Software or otherwise cause or may cause harm, damage, or other detrimental
+                consequences to the Software, TradeCoinAi, or other users of the Software;
+                <br>
+                <br>12.2.4
+                <br>if there are grounds to suspect that your credentials have been unlawfully disclosed to an
+                unauthorized third party, and the Software is being used with such credentials;
+                <br>
+                <br>12.2.5
+                <br>if you use the Software in violation of these Terms of Use and fail to remedy the violation
+                immediately upon receipt of notice from TRADECOINAI or use the Software in violation of any applicable
+                laws, rules, or regulations;
+                <br>
+                <br>12.2.6
+                <br>if you refuse to provide the necessary clarifications within the requested timeframe; or
+                <br>
+                <br>12.2.7
+                <br>for any other reasons as determined by TradeCoinAi from time to time.
+                <br>
+                <br>12.3
+                <br>Substantial breach of the Terms of Use may include, among other things, actions and inactions
+                described in sections 11.2.2 through 11.2.6.
+                <br>
+                <br>12.4
+                <br>TradeCoinAi endeavors to notify you of any suspension as far in advance as possible or, if advance
+                notice is not possible due to the urgency of the reasons requiring suspension, without undue delay. The
+                suspension of the Software's operation due to the reasons set forth in Section 11.2 does not relieve you
+                of the obligation to pay any applicable fees.
+                <br>
+                <br>13. CUSTOMER TERMS AND TERMINATION
+                <br>13.1
+                <br>Upon any access to or use of the Software, these Terms of Use remain in full force and effect with
+                respect to such access or use as they may be updated from time to time.
+                <br>
+                <br>13.2
+                <br>The term of your paid Subscription pursuant to the Purchase Agreement remains in effect for the
+                period for which you have made payment (e.g., month or year), subject to any extensions.
+                <br>
+                <br>13.3 Termination of Customer Account
+                <br>
+                <br>13.3.1
+                <br>You may delete your customer account at any time and without stating reasons in the settings of your
+                customer account where we have provided you with this option. Prior to deleting your customer account,
+                we will ask you to disable all associated exchanges and close all open trades or bots. In the event of
+                termination, your customer account will be closed within seven (7) days provided that: (1) any disputes
+                you have been involved in have been satisfactorily resolved; and (2) you have fulfilled all other
+                obligations related to your use of the Software (i.e., you have disabled all associated exchanges and
+                closed all open trades or bots). Within these seven (7) days, you may reactivate your customer account
+                by logging in and canceling the termination of your customer account.
+                <br>
+                <br>13.3.2
+                <br>TRADECOINAI may delete your customer account by notifying you of this within seven (7) days,
+                notifying you of this within the Software. The customer account will be deleted at the end of the
+                seventh (7th) day following the expiration of the advance notice period. In the event that TradeCoinAi
+                discovers a material breach, including, among other things, as defined in Section 11.3, TradeCoinAi may
+                immediately delete your customer account without prior notice.
+                <br>
+                <br>13.3.3
+                <br>Regardless of the party initiating the termination, the termination of the Customer Account shall
+                mean that: (1) simultaneously with the termination of the Customer Account, the Purchase Agreement (if
+                applicable) will also be terminated, and thus your access to the Software and the products and services
+                provided in connection therewith shall be nullified; (2) you are prohibited from any further use of the
+                Software; and (3) any and all data and information within your customer account or relating to actions
+                with your account will be permanently deleted, except where we are required or entitled to retain such
+                content, data, or information in accordance with applicable laws and regulations. You agree that all
+                such measures will be carried out by TradeCoinAi and that TradeCoinAi shall not be liable to you or any
+                third party as a result of any such measures for any reason to the extent permitted by applicable law.
+                <br>
+                <br>13.4 Termination of the purchase agreement
+                <br>
+                <br>13.4.1
+                <br>You may exercise your rights as described in Section 13 to terminate your purchase.
+                <br>
+                <br>13.4.2
+                <br>After the fourteen (14) day "reflection" period, you may terminate your Purchase Agreement at any
+                time and without stating reasons in the settings of your customer account.
+                <br>
+                <br>13.4.3
+                <br>TradeCoinAi may terminate the Purchase Agreement on the same terms as described in Section 12.3.2.
+                <br>
+                <br>13.4.4
+                <br>Regardless of the party initiating the termination, the termination of the Purchase Agreement shall
+                mean that your access to the Software's features provided under the Subscription pursuant to the
+                Purchase Agreement, as well as the products and services provided thereunder, will be immediately
+                terminated, but you will still have access to your customer account. Termination of the purchase
+                agreement will not result in data loss, i.e., if you decide to enter into a purchase agreement in the
+                future, the metrics you have set up will continue to function. For refund instructions, please refer to
+                our Refund Policy. You agree that all such measures will be carried out by TradeCoinAi and that
+                TradeCoinAi shall not be liable to you or any third party as a result of any such measures for any
+                reason to the extent permitted by applicable law.
+                <br>
+                <br>13.5
+                <br>Upon expiration of these Terms of Use, all legal rights, obligations, and liabilities by which you
+                and TradeCoinAi have been bound (or which have accrued over time while the Terms of Use have been in
+                force) or which are expressed to continue indefinitely shall not be affected by such termination,
+                including, among others, Sections 1, 4, 8, 10, 9, and 14-19.
+                <br>
+                <br>14. RIGHT OF WITHDRAWAL
+                <br>14.1
+                <br>If you have created a customer account and are a consumer from the European Union, you have the
+                right to withdraw from it in accordance with the provisions of the law.
+                <br>
+                <br>14.2
+                <br>The right of withdrawal is governed by the provisions set out in the following notice of the right
+                of withdrawal:
+                <br>
+                <br>Notice of the Right of Withdrawal
+                <br>
+                <br>You have the right to withdraw from this Purchase Agreement within fourteen days without giving any
+                reason.
+                <br>
+                <br>The withdrawal period shall be fourteen (14) days from the day you gained access to the features of
+                the Subscription you have chosen.
+                <br>
+                <br>To exercise your right of withdrawal, you must inform us, Black Dolphin OÜ, address: , , Tallinn, ,
+                , email address: support@tradecoinai.com, of your decision to withdraw from the purchase agreement by
+                making a clear statement. For this purpose, you may but are not obliged to use the following standard
+                withdrawal form:
+                <br>
+                <br>Sample Withdrawal Form
+                <br>
+                <br>To Black Dolphin OÜ, address: , , , , 10111:
+                <br>
+                <br>I/We (*) hereby give notice that I/We (*) withdraw from my/our (*) contract of sale of the following
+                goods (*)/for the provision of the following service (*),
+                <br>
+                <br>Ordered on (*)/received on (*),
+                <br>
+                <br>Name of consumer(s),
+                <br>
+                <br>Address of consumer(s),
+                <br>
+                <br>Date
+                <br>
+                <br>(*) Delete as appropriate.
+                <br>
+                <br>To meet the withdrawal deadline, it is sufficient for you to send the notification that you are
+                exercising your right of withdrawal before the withdrawal period has expired.
+                <br>
+                <br>Upon your withdrawal of the Purchase Agreement, we shall reimburse you for the cost of the
+                Subscription, which is deducted proportionally to the value of what has been provided under the Purchase
+                Agreement (including any free trial version) up to the time of withdrawal in accordance with Section 1.2
+                of the Refund Policy without undue delay and in any event not later than fourteen (14) days from the
+                date on which we receive notice from you of your withdrawal from the Purchase Agreement. Upon receipt of
+                your notice, we will immediately revoke your access to Subscription-related features, but you will still
+                have access to your customer account.
+                <br>
+                <br>You must cease any use of Subscription-related features without undue delay and in any event no
+                later than fourteen (14) days from the date on which you notify us of your withdrawal.
+                <br>
+                <br>15. THIRD-PARTY CONTENT
+                <br>15.1
+                <br>Any content provided through the Software is intended for use and should only be used for
+                informational purposes. It is crucial to conduct your own analysis before making any investments based
+                on your personal circumstances. You should obtain independent financial advice from a professional
+                regarding any information we provide from third parties, or independently research and verify it, and
+                upon which you wish to rely, whether for making investment decisions or otherwise. Any content, data,
+                information, or publications available through the Software are provided by us on an "as-is" basis for
+                your convenience and information. Any opinions, advice, statements, services, offers, or other
+                information provided by third parties belong to the respective authors or publishers and not
+                TradeCoinAi. Such information should not be construed as an endorsement by TradeCoinAi of the content or
+                information you may obtain from them. TradeCoinAi does not control the content or information of these
+                resources. TradeCoinAi disclaims any warranties or representations, express or implied, regarding the
+                accuracy and completeness of the information in such publications.
+                <br>
+                <br>15.2
+                <br>Crypto Signals Marketplace. Through the Software, you may have access to the Marketplace for Crypto
+                Signals. Crypto Signals are information provided by third-party service providers offering signals and
+                trading tactics. All Crypto Signals displayed on the trading platform are provided by third parties
+                (collectively referred to as "Signal Providers") and not TradeCoinAi. Signal Providers do not publish
+                advice on the use of cryptocurrencies or cryptocurrency trading. While the Software includes information
+                about an algorithmic indicator created by a Signal Provider, it does not provide the reader with any
+                financial advice. We are in no way responsible for any data published by Crypto Signals, as they are
+                third-party services and are for informational purposes only. We are not liable, whether in contract,
+                negligence, or otherwise, for any damages, expenses, or other losses you may incur as a result of such
+                information or any reliance you may place on such information.
+                <br>
+                <br>15.3
+                <br>As Crypto Signals are provided by third-party Signal Providers, their use is governed by the terms
+                of that particular Signal Provider. The terms of use for Crypto Signals will be made available to you
+                when you subscribe to the Crypto Signal of your choice. Payments for the use of Crypto Signals to
+                third-party Signal Providers shall be made by you in accordance with the payment terms specified in
+                Section 10 of TradeCoinAi's terms, which facilitate the corresponding payment to the relevant Signal
+                Provider under terms agreed between them.
+                <br>
+                <br>15.4
+                <br>Past performance of the algorithmic indicator is not indicative of future results. For the avoidance
+                of doubt, Signal Providers and any related companies or employees do not hold themselves out as
+                commodity trading advisors or authorized financial advisors. With this representation in mind, all
+                information, data, and materials provided by the Signal Provider and any related companies or employees
+                are intended for educational purposes only and should not be considered specific investment
+                recommendations.
+                <br>
+                <br>15.5
+                <br>Links to third-party platforms and information. The use of certain links within the Software will
+                direct you to third-party channels, software, websites, or mobile applications (collectively referred to
+                as "Third-Party Platforms"). Such Third-Party Platforms are not under the control of TradeCoinAi, and
+                TradeCoinAi is not responsible for the content of any such Third-Party Platforms or any links contained
+                therein. Links to Third-Party Platforms included in the Software are provided for your convenience, and
+                the inclusion of such links does not imply our recommendation or endorsement of any such Third-Party
+                Platform or the products, services, or information offered therein. If you choose to access any
+                information from a Third-Party Platform related to the Software, you do so solely at your own risk.
+                <br>
+                <br>15.6
+                <br>
+                <br>Third-Party Services. We may provide third-party services, such as applications utilizing the
+                TradeCoinAi API or framing within the Service, available to you through the Software. If you choose to
+                enable, access, or use services provided by third parties, please be aware that your access and use of
+                such third-party services are governed by the terms and conditions of those third-party services, and we
+                do not endorse, are not responsible for, or have any liability or make any representations regarding any
+                aspect of such third-party services, including, without limitation, their content or the manner in which
+                they handle, protect, manage, or process data or any interaction between you and the provider of such
+                services. Third-Party Services. You unconditionally waive any claims against TradeCoinAi with respect to
+                such Third-Party Services. We are not liable for any damages or losses, whether alleged or resulting
+                from your inclusion, access, or use of any such third-party services or your reliance on the methods of
+                data security, data protection processes, or other policies of such third-party services.
+                <br>
+                <br>16. PRIVACY AND PERSONAL INFORMATION
+                <br>16.1
+                <br>To fully utilize the Software, you will need to provide certain information about yourself
+                ("Personal Data"). You acknowledge that TradeCoinAi will collect and use certain Personal Data as
+                described in our Privacy Policy. For further information about the collection, use, disclosure, and
+                protection of your Personal Data, please review our Privacy Policy at
+                https://tradecoinai.com/privacy-policy. Any questions or inquiries regarding your Personal Data can be
+                directed to support@tradecoinai.com.
+                <br>
+                <br>17. AVAILABILITY OF THE SOFTWARE
+                <br>17.1
+                <br>TradeCoinAi will strive to provide continuous availability of the Software; however, TradeCoinAi
+                cannot guarantee continuous availability of the Software. The Software is provided "as-is" and "as
+                available." You do not have the right to expect that the Software and the features offered will be
+                available at all times or with any particular availability guaranteed by TradeCoinAi. TradeCoinAi is not
+                obligated to provide continuous access to the Software without any interruptions or failures and shall
+                not be held liable for this.
+                <br>
+                <br>17.2
+                <br>The Software may be unavailable in the following circumstances, for example:
+                <br>
+                <br>17.2.1
+                <br>if a defect or error in the Software provided through the website is a result of any amendments or
+                modifications made by you to the Software or if you have in any way used the Software beyond its
+                intended and anticipated access and use;
+                <br>
+                <br>17.2.2
+                <br>if a defect or failure in the Software is a result of an issue with your device,
+                <br>
+                <br>17.2.3
+                <br>due to technical malfunctions.
+                <br>
+                <br>17.3
+                <br>You may access and use the Software through mobile devices and computers. Since the Software is
+                provided over the internet and mobile networks, the quality and availability of the Software may be
+                affected by factors beyond our reasonable control. Not all features of the Software may be available on
+                a mobile device. You are solely responsible for any preconditions regarding software and hardware and
+                for any fees and charges for data transmission associated with accessing and using the Software through
+                a mobile device.
+                <br>
+                <br>18. DISCLAIMER OF WARRANTIES
+                <br>18.1
+                <br>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EXCEPT AS EXPRESSLY PROVIDED IN THIS DOCUMENT,
+                YOUR USE OF THE SOFTWARE IS PROVIDED TO YOU "AS IS" AND "AS AVAILABLE." TRADECOINAI, ITS RESPECTIVE
+                DIRECTORS, OFFICERS, EMPLOYEES, AND AGENTS EXPRESSLY DISCLAIM ANY AND ALL OTHER REPRESENTATIONS,
+                WARRANTIES, AND CONDITIONS, WHETHER EXPRESS OR IMPLIED, INCLUDING, AMONG OTHER THINGS, ANY
+                REPRESENTATIONS, WARRANTIES, OR CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+                OR NON-INFRINGEMENT, COMPLETENESS, SECURITY, RELIABILITY, SUITABILITY, ACCURACY, CURRENCY, OR
+                AVAILABILITY, UNINTERRUPTEDNESS, THAT DEFECTS WILL BE CORRECTED, THAT OUR SOFTWARE OR THE SERVER THAT
+                MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR ANY WARRANTIES ARISING OUT OF
+                TRADE, COURSE OF DEALING, RESULTS, OR TRADE USAGE. YOUR SOLE AND EXCLUSIVE REMEDY AND OUR SOLE
+                OBLIGATION TO YOU OR ANY THIRD PARTY WITH RESPECT TO ANY CLAIM ARISING IN CONNECTION WITH YOUR USE OF
+                THE SOFTWARE IS YOUR RIGHT TO DISCONTINUE USE OF THE SOFTWARE AT ANY TIME. 
+                <br>18.2
+                <br>
+                <br>TradeCoinAi DOES NOT PROVIDE ANY WARRANTIES OR REPRESENTATIONS REGARDING THE SOFTWARE, INCLUDING,
+                WITHOUT LIMITATION, THAT (I) THE SOFTWARE WILL MEET YOUR REQUIREMENTS; (II) THE SOFTWARE WILL BE
+                UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE; (III) THE RESULTS OBTAINED FROM THE USE OF THE SOFTWARE
+                WILL BE ACCURATE OR RELIABLE; OR (IV) ANY KNOWN OR YET-TO-BE-DISCOVERED DEFECTS WILL BE CORRECTED.
+                <br>
+                <br>18.3
+                <br>WE CANNOT AND DO NOT WARRANT OR GUARANTEE THAT FILES OR DATA AVAILABLE FOR DOWNLOADING FROM THE
+                INTERNET OR THE SOFTWARE WILL BE FREE OF VIRUSES OR OTHER DESTRUCTIVE CODE. YOU ARE SOLELY RESPONSIBLE
+                FOR YOUR USE OF THE SOFTWARE AND THE SECURITY OF YOUR COMPUTER, INTERNET, AND DATA. TO THE MAXIMUM
+                EXTENT PERMITTED BY APPLICABLE LAW, TRADECOINAI, ITS RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, AND
+                AGENTS SHALL NOT BE LIABLE FOR ANY DAMAGES OR HARM, WHETHER CAUSED BY A DENIAL-OF-SERVICE ATTACK,
+                DISTRIBUTED DENIAL-OF-SERVICE ATTACK, OVERLOADING, FLOODING, MAILBOMBING, OR CRASH, VIRUSES, TROJAN
+                HORSES, WORMS, LOGIC BOMBS, OR OTHER TECHNOLOGICALLY HARMFUL MATERIALS THAT MAY INFECT YOUR COMPUTER
+                EQUIPMENT, COMPUTER PROGRAMS, DATA, OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE SOFTWARE OR ANY
+                SERVICES OR ITEMS OBTAINED THROUGH THE SOFTWARE OR ANY MATERIALS POSTED ON IT, OR ON ANY THIRD-PARTY
+                PLATFORM LINKED TO IT.
+                <br>
+                <br>18.4
+                <br>THE FOREGOING DOES NOT AFFECT ANY WARRANTIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE
+                LAW.
+                <br>
+                <br>19. LIMITATION OF LIABILITY
+                <br>19.1
+                <br>TradeCoinAi does not provide any warranties or representations other than those expressly stated in
+                these Terms of Use. The Software has not been developed to meet your individual requirements.
+                <br>
+                <br>19.2
+                <br>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU UNDERSTAND AND AGREE THAT TRADECOINAI AND
+                THEIR RESPECTIVE DIRECTORS, OFFICERS, EMPLOYEES, OR AGENTS SHALL NOT BE LIABLE TO YOU FOR ANY DIRECT,
+                INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING, BUT NOT LIMITED TO, ANY
+                LOSS OF PROFITS, OPPORTUNITY, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH
+                YOUR USE OF THE SOFTWARE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR ANY OTHER
+                THEORY OF LIABILITY, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. YOUR SOLE AND EXCLUSIVE REMEDY
+                AGAINST TRADECOINAI FOR ANY CLAIM ARISING OUT OF YOUR USE OF THE SOFTWARE SHALL BE TO DISCONTINUE USE OF
+                THE SOFTWARE.
+                <br>
+                <br>19.3
+                <br>THE MAXIMUM AGGREGATE LIABILITY OF TRADECOINAI TO YOU SHALL BE LIMITED TO THE AMOUNT OF SUBSCRIPTION
+                FEES PAID BY YOU TO US DURING THE 12 (TWELVE) MONTHS PRECEDING YOUR CLAIM.
+                <br>
+                <br>20. INDEMNIFICATION
+                <br>20.1
+                <br>To the maximum extent permitted by applicable law, you agree to defend, indemnify, and hold harmless
+                TradeCoinAi, its affiliates, and their respective directors, officers, employees, agents, service
+                providers, contractors, licensors, suppliers, successors, and assigns from and against any claims,
+                liabilities, damages, judgments, awards, losses, costs, expenses, or fees (including reasonable
+                attorneys' fees) arising out of or relating to your violation of these Terms of Use or your use of the
+                Software, including, but not limited to, your User Materials, third-party platforms, any use of
+                intellectual property, services, and products other than as expressly authorized in these Terms of Use.
+                <br>
+                <br>21. CHANGES TO THE TERMS OF USE
+                <br>21.1
+                <br>TradeCoinAi reserves the right to modify these Terms of Use. You will be notified of any changes to
+                the Terms of Use within the Software seven (7) days in advance. Changes take effect and become binding
+                at the end of the seventh (7th) day after the end of the notice period. If you do not agree with the
+                changes, you have the right to delete your customer account as stated in section 12.3.1.
+                <br>
+                <br>21.2
+                <br>TradeCoinAi reserves the right to make the following changes to the Terms of Use without prior
+                notice:
+                <br>
+                <br>21.2.1
+                <br>if the change to the Terms of Use is advantageous to you only;
+                <br>
+                <br>21.2.2
+                <br>if the change relates solely to new services, features, or components of the services and does not
+                result in any changes to existing contractual relations for you;
+                <br>
+                <br>21.2.3
+                <br>if the change is necessary to comply with applicable legal requirements, especially in the event of
+                changes in the applicable legal situation, and if the change does not have any material adverse
+                consequences for you; or
+                <br>
+                <br>21.2.4
+                <br>if TradeCoinAi is required to implement the change to comply with a legally binding court decision
+                or mandatory decision of an authority, and if the change does not have any material adverse consequences
+                for you.
+                <br>
+                <br>21.3
+                <br>You will be informed of such changes within the Software.
+                <br>
+                <br>22. SUPPORT AND REPORTING
+                <br>22.1
+                <br>We only provide support services for the operation of the Software. If you become aware of any
+                unauthorized use of the Software, including defamatory or libelous behavior, you must report it to
+                TradeCoinAi. We recommend contacting us for assistance if you encounter any issues with the Software
+                through the following methods:
+                <br>
+                <br>22.1.1
+                <br>by accessing the TradeCoinAi Help Center at https://help.tradecoinai.com/ (when logged into your
+                customer account);
+                <br>
+                <br>22.1.2
+                <br>by submitting a support request through the "Support" form embedded in the Software (when logged
+                into your customer account);
+                <br>
+                <br>22.1.3
+                <br>by sending an email to support@tradecoinai.com.
+                <br>
+                <br>23. GENERAL PROVISIONS
+                <br>23.1 These Terms of Use, including the Privacy Policy and any other URLs included through links in
+                these Terms of Use, constitute the entire agreement between you and TradeCoinAi regarding your use and
+                our provision of the Software.
+                <br>
+                <br>23.2 The parties agree that if a party fails or refrains from exercising any lawful right or remedy
+                contained in these Terms of Use (or which it enjoys under any applicable law), it shall not be construed
+                as a formal waiver of its rights and that these rights or remedies will remain available to the party.
+                <br>
+                <br>23.3 If any provision of these Terms of Use is found to be unlawful, void, or unenforceable, it will
+                not affect any other provision of these Terms of Use, and the agreement between you and us will be
+                deemed amended to the extent necessary to make it legal, valid, and enforceable.
+                <br>
+                <br>23.4 The parties acknowledge that they have requested that these Terms of Use, including the
+                Purchase Agreement and all related documents, be drafted and concluded in the English language. Any
+                translation of this document is for informational purposes only and has no legal effect and does not
+                create any contractual relationship between the parties.
+                <br>
+                <br>23.5 No email address found in the Software may be collected or otherwise used for solicitation
+                purposes.
+                <br>
+                <br>23.6 The relationship between the parties is that of independent contractors. Nothing in these Terms
+                of Use shall be construed as creating any agency, partnership, joint venture, or other form of joint
+                enterprise, employment, or fiduciary relationship between the parties, and neither party has the
+                authority to contract or bind the other party in any manner whatsoever.
+                <br>
+                <br>23.7 These Terms of Use, the Purchase Agreement, and any contractual or non-contractual disputes
+                arising out of the use of the Software shall be governed by and construed in accordance with the laws of
+                Estonia and resolved in the Harju County Court (Estonia).
+                <br>
+                <br>23.8 You may not assign any of your rights or delegate any of your obligations under these Terms of
+                Use without our prior written consent. Any purported assignment or delegation in violation of this
+                Section is null and void. No assignment or delegation relieves you of any of your obligations under
+                these Terms of Use.
+                <br>
+                <br>23.9 TradeCoinAi may assign its rights and obligations under these Terms of Use to a third party. In
+                this case, TradeCoinAi will inform you in advance of the transfer to a third party within the Software.
+                You will have the right to immediately terminate the effectiveness of your customer account if you do
+                not agree with the transfer.
+                <br>
+                <br>23.10 If any provision of these Terms of Use is held to be unenforceable or invalid by any court or
+                arbitrator of competent jurisdiction for any reason, such provision shall be limited or severed to the
+                extent necessary so that these Terms of Use shall otherwise remain in full force and effect.
+                <br>
+                <br>24. COMPLAINT PROCEDURE
+                <br>24.1 If you have any complaints regarding TradeCoinAi and/or its services, you have the right to
+                file a complaint following our Complaint Procedure.
+                <br>
+                <br>24.2 The European Commission has also created an online platform for dispute resolution, which can
+                be found at http://ec.europa.eu/consumers/odr. TradeCoinAi is not obligated and does not intend to
+                participate in dispute resolution proceedings before a consumer arbitration board.
+                <br>
+                <br>25. NOTIFICATIONS
+                <br>25.1 We may provide you with any notification under these Terms of Use by: (i) sending a message to
+                the email address you provided to us and agreed to use; or (ii) by posting within the Software.
+                Notifications sent by email are effective when we send the email, and notifications provided by posting
+                are effective upon posting. You are responsible for maintaining the accuracy of your email address and
+                regularly checking incoming messages.
+                <br>
+                <br>25.2 To notify us in accordance with these Terms of Use, you must contact us by email at
+                support@tradecoinai.com.
+                <br>
+                <br>25.3 To request TradeCoinAi's consent for any of the actions requiring such consent under these
+                Terms of Use, send an email to support@tradecoinai.com. TradeCoinAi reserves the right to reject any
+                such requests at its discretion.
+                <br>
+                <br>26. COMPLIANCE WITH SANCTIONS
+                <br>26.1 By accessing TradeCoinAi services and using them, you represent and warrant that you:
+                <br>
+                <br>26.1.1
+                <br>are not included in any trade embargo or economic sanctions lists, including, among others:
+                <br>
+                <br>a) European Union restrictive measures;
+                <br>
+                <br>b) United Nations sanctions;
+                <br>
+                <br>c) Sanctions of the Government of Estonia;
+                <br>
+                <br>d) Specially Designated Nationals List maintained by the U.S. Department of the Treasury's Office of
+                Foreign Assets Control (OFAC);
+                <br>
+                <br>e) Denied Persons List or Entity List maintained by the U.S. Department of Commerce;
+                <br>
+                <br>f) UK Office of Financial Sanctions Implementation (OFSI) Consolidated List of Financial Sanctions
+                Targets;
+                <br>
+                <br>26.1.2
+                <br>your use and access to TradeCoinAi services do not violate or circumvent international sanctions and
+                restrictive measures established by the European Union, United Nations, United States of America, United
+                Kingdom, or other international sanctions applicable in the Republic of Estonia, and
+                <br>
+                <br>26.1.3
+                <br>are not from the following countries or geographical regions subject to comprehensive sanctions
+                (this list may change from time to time):
+                <br>
+                <br>a) Belarus
+                <br>
+                <br>b) Burma (Myanmar)
+                <br>
+                <br>c) Côte d'Ivoire
+                <br>
+                <br>d) Crimea (region of Ukraine)
+                <br>
+                <br>e) Cuba
+                <br>
+                <br>f) Democratic Republic of the Congo
+                <br>
+                <br>g) Donetsk (region of Ukraine)
+                <br>
+                <br>h) Iran
+                <br>
+                <br>i) Iraq
+                <br>
+                <br>j) Liberia (former regime of Charles Taylor)
+                <br>
+                <br>k) Libya
+                <br>
+                <br>l) Luhansk (region of Ukraine)
+                <br>
+                <br>m) Nicaragua
+                <br>
+                <br>n) North Korea
+                <br>
+                <br>o) Sierra Leone
+                <br>
+                <br>p) Somalia
+                <br>
+                <br>q) Sudan
+                <br>
+                <br>r) Syria
+                <br>
+                <br>s) Venezuela
+                <br>
+                <br>t) Yemen
+                <br>
+                <br>u) Zimbabwe.
+                <br>
+                <br>26.2
+                <br>We reserve the right to select markets and jurisdictions for doing business and may restrict or
+                refuse, at our discretion, to provide TradeCoinAi services in certain countries or regions not listed in
+                Section 26.1.
+                <br>
+                <br>26.3
+                <br>If you become subject to international sanctions, you must immediately cease using our services and
+                notify us accordingly.
+                <br>
+                <br>26.4
+                <br>Without prejudice to any other grounds we may have for such actions, we have the right to terminate,
+                suspend, or restrict the provision of TradeCoinAi services to you, as well as terminate these Terms of
+                Use if:
+                <br>
+                <br>26.4.1
+                <br>you become subject to international sanctions,
+                <br>
+                <br>26.4.2
+                <br>providing you with services is deemed a violation or circumvention of international sanctions,
+                <br>
+                <br>26.4.3
+                <br>you, in our assessment, are associated with a territory, field of activity, transaction, or person
+                subject to international sanctions, or
+                <br>
+                <br>26.4.4
+                <br>we exercise our right stated in Section 26.2.
+                <br>
+                <br>Black Dolphin OÜ
+                <br>
+                <br>Address: Metro Plaza, Viru väljak 2-3rd floor, 10111 Tallinn, Estonia
+                <br>
+                <br>Registration code 18114592487 in the Commercial Register of the Republic of Estonia.
+                <br>
+                <br>VAT payer's number EE547412
+                <br>
+                <br>support@tradecoinai.com
+
+            </div>
+            <div class="faq_images">
+                <div class="faq_images_light free_image">
+
+                    <img alt="fone light" class="lozad" data-src="img/quest/el4.webp" width="1003" height="393">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer_header">
+                <div class="footer_header_text">
+                    <h3 class="footer_header_text_h3">
+                        Пока вы отдыхаете, наш бот работает
+                    </h3>
+                    <div class="footer_header_text_body body">
+                        Профессиональная платформа для алгоритмической и ручной торговли криптовалютами
+                    </div>
+                </div>
+                <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button class="footer_header_button">
+                        Подключится
+                    </button></a>
+            </div>
+            <div class="footer_content">
+                <a href="https://tradecoinai.com/" class="footer_content_logo">
+
+                    <img alt="logo" src="img/logo.svg" width="73" height="136">
+                    <div class="footer_content_logo_text">
+                        TradeCoinAi
+                    </div>
+                </a>
+                <div class="footer_content_navigation">
+                    <div class="footer_content_navigation_navigation_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_navigation_elements">
+                        <div class="footer_content_navigation_elements_element">
+                            Choose algoritm
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Why to trust us
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Latest transactions
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Easy start
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            How to get started
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_content_documents">
+                    <div class="footer_content_documents_documents_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_documents_elements">
+                        <div class="footer_content_documents_elements_element">
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="footer_content_documents_elements_element">
+                            <a href="./terms.html">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="footer_footer_text">
+                    TradeCoinAI 2023 © All rights reserved
+                </div>
+                <div class="footer_footer_soc_net">
+
+                    <a href="https://twitter.com/TradeCoinAI" target="_blank"><img alt="twitter"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/twitter.svg" width="22" height="18"></a>
+
+                    <a target="_blank" href="https://t.me/tradecoinai"> <img alt="telegram"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/telegram.svg" width="21"
+                            height="18"></a>
+
+                    <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/discord.svg" width="20" height="20"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script
+        src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4RWWHES2VQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4RWWHES2VQ');
+    </script>
+
+</body>
+
+</html>

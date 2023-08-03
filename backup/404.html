@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeCoinAi — Подключиться к торговым ботам AI</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id='body'>
+    <header class="header" id="header">
+        <div class="header_container container">
+            <div class="header_pc">
+                <div class="header_navigation">
+                    <a href="https://tradecoinai.com/" class="header_navigation_logo">
+                        <div class="header_navigation_logo_img">
+
+                            <img width="32" height="32" alt="logo" class="lozad" src="img/logo.svg">
+                        </div>
+                        <div class="header_navigation_logo_text">
+                            TradeCoinAi
+                        </div>
+                    </a>
+                    <div class="header_navigation_links">
+                        <a href="./#all_trades" class="header_navigation_links_a medium15">Все сделки</a>
+                        <a href="./#how_it_works" class="header_navigation_links_a medium15">Как это работает</a>
+                        <a href="./#pricing" class="header_navigation_links_a medium15">Цены</a>
+                        <a href="./#trading" class="header_navigation_links_a medium15">О нас</a>
+                    </div>
+                </div>
+                <div class="header_buttons">
+                    <!-- <div class="header_buttons_lang">
+                        <div class="header_buttons_lang_img">
+                            
+                            <img width="20" height="21" alt="english" class="lozad" src="img/flags/usa.png">
+                        </div>
+                        <div class="header_buttons_lang_btn btn">
+                            English
+                        </div>
+                        <div class="header_buttons_lang_dd_btn">
+                            
+                            <img width="12" height="7" alt="arrow down" class="lozad header_buttons_lang_dd_btn_img" src="img/flags/arrow_down.png">
+                        </div>
+                    </div> -->
+                    <div class="header_buttons_log_reg">
+                        <a href="https://app.tradecoinai.com/auth/login"> <button
+                                class="header_buttons_log_reg_btn_log btn">
+                                Login
+                            </button></a>
+                        <a href="https://app.tradecoinai.com/auth/signup"><button
+                                class="header_buttons_log_reg_btn_reg btn">
+                                Sign up
+                            </button></a>
+                    </div>
+                    <div class="header_buttons_burger">
+                        <button class="header_buttons_burger_btn" id="burger_menu_button">
+
+                            <img alt="mobile menu opener" class="lozad" id="mobile_menu_img_burger" src="img/burger.svg"
+                                width="20" height="14">
+
+                            <img alt="mobile menu closer" class="lozad dnone" id="mobile_menu_img_cross"
+                                src="img/cross.svg" width="24" height="24">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header_mobile" id="mobile_menu" style="height: 0px">
+                <div class="header_mobile_menu_element">
+                    <a href="./#all_trades" class="header_mobile_menu_element_a medium15">Все сделки</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="./#how_it_works" class="header_mobile_menu_element_a medium15">Как это работает</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="./#pricing" class="header_mobile_menu_element_a medium15">Цены</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="./#trading" class="header_mobile_menu_element_a medium15">О нас</a>
+                </div>
+                <div class="header_mobile_menu_element header_mobile_menu_element_log_reg">
+                    <div class="header_mobile_menu_element_log_reg_buttons">
+                        <a href="https://app.tradecoinai.com/auth/login"><button
+                                class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
+                                Login
+                            </button></a>
+                        <a href="https://app.tradecoinai.com/auth/signup"><button
+                                class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
+                                Sign up
+                            </button></a>
+                    </div>
+                </div>
+                <!-- <div class="header_mobile_menu_element header_mobile_menu_element_last">
+                    <button
+                        class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
+                        <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                        <div class="text">English</div>
+                    </button>
+                    <button
+                        class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
+                        <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                        <div class="text">English</div>
+                    </button>
+                    <button
+                        class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
+                        <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                        <div class="text">English</div>
+                    </button>
+                    <button
+                        class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
+                        <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                        <div class="text">English</div>
+                    </button>
+                    <button
+                        class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
+                        <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                        <div class="text">English</div>
+                    </button>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="error404">
+        <img width="625" height="378" class="i404" src="img/404/i404.png" alt="404">
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+            <div class="text">
+                TradeCoinAI
+            </div>
+        </div>
+        <h1>
+            Sorry, an error accured
+        </h1>
+        <p class="body">
+            Please, go to main page and discover our product
+        </p>
+        <button onclick="window.location.href = './'">
+            Main page
+        </button>
+        <div class="images">
+            <div class="waves free_image">
+                <img src="img/404/waves.png" width="2007" height="610" alt="fone waves">
+            </div>
+            <div class="light free_image">
+                <img src="img/404/light.png" width="2412" height="1525" alr="fone light">
+            </div>
+            <div class="light2 free_image">
+                <img src="img/quest/el4.webp" width="500" height="200" alr="fone light">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer_header">
+                <div class="footer_header_text">
+                    <h3 class="footer_header_text_h3">
+                        Пока вы отдыхаете, наш бот работает
+                    </h3>
+                    <div class="footer_header_text_body body">
+                        Профессиональная платформа для алгоритмической и ручной торговли криптовалютами
+                    </div>
+                </div>
+                <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button class="footer_header_button">
+                        Подключится
+                    </button></a>
+            </div>
+            <div class="footer_content">
+                <a href="https://tradecoinai.com/" class="footer_content_logo">
+
+                    <img alt="logo" src="img/logo.svg" width="73" height="136">
+                    <div class="footer_content_logo_text">
+                        TradeCoinAi
+                    </div>
+                </a>
+                <div class="footer_content_navigation">
+                    <div class="footer_content_navigation_navigation_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_navigation_elements">
+                        <div class="footer_content_navigation_elements_element">
+                            Choose algoritm
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Why to trust us
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Latest transactions
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Easy start
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            How to get started
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_content_documents">
+                    <div class="footer_content_documents_documents_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_documents_elements">
+                        <div class="footer_content_documents_elements_element">
+                            <a href="./policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="footer_content_documents_elements_element">
+                            <a href="./terms.html">Terms &amp; Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="footer_footer_text">
+                    TradeCoinAI 2023 © All rights reserved
+                </div>
+                <div class="footer_footer_soc_net">
+
+                    <a href="https://twitter.com/TradeCoinAI" target="_blank"><img alt="twitter"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/twitter.svg" width="22" height="18"></a>
+
+                    <a target="_blank" href="https://t.me/tradecoinai"> <img alt="telegram"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/telegram.svg" width="21"
+                            height="18"></a>
+
+                    <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                            class=" footer_footer_soc_net_img" src="img/soc_net/discord.svg" width="20" height="20"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "outDir": "../css/sty123le.css",
+    "removeComments": true,
+    "sourceMaps": false,
+    "indentType": "tab",
+    "indentWidth": 1,
+    "linefeed": "cr",
+    "omitSourceMapUrl": false,
+    "outputStyle": "compressed"
+}
