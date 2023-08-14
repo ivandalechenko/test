@@ -1,11 +1,17 @@
 @import 'base_style';
 .article_name{
     padding: 20px;
+    @media (max-width:700px) {
+        padding: 5px;
+    }
     &_inner{
         border-radius: 32px;
         background: linear-gradient(90deg, #1246FF 0%, rgba(18, 70, 255, 0.00) 100%);
         padding: 40px;
         padding-bottom: 60px;
+        @media (max-width:700px) {
+            padding: 10px;
+        }
     }
     &_img{
         width: 100%;
@@ -22,7 +28,7 @@
     .container{
         display: flex;
         flex-wrap: wrap;
-        height: 440px;
+        min-height: 440px;
         align-content: space-between;
     }
     &_breadcrumbs{
@@ -56,11 +62,22 @@
     .container{
         display: flex;
         justify-content: space-between;
+        @media (max-width:1100px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }
 
 .articles_related{
     max-width: 350px;
+    @media (max-width:1100px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: center;
+    }
     &_header{
         color: var(--white-50, rgba(255, 255, 255, 0.50));
         font-size: 14px;
@@ -70,9 +87,11 @@
     }
 }
 .article{
-    margin-top: 24px;
-    img{
+    max-width: 500px;
+    width: 100%;
+    .post_img{
         border-radius: 24px;
+        width: 100%;
     }
     &_author{
         margin-top: 32px;
@@ -120,15 +139,25 @@
 }
 .article_content{
     margin-top: -40px;
+    @media (max-width:1100px) {
+        margin-top: 20px;
+    }
+
 }
 .text_and_share{
     width: 650px;
+    @media (max-width:1100px) {
+        width: 100%;
+    }
 }
 .article_text{
     padding: 35px;
     border-radius: 20px;
     border: 1px solid #242627;
     background: #131415;
+    @media (max-width: 600px) {
+        padding: 15px;
+    }
     &_header{
         font-size: 24px;
         font-weight: 700;
@@ -156,6 +185,8 @@
     &_img{
         border-radius: 24px;
         margin-top: 20px;
+        max-width: 800px;
+        width: 100%;
     }
     &_source{
         color: var(--white-50, rgba(255, 255, 255, 0.50));
@@ -218,6 +249,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:700px) {
+        justify-content: center;
+        row-gap: 12px;
+        flex-wrap: wrap;
+        column-gap: 30px;
+    }
     .text{
         display: flex;
         align-items: center;
@@ -229,5 +266,8 @@
     .icons{
         display: flex;
         column-gap: 32px;
+        @media (max-width:400px) {
+            column-gap: 24px;
+        }
     }
 }
