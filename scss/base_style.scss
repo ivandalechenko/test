@@ -637,6 +637,7 @@ body {
     }
   }
   .footer {
+    margin-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, .1);
     background: rgba(9, 10, 11, 1);
     &_header {
@@ -799,3 +800,9 @@ body {
     height: 100vh;
     overflow: hidden;
   }
+
+.free_image{
+  width: 0px;
+  height: 0px;
+  position: relative;
+}

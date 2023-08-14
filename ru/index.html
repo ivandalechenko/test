@@ -20,7 +20,9 @@
                 display: block;
                 width: 521px;
                 height: 502px;
-                background: radial-gradient(blue 10%, transparent 70%);
+                position: relative;
+                top: -290px;
+                left: -191px;
             }
         }
 
@@ -1005,9 +1007,9 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
     </noscript>
-    <link rel="preload" href="/css/style10.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/style12.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="/css/style10.css">
+        <link rel="stylesheet" href="/css/style12.css">
     </noscript>
 
 
@@ -1946,7 +1948,7 @@
                     width="1903" height="1659">
             </div>
         </div>
-        <div class="security">
+        <div class="security" id="security">
             <div class="security_container container">
                 <div class="security_img">
                     <div class="security_img_light free_image">
@@ -2247,7 +2249,7 @@
                 <img alt="fone light" class="lozad" data-src="/img/quest/el3.webp" width="1707" height="1591">
             </div>
         </div>
-        <div class="chance">
+        <div class="chance" id="chance">
             <div class="chance_inner">
                 <div class="chance_container container">
                     <div class="chance_header" style="z-index: 2;">
@@ -2471,19 +2473,21 @@
                     </div>
                     <div class="footer_content_navigation_elements">
                         <div class="footer_content_navigation_elements_element">
-                            Выбрать алгоритм
+                            <a href="#pricing">Выбрать алгоритм</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Почему нам доверяют
+                            <a href="#security">Почему нам доверяют</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Последнии транзакции
+                            <a href="#all_trades">Последнии транзакции</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Легкий старт
+                            <a href="#chance">Легкий старт</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            С чего начать
+                            <a href="#how_it_works">
+                                С чего начать
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -2515,7 +2519,7 @@
                             class=" footer_footer_soc_net_img" src="/img/soc_net/telegram.svg" width="21"
                             height="18"></a>
 
-                    <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                    <a target="_blank" href="https://discord.gg/KvYAhWUraE"> <img alt="discord"
                             class=" footer_footer_soc_net_img" src="/img/soc_net/discord.svg" width="20"
                             height="20"></a>
 
@@ -2574,13 +2578,13 @@
         if (window.innerWidth > 550) {
             document.getElementById('lb1').innerHTML = '<div class="lb1_light_el1 free_image"><img width="1600" height="1600" alt="fone light" id="el1usp" class="lb1_light_el1_img"   src="/img/usp_images/el1.webp"></div> <div class="lb1_light_line free_image "> <img width="2294" height="388" alt="fone line fade" src="/img/usp_images/line.webp"></div>   <div class="lb1_light_el2 free_image">  <img width="1304" height="1285" alt="fone light fade" src="/img/usp_images/el2.webp"></div>';
 
-            document.getElementById('usp_images').innerHTML = '<div class="usp_images_chart free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/chart.webp" width="747" height="575" alt="chart"class="fade usp_images_chart_img" loading="lazy"></picture></div><div class="usp_images_man_with_notebook free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/man_with_notebook.webp" width="739" height="576"alt="man with notebook" class="usp_images_man_with_notebook_img" onload="hide_loader()"></picture></div><div class="usp_images_eth free_image"><div class="usp_images_eth_button" aria-label="Eth button"><img src="/img/usp_images/eth.svg" width="23" height="24" alt="eth"class=" fade usp_images_eth_button_img"></div></div><div class="usp_images_ai free_image"><div class="usp_images_ai_button inter">Ai</div></div><div class="usp_images_usdt free_image"><div class="usp_images_usdt_button" aria-label="Usdt button"><img src="/img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"class=" fade usp_images_usdt_button_img"></div></div><div class="usp_images_stat free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"class="fade usp_images_stat_img" loading="lazy"></picture></div>';
+            document.getElementById('usp_images').innerHTML = '<div class="usp_images_chart free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/chart.webp" width="747" height="575" alt="chart"class="fade usp_images_chart_img" loading="lazy"></picture></div><div class="usp_images_man_with_notebook free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/man_with_notebook_large.webp" width="739" height="576"alt="man with notebook" class="usp_images_man_with_notebook_img" onload="hide_loader()"></picture></div><div class="usp_images_eth free_image"><div class="usp_images_eth_button" aria-label="Eth button"><img src="/img/usp_images/eth.svg" width="23" height="24" alt="eth"class=" fade usp_images_eth_button_img"></div></div><div class="usp_images_ai free_image"><div class="usp_images_ai_button inter">Ai</div></div><div class="usp_images_usdt free_image"><div class="usp_images_usdt_button" aria-label="Usdt button"><img src="/img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"class=" fade usp_images_usdt_button_img"></div></div><div class="usp_images_stat free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"class="fade usp_images_stat_img" loading="lazy"></picture></div>';
 
 
         }
 
         if (window.innerWidth < 551) {
-            document.getElementById('usp_phone_images').innerHTML = '<img src="/img/usp_images/man_with_notebook_small.webp" width="521" height="502" alt="man with notebook" class="usp_phone_images_man" style="margin-left: -90px;">';
+            document.getElementById('usp_phone_images').innerHTML = '<img src="/img/usp_images/man_with_notebook_mob2.webp" width="1042" height="1004" alt="man with notebook" class="usp_phone_images_man" style="margin-left: -90px;">';
         }
         document.getElementById('lang_changer_block').onclick = () => {
             document.getElementById('lang_changer').classList.toggle('dnone')

@@ -15,12 +15,39 @@
 
 
     <style>
+        .build_your_bot {
+            margin-top: -20px !important;
+            width: 162px;
+        }
+
+        .build_your_bot_wo_m {
+            width: 162px;
+        }
+
+        .locked_button {
+            background: rgba(100, 100, 100, 0.2) !important;
+        }
+
+        .wsnw {
+            white-space: nowrap !important;
+        }
+
+        .offers_offers_list_offer_content_price {
+            height: 50px;
+        }
+
+        .offers_offers_list_offer:nth-child(2) {
+            border: 1px solid #adc113
+        }
+
         @media (max-width:550px) {
             .usp_phone_images {
                 display: block;
                 width: 521px;
                 height: 502px;
-                background: radial-gradient(blue 10%, transparent 70%);
+                position: relative;
+                top: -290px;
+                left: -191px;
             }
         }
 
@@ -460,14 +487,123 @@
 
         .usp {
             padding-top: 90px;
-            padding-bottom: 350px;
             width: 100%;
+            /* padding-bottom: 400px; */
+            height: 930px;
+            overflow: hidden
+        }
+
+        .about_us {
+            /* margin-top: 20px; */
+            margin-top: -60px;
+            width: 100%;
+            padding: 0px 20px;
+            position: relative;
+            z-index: 2
+        }
+
+        @media (max-width:550px) {
+            .about_us {
+                margin-top: 54px;
+                padding: 0px 5px
+            }
+        }
+
+        .about_us_inner {
+            width: 100%;
+            margin-top: -15px;
+            border-radius: 32px;
+            background: rgba(55, 99, 255, .1);
+            /* padding-top: 55px; */
+            padding-top: 100px;
+            padding-bottom: 150px;
             overflow: hidden
         }
 
         @media (max-width:700px) {
+            .about_us_inner {
+                margin-top: -75px;
+            }
+        }
+
+        @media (max-width:550px) {
+            .about_us_inner {
+                padding-top: 32px
+            }
+        }
+
+        .usp_important_inner_important {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .usp_important_inner {
+            width: 100%;
+            max-width: 680px;
+            min-height: 120px;
+            display: flex;
+            /* background-color: rgba(28, 29, 30, 1); */
+            /* background-color: rgba(28, 29, 30, .4); */
+            background: rgba(255, 255, 255, .05);
+            box-shadow: inset 0px 4px 11px rgba(255, 255, 255, .1);
+            /* background-color: rgba(55, 99, 255, .1); */
+            border-radius: 16px;
+            align-items: center;
+            column-gap: 20px;
+            padding: 0px 30px;
+            font-weight: 300;
+        }
+
+        .usp_important_first {
+            margin-top: 360px;
+            position: relative;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0px 10px;
+        }
+
+        @media (max-width:550px) {
+            .usp_important_first {
+                margin-top: -55px;
+            }
+
+            .usp_important_first img {
+                display: none;
+            }
+        }
+
+        @media (max-width:370px) {
+            .usp_important_first {
+                margin-top: -80px;
+                padding: 10px;
+            }
+
+            .usp_important_inner {
+                padding: 10px;
+            }
+        }
+
+        .usp_important {
+            margin-top: 50px;
+            position: relative;
+            z-index: 4;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0px 10px;
+        }
+
+        @media (max-width:550px) {
+            .usp_important img {
+                display: none;
+            }
+        }
+
+        @media (max-width:700px) {
             .usp {
-                padding-bottom: 510px
+                padding-bottom: 0px
             }
         }
 
@@ -770,44 +906,6 @@
             border-radius: 7px
         }
 
-        .about_us {
-            margin-top: 400px
-        }
-
-        .about_us {
-            margin-top: 20px;
-            width: 100%;
-            padding: 0px 20px;
-            position: relative;
-            z-index: 2
-        }
-
-        @media (max-width:550px) {
-            .about_us {
-                padding: 0px 5px
-            }
-        }
-
-        .about_us_inner {
-            width: 100%;
-            border-radius: 32px;
-            background: rgba(55, 99, 255, .1);
-            padding-top: 65px;
-            padding-bottom: 150px;
-            overflow: hidden
-        }
-
-        @media (max-width:900px) {
-            .about_us_inner {
-                padding-bottom: 210px
-            }
-        }
-
-        @media (max-width:550px) {
-            .about_us_inner {
-                padding-top: 32px
-            }
-        }
 
         .about_us_colored_text {
             text-align: center;
@@ -1005,9 +1103,9 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
     </noscript>
-    <link rel="preload" href="/css/style10.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/style13.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="/css/style10.css">
+        <link rel="stylesheet" href="/css/style13.css">
     </noscript>
 
 
@@ -1371,28 +1469,39 @@
                     <div class="usp_text_body body">
                         Our crypto trading bots on ByBit will help you increase your profits by selling/buying AI crypto
                         coins in an efficient manner.
-                        CTA- Try for free
-
                     </div>
                     <a href="https://app.tradecoinai.com/auth/login"><button class="usp_text_button btn">
                             Try for free
                         </button></a>
                     <div class="usp_text_btns_mobile_download">
-                        <button class="usp_text_btns_mobile_download_button" aria-label="Appstore download button">
+                        <!-- <button class="usp_text_btns_mobile_download_button" aria-label="Appstore download button">
                             <img src="/img/platforms/apple.svg" alt="appstore download"
                                 class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
                         </button>
                         <button class="usp_text_btns_mobile_download_button" aria-label="Play market download button">
-
                             <img src="/img/platforms/android.svg" alt="play market download"
                                 class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="usp_phone_images" id="usp_phone_images">
                 </div>
+
+                <div class="usp_important_first">
+                    <div class="usp_important_inner">
+                        <img src="img/note.svg" width="40" height="40" alt="note">
+                        <div class="text">
+                            <span class="usp_important_inner_important">Important:</span>
+                            the bot does not have access to the withdrawal of your funds, it manages the
+                            funds in
+                            your
+                            account
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="about_us" id="trading">
             <div class="about_us_inner">
                 <div class="about_us_container container">
@@ -1532,8 +1641,9 @@
                 <div class="offers_offers_list_offer">
                     <div class="offers_offers_list_offer_header">
                         <div class="offers_offers_list_offer_header_name">
-                            <div class="offers_offers_list_offer_header_name_h4 h4">
-                                Basic
+
+                            <div class="offers_offers_list_offer_header_name_h4 h4 wsnw">
+                                AI Premium
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
@@ -1541,131 +1651,7 @@
                                     class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
                                     height="20">
                             </div>
-                        </div>
-                        <div class="offers_offers_list_offer_header_light14 light14">
-                            Recomended deposit <b class="medium14">$200 - $1000</b>
-                        </div>
-                        <div class="offers_offers_list_offer_header_tags">
-                            <div
-                                class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
-                                High
-                            </div>
-                            <div
-                                class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
-                                Risk management : 1:1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="offers_offers_list_offer_chart">
-                        <div class="offers_offers_list_offer_chart_price_wrapper">
-                            <div
-                                class="offers_offers_list_offer_chart_price_wrapper_price offers_offers_list_offer_chart_price_wrapper_medium14 medium14">
-                                $172,34
-                            </div>
-                        </div>
-
-                        <img data-src="/img/offer_chart1.svg" alt="offer chart"
-                            class="lozad offers_offers_list_offer_chart_img" width="345" height="130">
-                    </div>
-                    <div class="offers_offers_list_offer_content">
-                        <div class="offers_offers_list_offer_content_pnl">
-                            <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
-                                Average profit
-                            </div>
-                            <div class="offers_offers_list_offer_content_pnl_num">
-                                <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
-                                    $165.34
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_pnl_num_percent offers_offers_list_offer_content_pnl_num_percent_medium15 medium15">
-                                    +45,39%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offers_offers_list_offer_content_info">
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average winrate
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    47%
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average monthly profit
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    40-57%
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average loss
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    15-55%
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Subscribed
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    138/170
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    A profitable option for beginners
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="offers_offers_list_offer_content_price">
-                            <div class="offers_offers_list_offer_content_price_medium15 medium15">
-                                Price
-                            </div>
-                            <div class="offers_offers_list_offer_content_price_price_value">
-                                <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
-                                    59$
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offers_offers_list_offer_content_buttons">
-                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
-                                class="btn offers_offers_list_offer_content_buttons_button">
-                                Connect
-                            </a>
-                            <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
-                                onclick="tarifBasicClick()">
-                                Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="offers_offers_list_offer">
-                    <div class="offers_offers_list_offer_header">
-                        <div class="offers_offers_list_offer_header_name">
-                            <div class="offers_offers_list_offer_header_name_h4 h4">
-                                AI Pro
-                            </div>
-                            <div class="offers_offers_list_offer_header_name_verified">
-
-                                <img data-src="/img/verified.svg" alt="verified"
-                                    class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
-                                    height="20">
-                            </div>
-                            <div class="offers_offers_list_offer_header_name_the_best"
+                            <div class="offers_offers_list_offer_header_name_the_best wsnw"
                                 style="border-radius: 6px; margin-left: 10px">
                                 🔥 The best
                             </div>
@@ -1677,10 +1663,6 @@
                             <div
                                 class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
                                 Medium
-                            </div>
-                            <div
-                                class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
-                                Risk management : 1:1
                             </div>
                         </div>
                     </div>
@@ -1697,16 +1679,16 @@
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
-                            <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
+                            <!-- <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
                                 Average profit
-                            </div>
+                            </div> -->
                             <div class="offers_offers_list_offer_content_pnl_num">
                                 <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
-                                    $875.34
+                                    Average monthly profit
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_pnl_num_percent offers_offers_list_offer_content_pnl_num_percent_medium15 medium15">
-                                    +38,33%
+                                    +38%
                                 </div>
                             </div>
                         </div>
@@ -1724,39 +1706,29 @@
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average monthly profit
+                                    Monthly average loss
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    35%
+                                    10-17%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average loss
+                                    Monthly closed orders
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    15%
+                                    6-8
                                 </div>
                             </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Subscribed
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    271/320
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
+                            <!-- <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
                                     Option for confident traders of the cryptocurrency market
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="offers_offers_list_offer_content_price">
                             <div class="offers_offers_list_offer_content_price_medium15 medium15">
@@ -1776,7 +1748,7 @@
                             </a>
                             <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
                                 onclick="tarifAiProClick()">
-                                Details
+                                Last orders
                             </a>
                         </div>
                     </div>
@@ -1785,7 +1757,118 @@
                     <div class="offers_offers_list_offer_header">
                         <div class="offers_offers_list_offer_header_name">
                             <div class="offers_offers_list_offer_header_name_h4 h4">
-                                AI Premium
+                                AI Pro
+                            </div>
+                            <div class="offers_offers_list_offer_header_name_verified">
+
+                                <img data-src="/img/verified.svg" alt="verified"
+                                    class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
+                                    height="20">
+                            </div>
+                        </div>
+                        <div class="offers_offers_list_offer_header_light14 light14">
+                            Recomended deposit <b class="medium14">$200 - $1000</b>
+                        </div>
+                        <div class="offers_offers_list_offer_header_tags">
+                            <div
+                                class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
+                                High
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offers_offers_list_offer_chart">
+                        <div class="offers_offers_list_offer_chart_price_wrapper">
+                            <div
+                                class="offers_offers_list_offer_chart_price_wrapper_price offers_offers_list_offer_chart_price_wrapper_medium14 medium14">
+                                $172,34
+                            </div>
+                        </div>
+
+                        <img data-src="/img/offer_chart1.svg" alt="offer chart"
+                            class="lozad offers_offers_list_offer_chart_img" width="345" height="130">
+                    </div>
+                    <div class="offers_offers_list_offer_content">
+                        <div class="offers_offers_list_offer_content_pnl">
+                            <!-- <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
+                                Average profit
+                            </div> -->
+                            <div class="offers_offers_list_offer_content_pnl_num">
+                                <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
+                                    Average monthly profit
+                                </div>
+                                <div
+                                    class="offers_offers_list_offer_content_pnl_num_percent offers_offers_list_offer_content_pnl_num_percent_medium15 medium15">
+                                    +41%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offers_offers_list_offer_content_info">
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    Average winrate
+                                </div>
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
+                                    58%
+                                </div>
+                            </div>
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    Monthly average loss
+                                </div>
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
+                                    15-28%
+                                </div>
+                            </div>
+                            <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    Monthly closed orders
+                                </div>
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
+                                    5-7
+                                </div>
+                            </div>
+                            <!-- <div class="offers_offers_list_offer_content_info_info_element">
+                                <div
+                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
+                                    A profitable option for beginners
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <!-- <div class="offers_offers_list_offer_content_price">
+                            <div class="offers_offers_list_offer_content_price_medium15 medium15">
+                                Price
+                            </div>
+                            <div class="offers_offers_list_offer_content_price_price_value">
+                                <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
+                                    59$
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="mobile_ph"></div>
+                        <div class="offers_offers_list_offer_content_buttons">
+                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
+                                class="btn offers_offers_list_offer_content_buttons_button offers_offers_list_offer_content_buttons_button_large">
+                                Try for free
+                            </a>
+                            <a class="btn offers_offers_list_offer_content_buttons_button offers_offers_list_offer_content_buttons_button_large"
+                                href='#all_trades' onclick="tarifBasicClick()">
+                                Last orders
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_offers_list_offer">
+                    <div class="offers_offers_list_offer_header">
+                        <div class="offers_offers_list_offer_header_name">
+                            <div class="offers_offers_list_offer_header_name_h4 h4">
+                                AI Customs
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
                                 <img data-src="/img/verified.svg" alt="verified"
@@ -1799,11 +1882,7 @@
                         <div class="offers_offers_list_offer_header_tags">
                             <div
                                 class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
-                                High
-                            </div>
-                            <div
-                                class="offers_offers_list_offer_header_tags_tag offers_offers_list_offer_header_tags_medium15 medium15">
-                                Risk management : 1:1
+                                Low
                             </div>
                         </div>
                     </div>
@@ -1820,16 +1899,16 @@
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
-                            <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
+                            <!-- <div class="offers_offers_list_offer_content_pnl_medium15 medium15">
                                 Average profit
-                            </div>
+                            </div> -->
                             <div class="offers_offers_list_offer_content_pnl_num">
                                 <div class="offers_offers_list_offer_content_pnl_num_h4 h4">
-                                    $2378.34
+                                    Average monthly profit
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_pnl_num_percent offers_offers_list_offer_content_pnl_num_percent_medium15 medium15">
-                                    +12%
+                                    +17%
                                 </div>
                             </div>
                         </div>
@@ -1841,68 +1920,60 @@
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    87%
+                                    82%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average monthly profit
+                                    Monthly average loss
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    15%
+                                    5-14%
                                 </div>
                             </div>
                             <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Average loss
+                                    Monthly closed orders
                                 </div>
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    5-7%
+                                    3-5
                                 </div>
                             </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
-                                    Subscribed
-                                </div>
-                                <div
-                                    class="offers_offers_list_offer_content_info_info_element_value offers_offers_list_offer_content_info_info_element_medium14 medium14">
-                                    74/99
-                                </div>
-                            </div>
-                            <div class="offers_offers_list_offer_content_info_info_element">
+
+
+                            <!-- <div class="offers_offers_list_offer_content_info_info_element">
                                 <div
                                     class="offers_offers_list_offer_content_info_info_element_name offers_offers_list_offer_content_info_info_element_regular14 regular14">
                                     The best solution for major investors
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="offers_offers_list_offer_content_price">
-                            <div class="offers_offers_list_offer_content_price_medium15 medium15">
+                            <!-- <div class="offers_offers_list_offer_content_price_medium15 medium15">
                                 Price
-                            </div>
+                            </div> -->
                             <div class="offers_offers_list_offer_content_price_price_value">
-                                <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
+                                <!-- <div class="offers_offers_list_offer_content_price_price_value_h6 h6">
                                     30% <s
                                         class="offers_offers_list_offer_content_price_price_value_h6_s light18">40%</s>
-                                </div>
-                                <div class="offers_offers_list_offer_content_price_price_value_add_info_type_2">
-                                    Individual 🔥
+                                </div> -->
+                                <div
+                                    class="offers_offers_list_offer_content_price_price_value_add_info_type_2 build_your_bot_wo_m">
+                                    Build your bot and maximize your profits
                                 </div>
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_content_buttons">
-                            <a href="https://app.tradecoinai.com/auth/login" target="_blank "
-                                class="btn offers_offers_list_offer_content_buttons_button">
-                                Connect
+                            <a href="#" class="btn offers_offers_list_offer_content_buttons_button locked_button">
+                                <img src="img/lock.svg">
                             </a>
                             <a class="btn offers_offers_list_offer_content_buttons_button" href='#all_trades'
                                 onclick="tarifAiPremiumClick()">
-                                Details
+                                Last orders
                             </a>
                         </div>
                     </div>
@@ -1947,7 +2018,7 @@
                     width="1903" height="1659">
             </div>
         </div>
-        <div class="security">
+        <div class="security" id="security">
             <div class="security_container container">
                 <div class="security_img">
                     <div class="security_img_light free_image">
@@ -2062,13 +2133,13 @@
                 <div class="transactions_navigation onone" id="transactions_navigation">
                     <div class="transactions_navigation_navigation_element h6 transactions_navigation_active"
                         id="tariffBasic">
-                        Basic
-                    </div>
-                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPro">
                         AI Pro
                     </div>
-                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPremium">
+                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPro">
                         AI Premium
+                    </div>
+                    <div class="transactions_navigation_navigation_element h6" id="tariffAiPremium">
+                        AI Customs
                     </div>
                 </div>
                 <div id="table" class="onone">
@@ -2117,6 +2188,18 @@
                     </div>
                     <div id="table_elements_pagination" class="pages element_info onone">
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="usp_important">
+            <div class="usp_important_inner">
+                <img src="img/note.svg" width="40" height="40" alt="note">
+                <div class="text">
+                    <span class="usp_important_inner_important">Important:</span>
+                    the bot does not have access to the withdrawal of your funds, it manages the
+                    funds in
+                    your
+                    account
                 </div>
             </div>
         </div>
@@ -2237,7 +2320,7 @@
                 <img alt="fone light" class="lozad" data-src="/img/quest/el3.webp" width="1707" height="1591">
             </div>
         </div>
-        <div class="chance">
+        <div class="chance" id="chance">
             <div class="chance_inner">
                 <div class="chance_container container">
                     <div class="chance_header" style="z-index: 2;">
@@ -2250,9 +2333,9 @@
                         <div class="chance_header_body body">
                             Our trading bot for cryptocurrency exchanges - the best investment for your future.
                         </div>
-                        <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button
+                        <a href="https://app.tradecoinai.com/auth/signup" target="_blank"> <button
                                 class="chance_header_button btn">
-                                Order now
+                                Registration
                             </button></a>
                     </div>
                     <div class="chance_images">
@@ -2306,7 +2389,7 @@
                     <div class="small_offers_offer_info">
                         <div class="small_offers_offer_info_name">
                             <div class="small_offers_offer_info_name_h4 h4">
-                                Basic
+                                AI Pro
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
@@ -2342,7 +2425,7 @@
                     <div class="small_offers_offer_info">
                         <div class="small_offers_offer_info_name">
                             <div class="small_offers_offer_info_name_h4 h4">
-                                AI Pro
+                                AI Premium
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
@@ -2379,7 +2462,7 @@
                     <div class="small_offers_offer_info">
                         <div class="small_offers_offer_info_name">
                             <div class="small_offers_offer_info_name_h4 h4">
-                                AI Premium
+                                AI Customs
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
@@ -2460,19 +2543,19 @@
                     </div>
                     <div class="footer_content_navigation_elements">
                         <div class="footer_content_navigation_elements_element">
-                            Choose Algorithm
+                            <a href="#pricing">Choose Algorithm</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Why trust us
+                            <a href="#security">Why trust us</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Latest transactions
+                            <a href="#all_trades">Latest transactions</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            Easy start
+                            <a href="#chance">Easy start</a>
                         </div>
                         <div class="footer_content_navigation_elements_element">
-                            How to get started
+                            <a href="#how_it_works">How to get started</a>
                         </div>
                     </div>
                 </div>
@@ -2504,7 +2587,7 @@
                             class=" footer_footer_soc_net_img" src="/img/soc_net/telegram.svg" width="21"
                             height="18"></a>
 
-                    <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                    <a target="_blank" href="https://discord.gg/KvYAhWUraE"> <img alt="discord"
                             class=" footer_footer_soc_net_img" src="/img/soc_net/discord.svg" width="20"
                             height="20"></a>
 
@@ -2563,13 +2646,13 @@
         if (window.innerWidth > 550) {
             document.getElementById('lb1').innerHTML = '<div class="lb1_light_el1 free_image"><img width="1600" height="1600" alt="fone light" id="el1usp" class="lb1_light_el1_img"   src="/img/usp_images/el1.webp"></div> <div class="lb1_light_line free_image "> <img width="2294" height="388" alt="fone line fade" src="/img/usp_images/line.webp"></div>   <div class="lb1_light_el2 free_image">  <img width="1304" height="1285" alt="fone light fade" src="/img/usp_images/el2.webp"></div>';
 
-            document.getElementById('usp_images').innerHTML = '<div class="usp_images_chart free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/chart.webp" width="747" height="575" alt="chart"class="fade usp_images_chart_img" loading="lazy"></picture></div><div class="usp_images_man_with_notebook free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/man_with_notebook.webp" width="739" height="576"alt="man with notebook" class="usp_images_man_with_notebook_img" onload="hide_loader()"></picture></div><div class="usp_images_eth free_image"><div class="usp_images_eth_button" aria-label="Eth button"><img src="/img/usp_images/eth.svg" width="23" height="24" alt="eth"class=" fade usp_images_eth_button_img"></div></div><div class="usp_images_ai free_image"><div class="usp_images_ai_button inter">Ai</div></div><div class="usp_images_usdt free_image"><div class="usp_images_usdt_button" aria-label="Usdt button"><img src="/img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"class=" fade usp_images_usdt_button_img"></div></div><div class="usp_images_stat free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"class="fade usp_images_stat_img" loading="lazy"></picture></div>';
+            document.getElementById('usp_images').innerHTML = '<div class="usp_images_chart free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/chart.webp" width="747" height="575" alt="chart"class="fade usp_images_chart_img" loading="lazy"></picture></div><div class="usp_images_man_with_notebook free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/man_with_notebook_large.webp" width="739" height="576"alt="man with notebook" class="usp_images_man_with_notebook_img" onload="hide_loader()"></picture></div><div class="usp_images_eth free_image"><div class="usp_images_eth_button" aria-label="Eth button"><img src="/img/usp_images/eth.svg" width="23" height="24" alt="eth"class=" fade usp_images_eth_button_img"></div></div><div class="usp_images_ai free_image"><div class="usp_images_ai_button inter">Ai</div></div><div class="usp_images_usdt free_image"><div class="usp_images_usdt_button" aria-label="Usdt button"><img src="/img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"class=" fade usp_images_usdt_button_img"></div></div><div class="usp_images_stat free_image"><picture><source srcset="img/ph_new.png" media="(max-width: 550px)" /><img src="/img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"class="fade usp_images_stat_img" loading="lazy"></picture></div>';
 
 
         }
 
         if (window.innerWidth < 551) {
-            document.getElementById('usp_phone_images').innerHTML = '<img src="/img/usp_images/man_with_notebook_small.webp" width="521" height="502" alt="man with notebook" class="usp_phone_images_man" style="margin-left: -90px;">';
+            document.getElementById('usp_phone_images').innerHTML = '<img src="/img/usp_images/man_with_notebook_mob2.webp" width="1042" height="1004" alt="man with notebook" class="usp_phone_images_man" style="margin-left: -90px;">';
         }
         document.getElementById('lang_changer_block').onclick = () => {
             document.getElementById('lang_changer').classList.toggle('dnone')

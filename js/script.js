@@ -34,6 +34,7 @@ for (var i = 0; i < elements.length; i++) {
 }
 // Плавная прокрутка к якорям
 document.querySelectorAll('a[href^="#"').forEach(link => {
+
     link.addEventListener('click', function (e) {
         e.preventDefault();
 

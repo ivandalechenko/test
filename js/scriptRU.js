@@ -118,7 +118,7 @@ const faq = [
 // Первоначальная отрисовка вопросов
 faq.forEach(function (aq, i, faq) {
     if (i == 0) {
-        var style = 'style="margin-top: 8px"'
+        var style = 'style="margin-top: 16px"'
         var style2 = 'faq_questions_question_show'
     } else {
         var style = 'style="height: 0px"'
@@ -156,7 +156,7 @@ for (var i = 0; i < elements.length; i++) {
         var elBlock = this.querySelector(".faq_questions_question_text_hidden")
         if (elBlock.style.height === "0px") {
             elBlock.style.height = `${elBlock.scrollHeight}px`
-            elBlock.style.marginTop = `8px`
+            elBlock.style.marginTop = `16px`
         } else {
             elBlock.style.height = `${elBlock.scrollHeight}px`;
             window.getComputedStyle(elBlock, null).getPropertyValue("height");

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeCoinAi — Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
+    </noscript>
+    <link rel="preload" href="/css/article.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/css/article.css">
+    </noscript>
+
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg">
+</head>
+
+<body id="body">
+
+    <header class="header" id="header">
+        <div class="header_container container">
+            <div class="header_pc">
+                <div class="header_navigation">
+                    <a href="https://tradecoinai.com/" class="header_navigation_logo">
+                        <div class="header_navigation_logo_img">
+                            <img width="32" height="32" alt="logo" class="fade" src="/img/logo.svg">
+                        </div>
+                        <div class="header_navigation_logo_text inter">
+                            TradeCoinAi
+                        </div>
+                    </a>
+                    <div class="header_navigation_links">
+                        <a href="#all_trades" class="header_navigation_links_a medium15">All trades</a>
+                        <a href="#how_it_works" class="header_navigation_links_a medium15">How it works</a>
+                        <a href="#pricing" class="header_navigation_links_a medium15">Pricing</a>
+                        <a href="#trading" class="header_navigation_links_a medium15">About us</a>
+                    </div>
+                </div>
+                <div class="header_buttons">
+                    <div class="header_buttons_lang">
+                        <div class="header_buttons_lang_changer dnone" id="lang_changer">
+                            <div class="header_buttons_lang_changer_wrapper">
+                                <a href="https://tradecoinai.com/ru/"
+                                    class="header_buttons_lang_changer_wrapper_element">
+                                    <img width="20" height="21" alt="english" src="/img/flags/rf.png">
+                                    <div class="btn">
+                                        Русский
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_buttons_lang_btn" id="lang_changer_block">
+                            <div class="header_buttons_lang_img">
+                                <img width="20" height="21" alt="english" src="/img/flags/usa.png">
+                            </div>
+                            <div class="header_buttons_lang_btn btn">
+                                English
+                            </div>
+                            <div class="header_buttons_lang_dd_btn">
+                                <img width="12" height="12" alt="arrow down" class="header_buttons_lang_dd_btn_img"
+                                    src="/img/flags/arrow_down.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_buttons_log_reg">
+                        <a href="https://app.tradecoinai.com/auth/login"> <button
+                                class="header_buttons_log_reg_btn_log btn">
+                                Login
+                            </button></a>
+                        <a href="https://app.tradecoinai.com/auth/signup"><button
+                                class="header_buttons_log_reg_btn_reg btn">
+                                Sign up
+                            </button></a>
+                    </div>
+                    <div class="header_buttons_burger">
+                        <button class="header_buttons_burger_btn fade" id="burger_menu_button">
+                            <img alt="mobile menu opener" id="mobile_menu_img_burger" src="/img/burger.svg" width="20"
+                                height="14">
+                            <img alt="mobile menu closer" class="dnone" id="mobile_menu_img_cross" src="/img/cross.svg"
+                                width="24" height="24">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header_mobile" id="mobile_menu" style="height: 0px">
+                <div class="header_mobile_menu_element">
+                    <a href="#all_trades" class="header_mobile_menu_element_a medium15">All trades</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="#how_it_works" class="header_mobile_menu_element_a medium15">How it works</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="#pricing" class="header_mobile_menu_element_a medium15">Pricint</a>
+                </div>
+                <div class="header_mobile_menu_element">
+                    <a href="#trading" class="header_mobile_menu_element_a medium15">About us</a>
+                </div>
+                <div class="header_mobile_menu_element header_mobile_menu_element_log_reg">
+                    <div class="header_mobile_menu_element_log_reg_buttons">
+                        <a href="https://app.tradecoinai.com/auth/login"
+                            class="header_mobile_menu_element_log_reg_buttons_btn_log btn">
+                            Login
+                        </a>
+                        <a href="https://app.tradecoinai.com/auth/signup"
+                            class="header_mobile_menu_element_log_reg_buttons_btn_reg btn">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <div class="header_mobile_menu_element_change_lang">
+                    <div class="header_mobile_menu_element_change_lang_title">
+                        Choose language
+                    </div>
+                    <div class="header_mobile_menu_element_change_lang_languages">
+                        <div
+                            class="header_mobile_menu_element_change_lang_languages_element header_mobile_menu_element_change_lang_languages_element_active">
+                            <img width="20" height="21" alt="english" src="/img/flags/usa.png">
+                            English
+                        </div>
+                        <a href="https://tradecoinai.com/ru/"
+                            class="header_mobile_menu_element_change_lang_languages_element ">
+                            <img width="20" height="21" alt="english" src="/img/flags/rf.png">
+                            Русский
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="article_name">
+        <div class="article_name_img">
+            <img src="blog_img/posts/2.png" alt="">
+        </div>
+        <div class="article_name_inner">
+            <div class="container">
+                <div class="article_name_breadcrumbs">
+                    Home / Blog
+                </div>
+                <div class="article_name_info">
+                    <div class="article_name_author">
+                        <img src="blog_img/authors/tcai.png" alt="">
+                        TradeCoinAI
+                        <img src="blog_img/dot.svg" alt="">
+                        12 July, 2023
+                    </div>
+                    <div class="article_name_header">
+                        Bitget Crypto Exchange Announces Debt-Free Status
+                    </div>
+                    <div class="article_name_ttr">
+                        8 min read
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article_content">
+        <div class="container">
+            <div class="text_and_share">
+
+                <div class="article_text">
+                    <div class="article_text_header">
+                        As per Bitget’s announcement, the exchange’s overall reserve ratio now stands
+                    </div>
+                    <p>
+                        <a href="#">Bitget</a> crypto <a href="#">exchange</a> has announced that its reserves have
+                        reached
+                        a high of $1.44 billion, and
+                        that it is officially debt-free.
+                    </p>
+                    <p>
+                        As per Bitget’s announcement, the exchange’s overall reserve ratio now stands at 223%, more than
+                        twice the standard 100% (or 1-to-1) backing that is expected of all exchanges in the industry.
+                        Broken down into different digital assets, the exchange said it has a reserve ratio of 454% for
+                        <a href="#">Bitcoin (BTC)</a>, 135% for <a href="#">Tether (USDT)</a> and 171% for <a
+                            href="#">Ether
+                            (ETH).</a>
+                    </p>
+                    <img src="blog_img/post_images/1.jpg" class="article_text_img" alt="phone">
+                    <div class="article_text_source">
+                        Source: AdobeStock / Rafael Henrique
+                    </div>
+                    <div class="article_text_header">
+                        Notably, a representative for Bitget told Cointelegraph in an interview that the exchange has no
+                        debts not accounted for in the published reserve ratio.
+                    </div>
+                    <p>
+                        Bitget has no outstanding debts or liabilities and is not listed as a creditor for any recently
+                        bankrupt companies,” the exchange’s representative said.
+                    </p>
+                    <p>
+                        The Bitget representative explained that the excess large reserves it holds in crypto, which far
+                        exceeds the normal 1-to-1 backing, comes from profits from transaction fees and returns from its
+                        own
+                        investments and acquisitions.
+                    </p>
+                    <div class="article_text_list_element">
+                        <div class="num">
+                            1
+                        </div>
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                    <div class="article_text_list_element">
+                        <div class="num">
+                            2
+                        </div>
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                    <div class="article_text_list_element">
+                        <div class="num">
+                            3
+                        </div>
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                    <div class="article_text_mini_header">
+                        Regular proof-of-reserve statements
+                    </div>
+                    <p>
+                        In a media statement, Bitget’s managing director Gracy Chen said that the company will continue
+                        to
+                        release monthly proof-of-reserve statements to build trust in their platform.
+                    </p>
+                    <blockquote>
+                        <div class="dots">
+                            ''
+                        </div>
+                        <div class="text">
+                            Bitget also endeavors to set higher standards industry-wide — collaborating across exchanges
+                            to
+                            advocate for radical transparency through crypto’s evolution, Chen added.
+                        </div>
+                    </blockquote>
+
+                    <div class="article_text_list_element">
+                        <img src="blog_img/square_dots.svg" alt="">
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                    <div class="article_text_list_element">
+                        <img src="blog_img/square_dots.svg" alt="">
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                    <div class="article_text_list_element">
+                        <img src="blog_img/square_dots.svg" alt="">
+                        <div class="text">
+                            Bitget has no outstanding debts or liabilities
+                        </div>
+                    </div>
+                </div>
+                <div class="share">
+                    <div class="text">
+                        <img src="blog_img/share_with_friends.svg" alt="">
+                        Share with friends
+                    </div>
+                    <div class="icons">
+                        <a href="#"><img src="blog_img/sm/twitter.svg" alt=""></a>
+                        <a href="#"><img src="blog_img/sm/ig.svg" alt=""></a>
+                        <a href="#"><img src="blog_img/sm/tt.svg" alt=""></a>
+                        <a href="#"><img src="blog_img/sm/yt.svg" alt=""></a>
+                        <a href="#"><img src="blog_img/sm/tg.svg" alt=""></a>
+                        <a href="#"><img src="blog_img/sm/ds.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="articles_related">
+                <div class="articles_related_header">
+                    RELATED ARTICLES
+                </div>
+                <div class="article">
+                    <img src="blog_img/posts/1.jpg" alt="post">
+                    <div class="article_author">
+                        <img src="blog_img/authors/tcai.png" alt="author">
+                        TradeCoinAI
+                        <img src="blog_img/dot.svg" alt="dot">
+                        12 July, 2023
+                    </div>
+                    <div class="article_header">
+                        Bitget Crypto Exchange Announces Debt-Free Status
+                    </div>
+                    <div class="article_p">
+                        The crypto exchange Bitget has announced that its reserves have reached a massive $1.44 billion,
+                        and
+                        that it is officially debt-free.
+                    </div>
+                    <div class="article_read_more">
+                        <a href="#">Read more</a>
+                        8 min read
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="blog_img/posts/1.jpg" alt="post">
+                    <div class="article_author">
+                        <img src="blog_img/authors/tcai.png" alt="author">
+                        TradeCoinAI
+                        <img src="blog_img/dot.svg" alt="dot">
+                        12 July, 2023
+                    </div>
+                    <div class="article_header">
+                        Bitget Crypto Exchange Announces Debt-Free Status
+                    </div>
+                    <div class="article_p">
+                        The crypto exchange Bitget has announced that its reserves have reached a massive $1.44 billion,
+                        and
+                        that it is officially debt-free.
+                    </div>
+                    <div class="article_read_more">
+                        <a href="#">Read more</a>
+                        8 min read
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="blog_img/posts/1.jpg" alt="post">
+                    <div class="article_author">
+                        <img src="blog_img/authors/tcai.png" alt="author">
+                        TradeCoinAI
+                        <img src="blog_img/dot.svg" alt="dot">
+                        12 July, 2023
+                    </div>
+                    <div class="article_header">
+                        Bitget Crypto Exchange Announces Debt-Free Status
+                    </div>
+                    <div class="article_p">
+                        The crypto exchange Bitget has announced that its reserves have reached a massive $1.44 billion,
+                        and
+                        that it is officially debt-free.
+                    </div>
+                    <div class="article_read_more">
+                        <a href="#">Read more</a>
+                        8 min read
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_container container">
+            <div class="footer_header">
+                <div class="footer_header_text">
+                    <h3 class="footer_header_text_h3">
+                        While you are resting our bot is working
+                    </h3>
+                    <div class="footer_header_text_body body">
+                        Professional platform for algorithmic and manual trading of cryptocurrencies
+                    </div>
+                </div>
+                <a href="https://app.tradecoinai.com/auth/login" target="_blank"> <button class="footer_header_button">
+                        Connect now
+                    </button></a>
+            </div>
+            <div class="footer_content">
+                <div class="footer_content_logo">
+
+                    <img alt="logo" src="/img/logo.svg" width="73" height="136">
+                    <div class="footer_content_logo_text">
+                        TradeCoinAi
+                    </div>
+                </div>
+                <div class="footer_content_navigation">
+                    <div class="footer_content_navigation_navigation_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_navigation_elements">
+                        <div class="footer_content_navigation_elements_element">
+                            Choose Algorithm
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Why trust us
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Latest transactions
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            Easy start
+                        </div>
+                        <div class="footer_content_navigation_elements_element">
+                            How to get started
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_content_documents">
+                    <div class="footer_content_documents_documents_header">
+                        Navigation
+                    </div>
+                    <div class="footer_content_documents_elements">
+                        <div class="footer_content_documents_elements_element">
+                            <a href="./policy.html">Privacy Policy</a>
+                        </div>
+                        <div class="footer_content_documents_elements_element">
+                            <a href="./terms.html">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="footer_footer_text">
+                    TradeCoinAI 2023 © All rights reserved
+                </div>
+                <div class="footer_footer_soc_net">
+
+                    <a href="https://twitter.com/TradeCoinAI" target="_blank"><img alt="twitter"
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/twitter.svg" width="22"
+                            height="18"></a>
+
+                    <a target="_blank" href="https://t.me/tradecoinai"> <img alt="telegram"
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/telegram.svg" width="21"
+                            height="18"></a>
+
+                    <a target="_blank" href="https://discord.gg/XQYj3r9z"> <img alt="discord"
+                            class=" footer_footer_soc_net_img" src="/img/soc_net/discord.svg" width="20"
+                            height="20"></a>
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/blog.js"></script>
+
+</body>
+
+</html>

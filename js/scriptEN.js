@@ -109,7 +109,7 @@ const faq = [
 // Первоначальная отрисовка вопросов
 faq.forEach(function (aq, i, faq) {
     if (i == 0) {
-        var style = 'style="margin-top: 8px"'
+        var style = 'style="margin-top: 16px"'
         var style2 = 'faq_questions_question_show'
     } else {
         var style = 'style="height: 0px"'
@@ -146,12 +146,15 @@ for (var i = 0; i < elements.length; i++) {
         this.querySelector(".faq_questions_question_question_arrow").classList.toggle('faq_questions_question_show')
         var elBlock = this.querySelector(".faq_questions_question_text_hidden")
         if (elBlock.style.height === "0px") {
+            elBlock.style.marginTop = `16px`
             elBlock.style.height = `${elBlock.scrollHeight}px`
-            elBlock.style.marginTop = `8px`
         } else {
             elBlock.style.height = `${elBlock.scrollHeight}px`;
             window.getComputedStyle(elBlock, null).getPropertyValue("height");
+            elBlock.style.paddingTop = `0px`
             elBlock.style.height = "0";
+            elBlock.style.borderTop = `0px solid white`
+
             setTimeout(() => { elBlock.style.marginTop = `0`; }, 500);
         }
     };
@@ -167,7 +170,7 @@ lozad('.lozad', {
 }).observe()
 
 const table_element = (props) => {
-    return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">' + props.margin + '</div></div></div><div class="pair element_info"><div class="info"><img src="/img/currency/btc.png" /><div class="text">BTC/USDT.P</div></div></div><div class="date element_info"><div class="name">Date</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Count</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Price</div><div class="info">$ ' + props.price + '</div></div><div class="profit element_info"><div class="name">Profit</div><div class="info"><div class="usdt">$ ' + props.income + '</div><div class="percent ' + props.percentClass + '">' + props.percent + ' %</div></div></div></div>'
+    return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">' + props.margin + '</div></div></div><div class="pair element_info"><div class="info"><img src="/img/currency/btc.png" width="35" height="35" /><div class="text">BTC/USDT.P</div></div></div><div class="date element_info"><div class="name">Date</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Count</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Price</div><div class="info">$ ' + props.price + '</div></div><div class="profit element_info"><div class="name">Profit</div><div class="info"><div class="usdt">$ ' + props.income + '</div><div class="percent ' + props.percentClass + '">' + props.percent + ' %</div></div></div></div>'
     // return '<div class="element element_loading"><div class="num element_info"><div class="info">' + props.id + '</div></div><div class="type element_info"><div class="info"><div class="' + props.type + '">' + props.type + '</div><div class="lev">isol x10</div></div></div><div class="pair element_info"><div class="info"><img src="/img/currency/btc.png" /><div class="text">BNB/USDT</div></div></div><div class="date element_info"><div class="name">Дата</div><div class="info">' + props.date + '</div></div><div class="count element_info"><div class="name">Кол-во</div><div class="info">' + props.amount + '</div></div><div class="price element_info"><div class="name">Цена</div><div class="info">' + props.price + '</div></div><div class="volume element_info"><div class="name">Объем</div><div class="info">50,324</div></div><div class="profit element_info"><div class="name">Прибыль</div><div class="info"><div class="usdt">$' + props.income + '</div><div class="percent">+38,39%</div></div></div></div>'
 }
 
